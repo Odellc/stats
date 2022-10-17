@@ -1,12 +1,12 @@
 #One-Way MANOVA
-install.packages("car")
+#install.packages("car")
 library(car)
 data(Baumann)
 attach(Baumann)
 
 
 #Testing the Independence Assumption
-install.packages("psych")
+#install.packages("psych")
 library(psych)
 
 ICC(Baumann[,4:6])
@@ -33,4 +33,19 @@ summary(Baumann.manova, test="Wilks")
 summary(Baumann.manova, test="Pillai")
 summary(Baumann.manova, test="Hotelling-Lawley")
 summary(Baumann.manova, test="Roy")
+
+
+#Effects of Size (Partial Eta-Squared Values)
+
+wilks_lamda = 0.63202 #From the summary of the wilks manova
+
+#S = min(P, df_effect)
+min(3, 2)
+
+#Partial Eta squared = 1 - wilks_lamnda ^ 1/s
+
+1-(0.63202)^(1/2)
+
+#20.5% of the variance of grades of the 3 tests taken by the students are
+#due to the difference of education style
 
