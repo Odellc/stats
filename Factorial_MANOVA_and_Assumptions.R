@@ -57,3 +57,4 @@ min(3, 3)
 
 #68.37% of variance of the pH, Density, and Conductivity of the soil are due to
 #to the differences in the Depth in the soil
+
