@@ -40,3 +40,7 @@ starwars %>% summarize(across(where(is.numeric), ~min(.x,
 #The .x is a stand in for the variables within the across
 starwars %>% summarize(across(where(is.character), ~ length(unique(.x))))
 
+
+
+
+
