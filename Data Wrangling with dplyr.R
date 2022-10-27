@@ -44,3 +44,4 @@ starwars %>% summarize(across(where(is.character), ~ length(unique(.x))))
 
 
 
+
