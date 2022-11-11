@@ -23,6 +23,7 @@ starwars %>% summarize(across(where(is.numeric), mean, na.rm=TRUE))
 
 #Other functions are available, such as mean, min, median
 
+
 # we can also do more than one function with a list
 starwars %>% summarize(across(where(is.numeric), 
                               list(min=min, max=max), 
