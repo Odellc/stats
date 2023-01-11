@@ -50,5 +50,3 @@ min(3, 2)
 #due to the difference of education style
 
 
-
-
