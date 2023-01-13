@@ -48,5 +48,3 @@ min(3, 2)
 
 #20.5% of the variance of grades of the 3 tests taken by the students are
 #due to the difference of education style
-
-
