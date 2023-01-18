@@ -37,3 +37,4 @@ y= mtcars["mpg"])
 train_prediction = regression_model.predict(X = pd.DataFrame(mtcars['wt']))
 
 #Acutal - prediction = residuals
+
