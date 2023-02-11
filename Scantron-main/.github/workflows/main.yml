@@ -1,0 +1,41 @@
+---
+# Continuous Integration Workflow: Test case suite run + validation build check
+name: CI
+
+# Controls when the action will run.
+# Triggers the workflow on push or pull request events but only for the master branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Job: Build Android APK
+  android:
+    runs-on: macos-latest
+
+    steps:
+      # Checks out repository under $GITHUB_WORKSPACE
+      - name: Checkout Latest Repo
+        uses: actions/checkout@v2
+
+      # Run Unit Tests
+      - name: Run Unit Tests
+        run: |
+          dotnet --version
+          dotnet restore
+          dotnet test --configuration UnitTesting
+
+      # Build Android APK
+      - name: Build Android App
+        run: |
+          nuget restore
+          msbuild /p:AndroidBuildApplicationPackage=true /p:SetVersion=true /p:BuildNumber=$GITHUB_RUN_ID /p:Configuration=Release /t:Rebuild /verbosity:normal UpwardFarms.Scantron.sln 
+
+      # Update APK as Artifact
+      - name: Post APK Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: scantron-apk
+          path: UpwardFarms.Scantron/UpwardFarms.Scantron.Android/bin/Release/UpwardFarms.Scantron.Android-Signed.apk

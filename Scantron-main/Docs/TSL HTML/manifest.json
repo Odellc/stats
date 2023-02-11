@@ -1,0 +1,4272 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Main Projects/Xamarin.NetStandard.Sdk/Released/XamarinStdSDK_v2.0.1/Working/Portable ASCII Protocol/AsciiProtocolDocumentSite",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/ApiConnectingDotNetXamarin.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/ApiConnectingDotNetXamarin.html",
+          "hash": "lJw7OEEW/OhVCK1CaVycQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.api.inventorytagaccess.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.api.inventorytagaccess.html",
+          "hash": "9aPUBPbqROG1g5JEqYDodQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.api.overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.api.overview.html",
+          "hash": "BkDKQwWer2K+dkHsElaqbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.bluetoothhidmode.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.bluetoothhidmode.html",
+          "hash": "bJ4alOne+drH+8iZqnNggA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.bluetoothmodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.bluetoothmodes.html",
+          "hash": "GtiEfJq2IlOinvo+skkflQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.bluetoothpairing.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.bluetoothpairing.html",
+          "hash": "/xvCX40akbCZZzPLt/dI3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.hostbarcode.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.hostbarcode.html",
+          "hash": "nQQpNclwaQWtk8ExSeOHdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.asciicommander.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.asciicommander.html",
+          "hash": "vu3WQycqQVOrVOGkUQ4J5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.command.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.command.html",
+          "hash": "Q4aErwDgG8jpmZ6I0+UC5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.connect.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.connect.html",
+          "hash": "CdTKEqhHVrlQIvMa+J7HKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.dotnet.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.dotnet.html",
+          "hash": "PFajPimj24rBED2kgoPzmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.operations.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.operations.html",
+          "hash": "v0pww8/2oP6VbXKQ3Tb1zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/concepts.started.xamarin.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/concepts.started.xamarin.html",
+          "hash": "NNMy2S3iRG+i6eRkYIOSNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3geuZb0/jiPcgsoDuiaaQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiCommandExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiCommandExtensions.html",
+          "hash": "R39S34MQRGFLLsVhmOy7ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationBarcode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationBarcode.html",
+          "hash": "yVajIijRNb4nRMQ+rS4W7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationBatteryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationBatteryStatus.html",
+          "hash": "q59UrVjf9Yde0hHJtEX1FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationFindTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationFindTag.html",
+          "hash": "HKysSKCupjwMmagUqvDYog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationHostBarcode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationHostBarcode.html",
+          "hash": "8uchJGIvwxwWko43GTPu+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiOperationInventory.html",
+          "hash": "qR/ubyuW8IBhsdfAm6c8Gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiReader.html",
+          "hash": "D4Lum81f57+tePFk+6a30Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.AsciiReaderConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.AsciiReaderConfiguration.html",
+          "hash": "6ATf5HCPQ99lCSk5KMoA0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.IAsciiReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.IAsciiReader.html",
+          "hash": "4Ut1HO5g20rvbtgiJyEwkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.ISignalNormalize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.ISignalNormalize.html",
+          "hash": "z0TK9qrg3cSdmo7iH3BNXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.SignalNormalize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.SignalNormalize.html",
+          "hash": "/9cS8Tak/stH7SGnWajagQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.SwitchActionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.SwitchActionExtensions.html",
+          "hash": "ylQSHMdIuX3mXp30NXPcsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.TransponderForwarder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.TransponderForwarder.html",
+          "hash": "4Tg3YHrsrKxCWf6vBBhuYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiOperations.html",
+          "hash": "KIYnZdTIxNNq/VILKOgHmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AlertDuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AlertDuration.html",
+          "hash": "7Sqex8ThqE9lTOF1D0H0RA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommandAttribute.html",
+          "hash": "doibH5JzlGL1Hq/Crwyd7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommandExecutorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommandExecutorBase.html",
+          "hash": "PJtx7Xn3kOiaxUOJ/fr+ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommander.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommander.html",
+          "hash": "bOdXRqJFNGGnfsFnE6qKiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiLineEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiLineEventArgs.html",
+          "hash": "4HApIfjuc7oXbBz80mW3SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiParameterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiParameterAttribute.html",
+          "hash": "YRbsRPHz7usqECB9GV8txA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiProtocolException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiProtocolException.html",
+          "hash": "6z3RGcmnFtuJNPemv4Q4fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponder.html",
+          "hash": "GGndZVeuQb47a8c4lOvilw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponse.html",
+          "hash": "hm0t0PI43nm9PokHaIyc4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseAttribute.html",
+          "hash": "zh0WMp0INREw4lRug2DbCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseExtensions.html",
+          "hash": "LaJcxZc5oK0nNJgHx5xByQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseLine.html",
+          "hash": "0o7Pc31ikkarciUIFakTuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseRepeat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiResponseRepeat.html",
+          "hash": "tH+EU37ktAfQ5f6rfxaKEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AsciiTransponderResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AsciiTransponderResponder.html",
+          "hash": "0jbtnm9947UglYnGcCpEOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.AuthenticationChipStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.AuthenticationChipStatus.html",
+          "hash": "vwzmr8un7XcL5VPFCbUZDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.BarcodeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.BarcodeEventArgs.html",
+          "hash": "B0jtXFdUvUJp3Fiuhg6ZYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.BatteryHealth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.BatteryHealth.html",
+          "hash": "q5vmJP/arwaoq7VW1FDYxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.BluetoothMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.BluetoothMode.html",
+          "hash": "nosj1Q893HHnMCysY71S2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.BuzzerTone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.BuzzerTone.html",
+          "hash": "gSDxPLVFuMg61RPmqzyUow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.BuzzerVolume.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.BuzzerVolume.html",
+          "hash": "/EkZ2H1yPuf3pY+/ywnb8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ChargeStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ChargeStatus.html",
+          "hash": "sJ5Hs9CdujciL9FLdWbSLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.CommandHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.CommandHelper.html",
+          "hash": "ryF0b29VA+NZnRBReUKCNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.CommandParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.CommandParser.html",
+          "hash": "rJX9L2N5h7q8KwnGstuDTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.CommandSequencer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.CommandSequencer.html",
+          "hash": "/UEX+jMSF930D3JB1FW3yQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AbortCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AbortCommand.html",
+          "hash": "mo4o72k3ltzVHe9OA9Ivgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ActionCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ActionCommandBase.html",
+          "hash": "Q+CPIicwuAMWOiGt8JHnVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AlertCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AlertCommand.html",
+          "hash": "DlKGficjgxEgoc2svgF5Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AlertDateTimeCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AlertDateTimeCommandBase.html",
+          "hash": "Vnj55dpRBcnKQQR05qY4pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AsciiCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AsciiCommandBase.html",
+          "hash": "J7EDQxfZuc3Napui5UafbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AutorunCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.AutorunCommand.html",
+          "hash": "deX4iW4IrBiUidID+1K28w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BarcodeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BarcodeCommand.html",
+          "hash": "Yw6MmuDavS/nwzvX+budEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BatteryStatusCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BatteryStatusCommand.html",
+          "hash": "PR87vBZOS8avDrsl0tqxYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BlockPermalockTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BlockPermalockTransponderCommand.html",
+          "hash": "0WhhpibK/S1Esm+LtutI7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BluetoothCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.BluetoothCommand.html",
+          "hash": "R//acdz7d3rhyeQ1z4ViGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.DateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.DateCommand.html",
+          "hash": "2T4Mx6Y5COUZXEv4R/sXfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.EchoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.EchoCommand.html",
+          "hash": "7z5J5ZIxmygRNMYuM6YucQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ExecuteAutorunCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ExecuteAutorunCommand.html",
+          "hash": "yiDLBgnRHD6zNEgSKxAK/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.FactoryDefaultsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.FactoryDefaultsCommand.html",
+          "hash": "TxcpJPEyQ13DLmx7LEonwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.FindTagCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.FindTagCommand.html",
+          "hash": "x9re6qKNht6XsrDku1nZ2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidConfigurationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidConfigurationCommand.html",
+          "hash": "ILjxgLcqxHWwJ8tTadmkUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidConfigurationCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidConfigurationCommandBase.html",
+          "hash": "KH+xSPrg8ya5f+EcpzC5fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidDoublePressConfigurationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidDoublePressConfigurationCommand.html",
+          "hash": "vMmbHUB5QJhucyFjsAjWUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidSerialCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidSerialCommand.html",
+          "hash": "mIm1dhQDBt7NqJ+Z0Z/CMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidSinglePressConfigurationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.HidSinglePressConfigurationCommand.html",
+          "hash": "VEpajQ1HIi5ccuxyhHyoDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.InventoryCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.InventoryCommand.html",
+          "hash": "Ya7TkZn34NOSEEqxSZOGYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.KillCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.KillCommand.html",
+          "hash": "Lb0qxRsq2/bBFAkyw7tyow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.KillTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.KillTransponderCommand.html",
+          "hash": "LRBb9ENzryNizzRv/9KVdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LicenceKeyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LicenceKeyCommand.html",
+          "hash": "xibQQEAxz0yTe8hgTjvvbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LockCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LockCommand.html",
+          "hash": "vOU+mtfb+AGRQTAXGYJz4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LockTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.LockTransponderCommand.html",
+          "hash": "VtyW9Er91+gJEe6L4F8Sjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.MountCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.MountCommand.html",
+          "hash": "yp/TQjBu2JFabbpND18NPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ParameterCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ParameterCommandBase.html",
+          "hash": "9OZTVgV/G4wZ1cGTu682cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.QuerySelectTransponderCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.QuerySelectTransponderCommandBase.html",
+          "hash": "f8art8ZONH0nHjExRtIRQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadAutorunFileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadAutorunFileCommand.html",
+          "hash": "hAq27qUIKRGxcMDQNPUkgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadLogFileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadLogFileCommand.html",
+          "hash": "L5tRbpXdD53Ct2y+Dvyq6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadTransponderCommand.html",
+          "hash": "aK5Z54cxcvzIpvQV0nFm6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ShowRegionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ShowRegionCommand.html",
+          "hash": "Np3u/ig5RPR+4YK9jIjA0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SleepCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SleepCommand.html",
+          "hash": "hCwOjnBm9/nTIBArV8Qfzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SleepTimeoutCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SleepTimeoutCommand.html",
+          "hash": "eKkBFDOosS3mbBQLK57hcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchActionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchActionCommand.html",
+          "hash": "srX7ZsQ2dY67M04SiNHD+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchDoublePressCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchDoublePressCommand.html",
+          "hash": "Td17v98g36I3vD/es3RJnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchDoublePressUserActionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchDoublePressUserActionCommand.html",
+          "hash": "CZ2woNZJDey1/6TD0WkCEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchSinglePressCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchSinglePressCommand.html",
+          "hash": "ANDjkfeqdsR6PFGcY7sVTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchSinglePressUserActionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchSinglePressUserActionCommand.html",
+          "hash": "ck/RigzHPnZ2cyJvsJvzOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchStateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.SwitchStateCommand.html",
+          "hash": "sdozGGAXDCX7qwAOxsxqug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TimeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TimeCommand.html",
+          "hash": "/Q8C57GnjSKKTi4RvBjPsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderAccessCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderAccessCommandBase.html",
+          "hash": "sIkjGQyn1UzGiJUGbPgATA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderMemoryCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderMemoryCommandBase.html",
+          "hash": "RJ8gRZZDM23SAFd6Gu+uyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderSelectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TransponderSelectCommand.html",
+          "hash": "qMB4a4VJditTri1Mp/z2BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TranspondersCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.TranspondersCommandBase.html",
+          "hash": "z3PouA00yODSSHOCmKQmUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.VersionInformationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.VersionInformationCommand.html",
+          "hash": "hT8coW93DawWQ77YUsuDWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteCommandToAutorunCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteCommandToAutorunCommand.html",
+          "hash": "Gtru/j7VUYssJ/FeGcjG2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteSingleTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteSingleTransponderCommand.html",
+          "hash": "iPuo4YSH6gIdjyJnKmHlvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteTransponderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteTransponderCommand.html",
+          "hash": "9e7HxHGdHgwil7cf3W1tDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Commands.html",
+          "hash": "DI1+D5HbF/xrQ/ygvzlz7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ConfigurationConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ConfigurationConstants.html",
+          "hash": "9e7ptwlI+tbOeWIf3DiWfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Confirmation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Confirmation.html",
+          "hash": "DbXrZ1RoKZjpe8UrwvZcCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ConnectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ConnectionException.html",
+          "hash": "edl1eMkH/uHUWfmxTNx32g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ConnectionLostEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ConnectionLostEventArgs.html",
+          "hash": "5bWQ4w26ySYfGvOOMrNe9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Constants.html",
+          "hash": "Npqsz3ehLD4LlUl1S0hh2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.DataBlock.Base16Encoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.DataBlock.Base16Encoding.html",
+          "hash": "mGOdmv4QkoNAQ8OZrw2Eiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.DataBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.DataBlock.html",
+          "hash": "C6VEtvmWAwTfCgrEfuQG1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Databank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Databank.html",
+          "hash": "wU/Xgy3nNnxlLj2PQsklfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.DatabankOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.DatabankOffset.html",
+          "hash": "sxQhBClyuogKfPqoOHOT4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Deletion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Deletion.html",
+          "hash": "9LATuw/FYvWPQee22iSg4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.DuplicateRemovalMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.DuplicateRemovalMode.html",
+          "hash": "k/7MDp+MzFrwUZMINxKfdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtension.html",
+          "hash": "cvt0CLqOh+d7pXpEllfdog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtensionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtensionAttribute.html",
+          "hash": "cMJgxy68NLDpfMvyBDMVtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.EnumExtensions.html",
+          "hash": "FF7u83KSZVYJgbL6XSTXyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ErrorCode.html",
+          "hash": "zWNrMH3bt0KwS/Qv8hO6Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ExecuteExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ExecuteExtensions.html",
+          "hash": "Wg1W2BfyF5/XXx4LG+tq5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AndroidLifecycleNone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AndroidLifecycleNone.html",
+          "hash": "V0dg1F/vwTGoMg+HCyjkDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AsciiTransportsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AsciiTransportsManager.html",
+          "hash": "FVFNM3ILFJlwxq06851L5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothAddress.html",
+          "hash": "mOUYjhHMmeV310mUiVhnQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothOffException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothOffException.html",
+          "hash": "6Z+gC0Irp+8t5ZAmZlbCkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothPairingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothPairingEventArgs.html",
+          "hash": "LPfXQ9QEzP/0ld28O26dKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothSecurity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.BluetoothSecurity.html",
+          "hash": "xqhum9ALkFrl3wdsIFRsNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ConnectionStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ConnectionStateChangedEventArgs.html",
+          "hash": "yBydyb8VU9qfjASeSauKhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.HostBarcodeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.HostBarcodeHandler.html",
+          "hash": "txlpOsCQiC0aZcpsBARjRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IAndroidLifecycle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IAndroidLifecycle.html",
+          "hash": "0BkNu9uemMkIr6wLImHJzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBarcodeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBarcodeHandler.html",
+          "hash": "A5cnt2Y/on95EucX+v4fyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBluetoothSecurity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBluetoothSecurity.html",
+          "hash": "yTeqUo46skn1go2CLpa5/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IHostBarcodeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IHostBarcodeHandler.html",
+          "hash": "meBcJ+fJt4HG66vc/rRiBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.INamedReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.INamedReader.html",
+          "hash": "VgIHwqrqGFjW53AVRoqOeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html",
+          "hash": "VOuv2VF/6UTcQ0uGVhpBCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManager.html",
+          "hash": "xkeHW34nsGEDEKa12CCHSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManagerAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManagerAdapter.html",
+          "hash": "yXyD0T4DtDYjv/sQ9LZjMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManagerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManagerBase.html",
+          "hash": "QWNG/GYz3rORe8YSUJsjrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionState.html",
+          "hash": "Q/eLuLPVS5S7Ir/b+GMFrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.Resource.Xml.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.Resource.Xml.html",
+          "hash": "8kPSxsODiSIBLBEDYtID5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.Resource.html",
+          "hash": "rz/8PRMUbWxCYUOi7M8A8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.html",
+          "hash": "bmXkS6DaGfHOZTNDYoxpWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.FileDownloadResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.FileDownloadResponder.html",
+          "hash": "XJ8VhGjPHeZiLg5O5rRf8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommand.html",
+          "hash": "I6Hw8PhWTIFrFdfVqUltdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandExecuting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandExecuting.html",
+          "hash": "HkRNAhHKOTMTaIyu+sHbhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandResponder.html",
+          "hash": "zKQu5YUkNq0jGX64yPC/6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandSynchronousResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommandSynchronousResponder.html",
+          "hash": "Zfp9KEAG7tV4YsX7BpIcUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommander.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiCommander.html",
+          "hash": "4R/uwA4Kk/N9kFM71dgu6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponder.html",
+          "hash": "PilElZNs3eWPw+W5L1bdZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponderChain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponderChain.html",
+          "hash": "y7R5C/Cqp100FFY7UX/TCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponse.html",
+          "hash": "J4jL2qVEbZrKmYZzl4X2ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponseLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponseLine.html",
+          "hash": "7hLEG1QXtP5djazx/CiPxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponseResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiResponseResponder.html",
+          "hash": "dsvT7GbFL4/t1LE7dKe8CA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransport.html",
+          "hash": "Soaoef3tcy8VW6Zd7+ncJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransportConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransportConsumer.html",
+          "hash": "cUQaBSprQb8CcVoGp9yKFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ILibraryConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ILibraryConfiguration.html",
+          "hash": "afqKCUyQekPGUGJbcro8iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.IReaderConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.IReaderConnection.html",
+          "hash": "V1Eq1zsi80zOI4dYYgFydw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.LibraryConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.LibraryConfiguration.html",
+          "hash": "Np9PMqu1rbkxtLLpokKdPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.LibraryConfigurationSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.LibraryConfigurationSet.html",
+          "hash": "U7hO0eioZSRb+uNabpu+cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.LockPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.LockPayload.html",
+          "hash": "a6NnilVMj9vLHzmEH5wiLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.LoggerResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.LoggerResponder.html",
+          "hash": "KWZIDCutrLyaexc1xV20bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.MemoryBankRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.MemoryBankRestriction.html",
+          "hash": "ndsnuyIB0O1/jLkIoNkjIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.DatabankParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.DatabankParameterCollection.html",
+          "hash": "35Q02RPcoqDbHOs8+c2CFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameterBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameterBounds.html",
+          "hash": "xEifi+QcZyqoTumLaQ30rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameterCommandBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameterCommandBounds.html",
+          "hash": "s7k2oK8TmvdVsoBRAFkuQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParameters.html",
+          "hash": "j19PJ8eWFHdaZY0iZQ0ucA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParametersWithBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IAntennaParametersWithBounds.html",
+          "hash": "54VALqbBpafWZwe1Z31rRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ICommandParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ICommandParameter.html",
+          "hash": "g+jmI4FZgJDrXxGQqa9/Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ICommandParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ICommandParameters.html",
+          "hash": "Pz9xgTw/hObW4nMi72R3oQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IDatabankParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IDatabankParameters.html",
+          "hash": "HVQk/rvWYGExCiiZUsIJkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterAction.html",
+          "hash": "n4SvjxXpi9izBoJb27PZxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterAndValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterAndValue-1.html",
+          "hash": "X/WVfjbxuHVOao401sRMnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IParameterValue-1.html",
+          "hash": "jEllNeMf9sVgQNsr+wODmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IQAlgorithmParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IQAlgorithmParameters.html",
+          "hash": "npXT8h1Nu7+NNTrFOxtt8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IQueryParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IQueryParameters.html",
+          "hash": "A6HzRp2JN4oW6hCRVdx/kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IResponseParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.IResponseParameters.html",
+          "hash": "/wf+Od6dk4vewjN9bTjQ1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ISelectParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ISelectParameters.html",
+          "hash": "vM1OzFxJImhk/gZFhR8v+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ITransponderParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ITransponderParameters.html",
+          "hash": "XjbS6jt2zeyHjWXcvYRg1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterBase-1.html",
+          "hash": "NA3kupSLf6AGxqbF/RUWCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterBool.html",
+          "hash": "3wZuucRO+OnZRLW84irDsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterCollection.html",
+          "hash": "j5TXtz8nQQ0hmn3hSEyabw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterDateTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterDateTime.html",
+          "hash": "JkW0HahABkX+k+4x/txIEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterEnum-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterEnum-1.html",
+          "hash": "0vPQQm1gnrhHN/9u/cmVwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterExtensions.html",
+          "hash": "wkTjZcnIp5Af5VyY/9ZeSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterHex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterHex.html",
+          "hash": "2L0+6YxfUgkNaS3pKag98g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterInt.html",
+          "hash": "TubIJg9gFtKujwmHovmQyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.ParameterText.html",
+          "hash": "e0nwcuEBWIXl3D6fhCxOhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.SelectParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.SelectParameterCollection.html",
+          "hash": "yR6X9ueo2gIxrTVZ07/aFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.TransponderParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.TransponderParameterCollection.html",
+          "hash": "BUHORX7E6isB4iB/0jmH5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Parameters.html",
+          "hash": "BLlMIVas7Y6pBYGe5ww33Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.PasswordRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.PasswordRestriction.html",
+          "hash": "Z+i6u3kU+R3d07LBCvqaQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.PermalockMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.PermalockMode.html",
+          "hash": "7o3PaTKjmbPWqCmWE982xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.AndroidHostBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.AndroidHostBarcodeScanner.html",
+          "hash": "+EbiD8G5NQEPTqL1Xj2M6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.BroadcastReceiverAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.BroadcastReceiverAction.html",
+          "hash": "n9pJlkkYyq0f/R83XqMcMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.BroadcastReceiverRegisteredAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.BroadcastReceiverRegisteredAction.html",
+          "hash": "vHJSI5E1vkgNvjfN4urmqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.FtdiDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.FtdiDevice.html",
+          "hash": "YoGy/3JNtg5krB5psECaBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.HoneywellBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.HoneywellBarcodeScanner.html",
+          "hash": "W1ywDG+6YBI51qU+2RWSGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.IAndroidHostBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.IAndroidHostBarcodeScanner.html",
+          "hash": "1AnXSRrY48MpfFfrBRS+Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.MotorolaBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.MotorolaBarcodeScanner.html",
+          "hash": "+frkqPHU7rzre00rULhSfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.ZebraBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.ZebraBarcodeScanner.html",
+          "hash": "Y2GGlkjSQ2FTQuIwxY5Uow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platform.html",
+          "hash": "KU1ex1WU/U71jilSYD8Khg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransport.html",
+          "hash": "9+DE73tlAvcwa25O8GuY0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportEnumerator-1.html",
+          "hash": "AR65Vcn/Zy0XZ5/asWasKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportManualEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportManualEnumerator.html",
+          "hash": "o/C1dMiGyjnejWXAseDe8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportsManagerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.AsciiTransportsManagerBase.html",
+          "hash": "2X8O6w8KGTGR0vE3hBb0Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.BarcodeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.BarcodeHandler.html",
+          "hash": "6Oo7y8LL71WjtYDH1nTnsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.IAsciiTransportEnumerator2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.IAsciiTransportEnumerator2.html",
+          "hash": "+s/708LWOqZUp0eSl/WGvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ILineRingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ILineRingBuffer.html",
+          "hash": "aO8sPeCqFm7RniB4lCeckg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.IRingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.IRingBuffer.html",
+          "hash": "N3LXEs/4n06ga3qXkf5cfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialControlLines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialControlLines.html",
+          "hash": "RFY0fOApW9TWj17ASmaWzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialPort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialPort.html",
+          "hash": "hK0dkB0ijTmeDLPYwd7UKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.ISerialStream.html",
+          "hash": "5zK8mWhGgnESnAsdWExxgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.LineRingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.LineRingBuffer.html",
+          "hash": "znlUvTKQQF7JvKvrPKazXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.NamedReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.NamedReader.html",
+          "hash": "xsmYX5nlEoLagiq5td0O7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.RingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.RingBuffer.html",
+          "hash": "PQNVW6GLBBgoXNQPHBjKhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.SerialControlLinesExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.SerialControlLinesExtensions.html",
+          "hash": "7diZEP7REhNzzh/QYwIPjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.Transport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.Transport.html",
+          "hash": "+NXekMWoEJyfzeyCxVcWvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.TslBarcodeScanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.TslBarcodeScanner.html",
+          "hash": "aXoRoNpyFiNXn2oRS4lcEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Platforms.html",
+          "hash": "jhH8HlR2m723HkUAWYe95g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.PopLoqMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.PopLoqMode.html",
+          "hash": "TMilJxCeybw+jZ8mHn4/Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Portability.CategoryAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Portability.CategoryAttribute.html",
+          "hash": "wQcvEyuX9DkZKwf3uYyfUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Portability.DescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Portability.DescriptionAttribute.html",
+          "hash": "r21nhYcxPsNeXiqgB1CngQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Portability.ReflectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Portability.ReflectionExtensions.html",
+          "hash": "A2tj5MAT9Zza9x+SCBhtcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Portability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Portability.html",
+          "hash": "kFvGJEs0SOO73oCPJAQm0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.QAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.QAlgorithm.html",
+          "hash": "svySEtDJmhd8a0fdedyWQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.QtMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.QtMode.html",
+          "hash": "KrK/wdHW8Z+AN9ufs3zOVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.QuerySelect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.QuerySelect.html",
+          "hash": "qe77HFAjY+uIS7DiTsvmTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.QuerySession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.QuerySession.html",
+          "hash": "42/vf+mvlX6XThs9DvupbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.QueryTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.QueryTarget.html",
+          "hash": "WRvGUCXheIpVn3vfkFB9/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ReconnectMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ReconnectMode.html",
+          "hash": "Lsgc/bzlNAKFcckkLTG/IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.ResponderChainExceptionArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.ResponderChainExceptionArgs.html",
+          "hash": "M8tW0oxpFaWfrQ6N+g3OwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SelectAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SelectAction.html",
+          "hash": "Qx4t9sBbdtuFlMTRTAVGjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SelectTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SelectTarget.html",
+          "hash": "oAjgLh+dErlPfJwynoO8OQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.StartStop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.StartStop.html",
+          "hash": "UBh913PihyCM+90u6iVn6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SwitchAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SwitchAction.html",
+          "hash": "+JJbKtIFDadLdmkkjAOJSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SwitchAsynchronousResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SwitchAsynchronousResponder.html",
+          "hash": "aGUpIvyKH3B12aeNxfD+YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SwitchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SwitchState.html",
+          "hash": "CMxmSuA7YhoGYDESmLCzvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SwitchStateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SwitchStateEventArgs.html",
+          "hash": "Y9+8uTTZDPeHdUXWKyxwVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.SynchronousDispatchResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.SynchronousDispatchResponder.html",
+          "hash": "3JUyDm3KXIk89zy2ifw+kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransmitMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransmitMode.html",
+          "hash": "+daK15PVN76Eck4x6tcUpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderAccessErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderAccessErrorCode.html",
+          "hash": "Y8NEmj045zw+c5YDTAxUHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderBackscatterErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderBackscatterErrorCode.html",
+          "hash": "JahJbC9GoaBZA25uX49w1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderData.html",
+          "hash": "7Msjp82idtYeqE/jDXeObA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderDataEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderDataEventArgs.html",
+          "hash": "Kd0XH8q6Dfka09P27rJq5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderResponder.html",
+          "hash": "jk7NLwcltPj0PC0/p4tiSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderWriteExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderWriteExtension.html",
+          "hash": "xzHiYcp4Wct4syi0SkQV+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TransponderWriteMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TransponderWriteMode.html",
+          "hash": "gFIJspRwSoL3uFY8DZnX8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportAndroidBluetooth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportAndroidBluetooth.html",
+          "hash": "lYm0oIlIJ63hvLAhtzQlnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportAndroidUsb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportAndroidUsb.html",
+          "hash": "MgpfjMutZrcghbt0SDmVVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportEnumeratorAndroidBluetooth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportEnumeratorAndroidBluetooth.html",
+          "hash": "lSy37zW+2cVOsGqexPiabQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportEnumeratorAndroidUsb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.AsciiTransportEnumeratorAndroidUsb.html",
+          "hash": "XNrIKMKYlzg+vXNG1i7DLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.BinarySerialTransportAndroidUsb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.BinarySerialTransportAndroidUsb.html",
+          "hash": "Q8xhTYK/Kw/HQU4BXxrOXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.BluetoothAsciiSerialTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.BluetoothAsciiSerialTransport.html",
+          "hash": "3/k6qqFI1haHM0T6NsQgsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transport.html",
+          "hash": "ZSBaji9OXvUS87y73sVx6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.ConnectionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.ConnectionState.html",
+          "hash": "9SX/HnhxtiZdnFZzqTHNxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.EnumerationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.EnumerationState.html",
+          "hash": "J8EqUFAUKbTmWfVHo/ytgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiConnection.html",
+          "hash": "6rO5asCDNNG44GMkmBjtpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransport.html",
+          "hash": "yL6knD66qh9Iw+7MIfn4dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportEnumerator.html",
+          "hash": "3wOnqBfwQ9+6VMCHIbDShQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportsManager.html",
+          "hash": "68IldnI1iAcHh7x7iti8xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.INotifyTransportChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.INotifyTransportChanged.html",
+          "hash": "CR1LSK5nMzN4bF9U93UGzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.PhysicalTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.PhysicalTransport.html",
+          "hash": "irj4McLKrpPivZPaX853lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.TransportStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.TransportStateChangedEventArgs.html",
+          "hash": "cjzpRctfHMbrhQvqj4ydGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.Transports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.Transports.html",
+          "hash": "CqI7mn4M+rb3VA1ysgL8zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TriState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TriState.html",
+          "hash": "vPFKllkgmmyFuWWtX+lbeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.TriggerMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.TriggerMode.html",
+          "hash": "/XEawfrzbNy525Lwndao2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.AsciiProtocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.AsciiProtocol.html",
+          "hash": "Ny1ln7t97MOq9/gT6RLYyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IOutputPowerBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IOutputPowerBounds.html",
+          "hash": "uQbM/WyjcoYFbrjLGUeYtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReader.html",
+          "hash": "QI+nzMizweAEESKRO0g91g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderConfiguration.html",
+          "hash": "Nzz8qRhJ4keeAVBFgRIn7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperation.html",
+          "hash": "krPKCTddvSuh5/p9eVNS3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationBarcode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationBarcode.html",
+          "hash": "QBXAyPTWck5FRSBfmGDI2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationBatteryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationBatteryStatus.html",
+          "hash": "6GlKrXCcH0Km2/53+jCGnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationFindTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationFindTag.html",
+          "hash": "tHz6rabe58lhQw//vzAO5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationHostBarcode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationHostBarcode.html",
+          "hash": "DOpNU9C5ti+uTePjJcbLzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationInventory.html",
+          "hash": "ojcbE53NRzxS/vx9LiUaiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationTransponders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationTransponders.html",
+          "hash": "luyrzL57eqJcPmrwxfPbyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderOperationTranspondersAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderOperationTranspondersAccess.html",
+          "hash": "kGTUFLO+RnWuY9ydYA3JAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.IReaderReaderOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.IReaderReaderOperation.html",
+          "hash": "Yp69WblPNwOdzgzDwNLWAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ITriggerSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ITriggerSource.html",
+          "hash": "mrWLq3XtDcSt0YvcPjdivQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.MemoryBank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.MemoryBank.html",
+          "hash": "iKWyviqmQ9VIxztnVQKK5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperation.html",
+          "hash": "4ohQMslhdyQKbFZ7ter++Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperationEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperationEventArgs.html",
+          "hash": "Biu8stuMZRIR8Oc3GqqVog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperationExtensions.html",
+          "hash": "MshnfrqseG8C0wRBMSKb2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperationState.html",
+          "hash": "bsrq1Lub+yzywQtLvw5h5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperationTransponders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperationTransponders.html",
+          "hash": "07XcOxT3SWTHnMVllIKn+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.ReaderOperationTranspondersAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.ReaderOperationTranspondersAccess.html",
+          "hash": "KH/2JAfAhT185XqmqkJ40g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagAccess.html",
+          "hash": "G7Awk3/bwB8jUhAflNionA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagAccessExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagAccessExtensions.html",
+          "hash": "PuVZwJf+FxPh3qUDb68u7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagAccessFilterFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagAccessFilterFields.html",
+          "hash": "ABWbyxa+M3+LSBwtH7NiJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagAccessOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagAccessOperation.html",
+          "hash": "Q3C+uL474pYXkWzl0LTqxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFields.html",
+          "hash": "7Ghhum6v+NG5BzDoW77bIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFilter.html",
+          "hash": "v0/YBhrj9/HGCFTnNbrCWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFilterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFilterExtensions.html",
+          "hash": "xAdooA+CzxcnS/CPvMAjfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFilterFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFilterFields.html",
+          "hash": "0IMDiDcZxZdhBD8+gR33Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFilterHint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFilterHint.html",
+          "hash": "f5WlSwigPJx/bQq2BHk2nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFinderState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFinderState.html",
+          "hash": "e+Wy/KpuiA1gha3UvfPHBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagFoundEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagFoundEventArgs.html",
+          "hash": "GRdmbFCLSYD8kIxyYpGDFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagMemory.html",
+          "hash": "q5gWV9232LyaLbieRLC6Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TagMemoryOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TagMemoryOffset.html",
+          "hash": "3C/1YN8Kf/6YjLJ8Sl5IRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.TranspondersEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.TranspondersEventArgs.html",
+          "hash": "IAwz2ZOcHZnYrUHi1fkmgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/TechnologySolutions.Rfid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TechnologySolutions.Rfid.html",
+          "hash": "8Y5ufg0DtpEGN7twmQhN0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ab.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ab.html",
+          "hash": "JSi9uSb1deJyEgtpjoYTsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.al.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.al.html",
+          "hash": "wWts5Ruyfbyc7EmAJuf/wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ar.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ar.html",
+          "hash": "FU1pHkLpDaaxaFU2TilbfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.bc.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.bc.html",
+          "hash": "6iWHYTeibCVSO6+g4HgbiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.bl.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.bl.html",
+          "hash": "k+2sCkDfnQWb0w5C7Jro9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.bp.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.bp.html",
+          "hash": "4eT8ZyP3YqCmsDFghsqvkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.bt.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.bt.html",
+          "hash": "4NJ9Dd8hRPu2YKDWBhvQxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.da.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.da.html",
+          "hash": "OS0jbQf2Q2kx4KjfN5BTlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.dp.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.dp.html",
+          "hash": "b6Tg2LbSpDCIPB2Ac1AE9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ea.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ea.html",
+          "hash": "lrZKFSm6ISdCx1y7H11vOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ec.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ec.html",
+          "hash": "zrDZuHA8S9nHBDaBjVyyIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.fd.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.fd.html",
+          "hash": "oFw/4hOULdZ/GImtgKXyrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ft.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ft.html",
+          "hash": "M+B0H13Mg36K6WvIBAwjOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.hc.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.hc.html",
+          "hash": "I0fqTPkBbuzrlGoJ28VzSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.hd.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.hd.html",
+          "hash": "yKFoffRp7GN9wUnb9d+Opw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.hs.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.hs.html",
+          "hash": "cf3wVUU/4Qo/KONHN5amAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.iv.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.iv.html",
+          "hash": "wy+QjTa+uo3fh5C8wO+oRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ki.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ki.html",
+          "hash": "J7MB4d0UdwDdsQdqmMbC5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.lk.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.lk.html",
+          "hash": "EZdG/uUUsbYrJvQIsoXrWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.lo.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.lo.html",
+          "hash": "OdbUET3d6UlLX+liHZShgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.html",
+          "hash": "wIqR/puRAK0zPQChUnnxUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.mt.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.mt.html",
+          "hash": "tJlLnAPzbgNDl8qy2KEt8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.pd.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.pd.html",
+          "hash": "Yg/JYQu+Ybvczey/YmTDqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ps.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ps.html",
+          "hash": "s1p/MVCrT8zaU/C6s7zalA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ra.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ra.html",
+          "hash": "nIBo5gdieGN1FbOPuflTVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.rd.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.rd.html",
+          "hash": "zIVq9yx499iaFzn+G+TejQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.rl.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.rl.html",
+          "hash": "SgUTfl1kP0DtkqilliuMfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.sa.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.sa.html",
+          "hash": "JWHoxQzyt2bvN8Uph0GN+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.sh.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.sh.html",
+          "hash": "85G64YPxzfsdCEUAv/aP+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.sl.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.sl.html",
+          "hash": "6uoTU/F+NppyZ9pbWnFjCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.sp.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.sp.html",
+          "hash": "I65DLlO2zYSTHQv6p5lbxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.sr.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.sr.html",
+          "hash": "FZ57TCToDqGxSaa3B+aYmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ss.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ss.html",
+          "hash": "RAQOetzkZYz9OpFvPTqJGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.st.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.st.html",
+          "hash": "9/XIdJ+lh0qk/A1w7PZmBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.tm.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.tm.html",
+          "hash": "1xuIWDXNfn60ghsXeDjilQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ts.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ts.html",
+          "hash": "2uDFjSjrCbuuT1ElOg2oZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.vr.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.vr.html",
+          "hash": "FmWGNjJpv4DAOhBC5KNS9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.wa.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.wa.html",
+          "hash": "GUnlsLxv8bKABH95IydXrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.wr.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.wr.html",
+          "hash": "4ay/pf/ee3FbrV0FKQbBKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commands/protocol.commands.ws.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commands/protocol.commands.ws.html",
+          "hash": "A+5zxDI0c8ROZYkj1EvBTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commandsOverview.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commandsOverview.html",
+          "hash": "LELreMKKuRCIKtwYtVP8TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/commandsParser.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/commandsParser.html",
+          "hash": "3HgXqanVHDYD76sgXb+rNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/filesOnSdCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/filesOnSdCard.html",
+          "hash": "1GgCwcxHhY/wMRp4ceSisw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/hardwareSpecifics.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/hardwareSpecifics.html",
+          "hash": "g0YQUwsCyIDNIU8o1pPvtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/protocol.introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/protocol.introduction.html",
+          "hash": "8cwrhFma9ZLOSVYQY/Vi4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/protocol.responses.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/protocol.responses.html",
+          "hash": "uN0/zVMB59+kSEW3SObAwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/releaseNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/releaseNotes.html",
+          "hash": "/rMoVRAdGRhMi7NKq38TEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "protocol/responses.md",
+      "output": {
+        ".html": {
+          "relative_path": "protocol/responses.html",
+          "hash": "SFi058EVpY6saX8siEXQpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/TslLogo520x172.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/TslLogo520x172.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ico/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ico/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/svg/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/svg/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 62,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 296,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TSL&#174; ASCII 2 Protocol. Selecting, Reading and Writing Transponders | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TSL&#174; ASCII 2 Protocol. Selecting, Reading and Writing Transponders | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.42.2.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tsl-ascii-2-protocol-selecting-reading-and-writing-transponders">TSL® ASCII 2 Protocol. Selecting, Reading and Writing Transponders</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>This page recaps the behaviour and operation of UHF transponders with respect to selecting,
+reading and writing and to provide some examples of how to achieve this with the TSL® ASCII 2 Protocol.
+For more information about the behaviour of the transponders refer to the standard describing their behaviour. The
+latest UHF Class 1 Gen 2 Standard is available for download from <a href="https://www.gs1.org/standards/epc-rfid/uhf-air-interface-protocol">GS1</a></p>
+<p>“The RF in RFID” by Daniel M. Dobkin (ISBN 978-0-7506-8209-1) is another useful reference.</p>
+<h2 id="uhf-transponders-recap">UHF Transponders Recap</h2>
+<h3 id="memory-banks">Memory Banks</h3>
+<p>A UHF Transponder has up to four memory banks; <strong>Reserved</strong>, <strong>EPC</strong>, <strong>TID</strong> and <strong>User</strong>.</p>
+<p>Transponder memory is accessed as sixteen bit words addressed from the start of the memory bank.</p>
+<p>The <strong>Reserved</strong> memory bank is 64 bits long and contains the kill password (bits 0x00 to 0x1f) and access password (bits 0x20 to 0x3f)</p>
+<table>
+<tr><td>Word</td><td>0..1</td><td>2..3</td></tr>
+<tr><td>Bits</td><td>00..31</td><td>32..63</td></tr>
+<tr><td>Description</td><td>Kill Password</td><td>Access Password</td></tr>
+</table>
+<p>The <strong>EPC</strong> memory bank holds the Electronic Product Code (EPC), the Protocol Control (PC) word and the 16-bit cyclic redundancy check (CRC).
+A typical transponder inventory response contains the PC word, the EPC and the CRC.
+The PC word is one sixteen bit word and defines the length as well as other properties of the EPC.
+The EPC is the actual identifier for the transponder (it can be many words in length).
+The CRC is a single word and is the checksum calculated across the PC and EPC.
+When stored in the EPC memory bank the first word is the CRC, the second word is the PC and the remainder of the memory bank stores the EPC.
+In an inventory response, the amount of the memory bank returned for the EPC is determined by the PC. Refer to section 6.3.2.1.2 of the standard for more information.</p>
+<table>
+<thead>
+<tr>
+<th>Word 0</th>
+<th>Word 1</th>
+<th>Word 2, ... to EPC length</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bits 0..15</td>
+<td>Bits 16..31</td>
+<td>Bit 32 ...</td>
+<td></td>
+</tr>
+<tr>
+<td>CRC</td>
+<td>PC</td>
+<td>EPC</td>
+<td>Remainder of EPC memory</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Transponder identifier bank (TID)</strong> holds 32 bits or more of information to help identify the type of transponder.
+The standard defines a number of schemes how this memory can be formatted (refer to section 6.3.2.1.3 of the standard).
+The most useful format for uniquely identifying transponders is where the transponder type is serialized in this bank to provide the silicon identifier and a unique serial number.</p>
+<p>The <strong>User</strong> memory bank is used for storing application specific information.</p>
+<h3 id="inventory-and-tag-access">Inventory and Tag Access</h3>
+<p>A tag access operation is a read / write / lock / kill / block read / block write etc… and may require an access and or kill password.
+When the reader attempts to communicate to a field of transponders it performs an inventory.</p>
+<p>An <strong>inventory</strong> involves issuing a request to all transponders and then providing time slots for the transponders to reply in.
+The number of slots is determined by the Q value (2^Q).
+When performing an inventory the transponder only replies with its inventory response. When performing a tag
+access the reader performs a further set of operations to access the transponder in each slot before issuing the
+next slot request for the next transponder.</p>
+<p>Whether the transponder responds at all (assuming it is in range) is determined by the query issued by the reader for the inventory.
+This identifies the required transponders based on the states of a number of flags maintained by each transponder.</p>
+<p>Before performing an inventory the reader can perform a <strong>select</strong>.
+This is a command to all transponders within range of the reader and instructs transponders that match and not-match a particular criteria to set their flags into a specific known state.
+The select separates the field of transponders into distinct groups which is then followed by an inventory (potentially with tag access) which operates on a particular group.</p>
+<h3 id="sessions-and-selected-flags">Sessions and Selected Flags</h3>
+<p>Each transponder maintains five flags; the <strong>selected</strong> flag and four <strong>session</strong> flags (session 0, session 1 session 2, session 3).
+As described above these flags are set into particular states by issuing a select and then used to identify the transponders of interest for an inventory or tag access (refer to section 6.3.2.2 of the standard).</p>
+<p>The <strong>selected</strong> (SL) flag is either selected or not selected.</p>
+<p>The <strong>session</strong> flags have a value or either <strong>A</strong> or <strong>B</strong>. As a transponder responds to an inventory (which may be part of a tag access) the flag in the transponder, used to identify the transponder as part of this inventory, toggles state.
+For example if the inventory was for transponders in session 0 flag state <strong>A</strong>, each transponder that responds to the
+inventory will change its <strong>session</strong> 0 flag to <strong>B</strong> from <strong>A</strong> as it responds.</p>
+<p>Each session and selected flag has a particular persistence, that is the amount of time the transponder can
+maintain the selected state while either energized (in the reader field) or not energized (outside the reader field).
+These are summarised in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Action (Tag energised)</th>
+<th>Action (Tag not energised)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S0 inventoried flag</td>
+<td>Indefinite.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>S1 inventoried flag</td>
+<td>500ms &lt; persistence &lt; 5s</td>
+<td>500ms &lt; persistence &lt; 5s</td>
+</tr>
+<tr>
+<td>S2 inventoried flag</td>
+<td>Indefinite</td>
+<td>2s &lt; persistence</td>
+</tr>
+<tr>
+<td>S3 inventoried flag</td>
+<td>Indefinite</td>
+<td>2s &lt; persistence</td>
+</tr>
+<tr>
+<td>Selected (SL) flag</td>
+<td>Indefinite</td>
+<td>2s &lt; persistence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tag energised</strong> refers to the tag remaining within the RF field of the reader (i.e. being powered from the reader)</p>
+<p><strong>Tag not energised</strong> refers to the tag leaving the RF field of the reader (i.e. being powered off)</p>
+<h3 id="sessions-and-inventory">Sessions and Inventory</h3>
+<p>The following are provided as examples of how the different persistence of the session may be useful. Note that the
+ASCII 2 protocol provides an ‘inventory only’ flag for the inventory command that means that a select does not have
+to be performed for every inventory command executed:</p>
+<p><strong>Session 0</strong> is only persistent while the reader field is energized.</p>
+<p>The field is reset for each reader command.
+Transponders revert to the A state for sessions after the persistence expires. Therefore performing an inventory of
+session 0, flag state A transponders provides the best chance that all transponders will respond to every inventory.</p>
+<p><strong>Session 1</strong> has a short persistence.</p>
+<p>Performing a session 1 inventory will return and temporarily silence
+transponders. This is useful with large populations of transponders to temporarily silence transponders, once seen
+a transponder won’t respond again for a short while. An analogy may be telling the loud ones to be quiet to allow
+the quiet ones to speak.</p>
+<p><strong>Session 2</strong> can be used for counting situations as a transponder remains in its new state for some time.</p>
+<p>The transponders are selected into a known state (e.g. session 2, A). Perform inventories for this query target (e.g.
+session 2, A) until no more transponder respond. All transponders have toggled state (e.g. to session 2, B) when
+no more transponders respond. Perform more inventories this time for the opposite query target (e.g. session
+2, B) until no more transponders respond. The result is two lists of transponders that should be the same, each
+transponder only responding to an inventory twice.</p>
+<h2 id="transponder-access">Transponder Access</h2>
+<p>To specify the transponder(s) to inventory or perform a tag access operation requires two things;</p>
+<ul>
+<li>firstly to specify and execute a select to group the required transponder(s) separately from the rest of those in the field, and</li>
+<li>secondly to perform the inventory or tag access querying for the appropriate group of transponders.</li>
+</ul>
+<h3 id="specifying-the-group-of-transponders-to-select">Specifying the Group of Transponders to Select</h3>
+<p>Transponders are grouped based on the contents of their memory banks.
+For each of the commands where select is used a Select Bank, Select Offset, Select Data and Select Length are specified.</p>
+<ul>
+<li>The <strong>Select Bank</strong> specifies which memory bank of the transponder is used for the comparison.</li>
+<li>The <strong>Select Offset</strong> specifies the offset in <strong>bits</strong> into the memory bank at which to start matching the Select Data.</li>
+<li>The <strong>Select Data</strong> specifies the actual bit pattern to match to the transponders memory starting at the specified offset. The data must be specified as a whole number of bytes. The Select Length permits partial bytes.</li>
+<li>The <strong>Select Length</strong> specifies the number of <strong>bits</strong> in the Select Data (from bit 0) to match to the memory in the specified transponder bank starting from the Select Offset.</li>
+</ul>
+<p>The above defines two distinct groups of transponders; the transponders where the memory matches the specified pattern at the specified location in its memory and those transponders that do not.
+The <strong>Select Action</strong> and <strong>Select Target</strong> parameters specify how to change the state of the transponders so that the two groups (matching and nonmatching) may be identified.
+The <strong>Select Target</strong> specifies which of the transponder’s session or selected flags to modify according to the <strong>Select Action</strong>.
+The <strong>Select Action</strong> specifies how to modify the specified flag.</p>
+<p>The actions are summarised in the table below and describes how the selected or session flag (based on the Select Target)
+is modified depending on whether the transponder matches or does not match the specified pattern.</p>
+<table>
+<tr><th rowspan="2">Parameter n=</th><th colspan="2">Matching Action</th><th colspan="2">Non Matching Action</th></tr>
+<tr><th>SL Flag</th><th>Session Flag</th><th>SL Flag</th><th>Session Flag</th></tr>
+<tr><td>0</td><td>assert</td>   <td>set A</td>      <td>deassert</td>   <td>set B</td></tr>
+<tr><td>1</td><td>assert</td>   <td>set A</td>      <td>nothing</td>    <td>nothing</td></tr>
+<tr><td>2</td><td>nothing</td>  <td>nothing</td>    <td>deassert</td>   <td>set B</td></tr>
+<tr><td>3</td><td>toggle</td>   <td>toggle</td>     <td>nothing</td>    <td>nothing</td></tr>
+<tr><td>4</td><td>deassert</td> <td>set B</td>      <td>assert</td>     <td>set A</td></tr>
+<tr><td>5</td><td>deassert</td> <td>set B</td>      <td>nothing</td>    <td>nothing</td></tr>
+<tr><td>6</td><td>nothing</td>  <td>nothing</td>    <td>assert</td>     <td>set A</td></tr>
+<tr><td>7</td><td>nothing</td>  <td>nothing</td>    <td>toggle</td>     <td>toggle</td></tr>
+</table>
+<h3 id="specifying-the-group-of-transponders-to-return">Specifying the Group of Transponders to Return</h3>
+<p>With the transponders separated into groups (via known session and selected flag states) the query parameters
+(<strong>Query Select</strong>, <strong>Query Session</strong> and <strong>Query Target</strong>) specify which group to return.</p>
+<p>A transponder will respond to an inventory (which may be part of a tag access) if both of the following are true:</p>
+<ul>
+<li>its selected flag matches the <strong>Query Select</strong> value</li>
+<li>the session flag specified by <strong>Query Session</strong> matches the state specified in <strong>Query Target</strong></li>
+</ul>
+<p>The <strong>Query Select</strong> can be set to all which effectively allows the state of the selected flag to be ignored.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a transponder responds to an inventory it toggles the flag for the specified session (i.e. B to A or A to B for the query session).</p>
+</div>
+<h3 id="selecting-the-q-value-and-algorithm">Selecting the Q value and Algorithm</h3>
+<p>When a reader performs an inventory it sends out the query and then provides a number of time slots for the transponders to respond within.
+The number of time slots used is determined by the Q value, there are 2^Q timeslots which gives a range from 1 to 32768 time slots.
+Providing too many time slots for the number of expected transponders does not cause any problems except to slow down the command as the reader will issue many timeslots where there are no transponders to reply.
+The fixed Q algorithm uses the Q value directly and does not alter it for subsequent inventories.
+The dynamic Q algorithm uses the Q value parameter as a starting value and adapts the Q for subsequent operations based on the number of transponders that replied in the previous inventory.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="modifying-a-single-transponder">Modifying a Single Transponder</h3>
+<p>These examples demonstrate writing to, reading from and locking a single, unique transponder.
+To identify a single transponder, typically, the EPC returned from an inventory is used and is assumed to be unique.
+Select parameters are used that specify the full EPC of the target transponder to restrict the operation to just that target tag.
+These examples modify the transponder’s User memory bank.</p>
+<p>Transponder memory is address by word or bit. Each word has 16 bits.
+The EPC is stored from word 2 of the EPC memory bank (bit address 32).
+So, for a typical 96 bit EPC the value is 6 words long.
+Transponders are likely to be in the default state A for a session, unless they have been recently energised, so it is recommended to use state B for writing.</p>
+<h3 id="writing">Writing</h3>
+<p>The ASCII 2 protocol provides two commands for writing to transponders.
+This example uses the more flexible of the two the <a class="xref" href="../protocol/commands/protocol.commands.wr.html">Write Transponder Command - .wr</a>.
+This command gives the developer full control over the query and selection criteria, the Q algorithm and Q Value.</p>
+<h4 id="task">Task:</h4>
+<p>Write words 0x1111222233334444 to the User bank at word address 5 of a transponder with EPC
+0x0123456789abba9876543210 using session 1.</p>
+<h4 id="command">Command:</h4>
+<pre><code>.wr –db usr –da 1111222233334444 –dl 04 –do 0005 –ql all –qs s1 –qt b –sa 4 –sb epc –sd 0123456789abba9876543210 –sl 60 –so 0020 –st s1
+</code></pre>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_tabid-writecommandbreakdown" role="tab" aria-controls="tabpanel_CeZOj-G++Q_tabid-writecommandbreakdown" data-tab="tabid-writecommandbreakdown" tabindex="0" aria-selected="true">Ascii Protocol</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_tabid-writeAsciiProtocol" role="tab" aria-controls="tabpanel_CeZOj-G++Q_tabid-writeAsciiProtocol" data-tab="tabid-writeAsciiProtocol" tabindex="-1">.Net AsciiProtocol</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_tabid-writeAsciiOperations" role="tab" aria-controls="tabpanel_CeZOj-G++Q_tabid-writeAsciiOperations" data-tab="tabid-writeAsciiOperations" tabindex="-1">.Net AsciiOperations</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_tabid-writecommandbreakdown" role="tabpanel" data-tab="tabid-writecommandbreakdown">
+
+<p>Command Breakdown:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.wr</td>
+<td>Execute the Write transponder command</td>
+</tr>
+<tr>
+<td>–db</td>
+<td>usr Data will be written to the User memory bank</td>
+</tr>
+<tr>
+<td>–da 1111222233334444</td>
+<td>The data to write in 4-character, ASCII-hex words</td>
+</tr>
+<tr>
+<td>–dl 04</td>
+<td>4 Words will be written</td>
+</tr>
+<tr>
+<td>–do 0005</td>
+<td>The data will be written starting at offset 5</td>
+</tr>
+<tr>
+<td>–ql all</td>
+<td>Transponders with any selected flag state can respond</td>
+</tr>
+<tr>
+<td>–qs s1</td>
+<td>Transponders will respond based on the value of the session 1 flag</td>
+</tr>
+<tr>
+<td>–qt b</td>
+<td>Transponders with (session 1) state B will respond</td>
+</tr>
+<tr>
+<td>–sa 4</td>
+<td>Transponders that match the Select criteria will clear the selected flag and set the session 1 flag to B. Transponders that do not match the Select criteria will set the selected flag and set the session 1 flag to A.</td>
+</tr>
+<tr>
+<td>–sb epc</td>
+<td>Select transponders based on the EPC memory</td>
+</tr>
+<tr>
+<td>–sd 0123456789abba9876543210</td>
+<td>Select using this data i.e. the EPC value</td>
+</tr>
+<tr>
+<td>–sl 60</td>
+<td>Select using 96 bits of the data ( length is in hex, 0x60 = 96)</td>
+</tr>
+<tr>
+<td>–so 0020</td>
+<td>Select from memory bit offset 32 (0x20 = 32 bits)</td>
+</tr>
+<tr>
+<td>–st s1</td>
+<td>Select will affect the session 1 flag state</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabpanel_CeZOj-G++Q_tabid-writeAsciiProtocol" role="tabpanel" data-tab="tabid-writeAsciiProtocol" aria-hidden="true" hidden="hidden">
+
+<p>To build this command using the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.html">TechnologySolutions.Rfid.AsciiProtocol</a> and <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Commands.html">TechnologySolutions.Rfid.AsciiProtocol.Commands</a> namespaces using the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Commands.WriteTransponderCommand.html">WriteTransponderCommand</a></p>
+<pre><code class="lang-csharp" name="LockAsciiOperation">string expected = &quot;.wr LCMD -x -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -ap00000000 -dbusr -dl04 -do0005 -da1111222233334444&quot;;
+
+var writeCommand = new WriteTransponderCommand()
+{
+    AccessPassword = &quot;00000000&quot;,
+    Bank = Databank.User,
+    Data = &quot;1111222233334444&quot;,
+    Length = 4,
+    Offset = 5,
+    QuerySelect = QuerySelect.All,
+    QuerySession = QuerySession.S1,
+    QueryTarget = QueryTarget.TargetB,
+    ResetParameters = true,
+    SelectAction = SelectAction.DeassertSetBNotAssertSetA,
+    SelectBank = Databank.ElectronicProductCode,
+    SelectData = &quot;0123456789abba9876543210&quot;,
+    SelectLength = 0x60,
+    SelectOffset = 0x20,
+    SelectTarget = SelectTarget.S1,
+
+    // Only as we can't output a known index value for comparison
+    IsIndexedCommand = false,
+};
+
+string actual = writeCommand.CommandLine();
+
+System.Diagnostics.Debug.Assert(expected == actual);
+</code></pre></section>
+<section id="tabpanel_CeZOj-G++Q_tabid-writeAsciiOperations" role="tabpanel" data-tab="tabid-writeAsciiOperations" aria-hidden="true" hidden="hidden">
+
+<p>To build this command using the <a class="xref" href="../api/TechnologySolutions.Rfid.html">TechnologySolutions.Rfid</a> and <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiOperations.html">TechnologySolutions.Rfid.AsciiOperations</a> namespaces</p>
+<pre><code class="lang-csharp" name="LockAsciiOperation">// using TechnologySolutions.Rfid;
+// using TechnologySolutions.Rfid.AsciiOperations;
+string expected = &quot;.wr LCMD -x -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -ap00000000 -dbusr -dl04 -do0005 -da1111222233334444&quot;;            
+
+var tagAccess = TagFilter.ForEpc(&quot;0123456789abba9876543210&quot;).ForTagAccess().ReportDefaults().Write(MemoryBank.User, 5, &quot;1111222233334444&quot;);
+var tagAccessCommand = tagAccess.ToTagAccessCommand();
+// Only as we can't output a known index value for comparison
+tagAccessCommand.IsIndexedCommand = false;
+
+string actual = tagAccessCommand.CommandLine();
+
+System.Diagnostics.Debug.Assert(expected == actual);
+</code></pre></section>
+</div>
+<h4 id="response">Response:</h4>
+<pre><code>CS: .wr -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -dbusr -dl04 -do0005 -da1111222233334444
+EP: 0123456789ABBA9876543210
+WW: 4
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding
+transponder provides the EPC (after the <code>EP:</code> header) and the number of words written to that transponder (following
+the <code>WW:</code> header). The above response shows a single transponder responding and all 4 words were written - a successful operation.</p>
+<p>The <code>.wr</code> command can write to multiple transponders simultaneously.
+If the select criteria can match multiple transponder EPCs or the EPC specified is not unique then the command will attempt to write the data to all matching transponders.
+To ensure that only a single transponder is written to use the <a class="xref" href="../protocol/commands/protocol.commands.ws.html">Write Single Transponder .ws</a> command.
+This command is very robust and makes multiple attempts to write the specified data before failing.
+It also guarantees that only one transponder is written to.
+If the select criteria specifies a match for more than one transponder in range then the .ws command is likely to succeed but be aware that there is no simple way of knowing which of the transponders was written to.</p>
+<h3 id="reading">Reading</h3>
+<p>Having successfully written to the transponder the contents of the User memory can be verified using the <a class="xref" href="../protocol/commands/protocol.commands.rd.html">Read Transponder Command - .rd</a>.</p>
+<h4 id="task-1">Task:</h4>
+<p>Read 4 words from the User bank at word address 5 of a transponder with EPC 0x0123456789abba9876543210 using session 1.</p>
+<h4 id="command-1">Command:</h4>
+<pre><code>.rd –db usr–dl 04 –do 0005 –ql all –qs s1 –qt b –sa 4 –sb epc –sd 0123456789abba9876543210 –sl 60 –so 0020 –st s1
+</code></pre>
+<h4 id="command-breakdown">Command Breakdown:</h4>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.rd</td>
+<td>Execute the Read transponder command</td>
+</tr>
+<tr>
+<td>–db</td>
+<td>usr Data will be read from the User memory bank</td>
+</tr>
+<tr>
+<td>–dl 04</td>
+<td>4 Words will be read</td>
+</tr>
+<tr>
+<td>–do 0005</td>
+<td>The data will be read starting at offset 5</td>
+</tr>
+<tr>
+<td>–ql all</td>
+<td>Transponders with any selected flag state can respond</td>
+</tr>
+<tr>
+<td>–qs s1</td>
+<td>Transponders will respond based on the value of the session 1 flag</td>
+</tr>
+<tr>
+<td>–qt b</td>
+<td>Transponders with (session 1) state B will respond</td>
+</tr>
+<tr>
+<td>–sa 4</td>
+<td>Transponders that match the Select criteria will clear the selected flag and set the session 1 flag to B. Transponders that do not match the select criteria will set the selected flag and set the session 1 flag to A.</td>
+</tr>
+<tr>
+<td>–sb epc</td>
+<td>Select transponders based on the EPC memory</td>
+</tr>
+<tr>
+<td>–sd 0123456789abba9876543210</td>
+<td>Select using this data i.e. the EPC value</td>
+</tr>
+<tr>
+<td>–sl 60</td>
+<td>Select using 96 bits of the data ( length is in hex, 0x60 = 96)</td>
+</tr>
+<tr>
+<td>–so 0020</td>
+<td>Select from memory bit offset 32 (0x20 = 32 bits)</td>
+</tr>
+<tr>
+<td>–st s1</td>
+<td>Select will affect the session 1 flag state</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-1">Response:</h4>
+<pre><code>CS: .rd -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -dbusr -dl04 -do0005
+EP: 0123456789ABBA9876543210
+RD: 1111222233334444
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding
+transponder provides the EPC (after the <code>EP:</code> header) and the data read from that transponder (following the <code>RD:</code>
+header). The above response shows a single transponder responding with the 4 hex words 1111222233334444 - a successful operation.</p>
+<h3 id="locking">Locking</h3>
+<p>When a transponder has been prepared with the desired data then it can be secured to restrict further modification.
+In this example we will use the <a class="xref" href="../protocol/commands/protocol.commands.lo.html">Lock Command - .lo</a> to require an access password to make further modifications to the ‘locked’ User memory bank.
+Care must be taken when experimenting with the lock command as it is possible to make a transponder permanently read-only.
+The use of this command requires a full understanding of the 20-bit lock payload as described in the UHF Class 1 Gen 2 Standard.
+Before using the lock command the access password needs to be set – this uses a write operation as described in the ‘Writing’ section above. We will use ddddcccc as the access password.</p>
+<h4 id="task-2">Task:</h4>
+<p>Set an access password of ddddcccc.</p>
+<h4 id="command-2">Command:</h4>
+<pre><code>.wr -db res -dl 02 -do 0002 -da ddddcccc -ql all -qs s1 -qt b -sa 4 -sb epc -sd 0123456789abba9876543210 -sl 60 -so 0020 -st s1
+</code></pre>
+<h4 id="task-3">Task:</h4>
+<p>Lock the User memory bank to prevent further modification unless the access password is specified.</p>
+<h4 id="command-3">Command:</h4>
+<pre><code>.lo -lp 00802 -ap ddddcccc -ql all -qs s1 -qt b -sa 4 -sb epc -sd 0123456789abba9876543210 -sl 60 -so 0020 -st s1
+</code></pre>
+<h4 id="command-breakdown-1">Command Breakdown:</h4>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lo</td>
+<td>Execute the Lock command</td>
+</tr>
+<tr>
+<td>–lp 00802</td>
+<td>20-bit Lock payload specifying that the User memory bank requires an access password to be written to.</td>
+</tr>
+<tr>
+<td>–ap ddddcccc</td>
+<td>The access password</td>
+</tr>
+<tr>
+<td>–ql all</td>
+<td>Transponders with any selected flag state can respond</td>
+</tr>
+<tr>
+<td>–qs s1</td>
+<td>Transponders will respond based on the value of the session 1 flag</td>
+</tr>
+<tr>
+<td>–qt b</td>
+<td>Transponders with (session 1) state B will respond</td>
+</tr>
+<tr>
+<td>–sa 4</td>
+<td>Transponders that match the Select criteria will clear the selected flag and set the session 1 flag to B. Transponders that do not match the select criteria will set the selected flag and set the session 1 flag to A.</td>
+</tr>
+<tr>
+<td>–sb epc</td>
+<td>Select transponders based on the EPC memory</td>
+</tr>
+<tr>
+<td>–sd 0123456789abba9876543210</td>
+<td>Select using this data i.e. the EPC value</td>
+</tr>
+<tr>
+<td>–sl 60</td>
+<td>Select using 96 bits of the data ( length is in hex, 0x60 = 96)</td>
+</tr>
+<tr>
+<td>–so 0020</td>
+<td>Select from memory bit offset 32 (0x20 = 32 bits)</td>
+</tr>
+<tr>
+<td>–st s1</td>
+<td>Select will affect the session 1 flag state</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-2">Response:</h4>
+<pre><code>CS: .lo -lp00802 -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -apddddcccc
+EP: 0123456789ABBA9876543210
+LS: Lock Success
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding
+transponder provides the outcome of the lock request. The above response shows a single transponder
+responding with Lock Success - a successful operation.</p>
+<h4 id="task-4">Task:</h4>
+<p>Attempt to write to the User memory with an incorrect access password.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Beware: as the reader stores parameters, once the access password has been specified for a command it will continue to be used even if not explicitly entered on the command line.
+For this reason the access password is re-specified as 00000000 in the following command as if you are following through these examples the reader will currently have it set to ddddcccc which it will continue to use unless otherwise specified.</p>
+</div>
+<h4 id="command-4">Command:</h4>
+<pre><code>.wr -ap 00000000 -db usr -dl 04 -do 0005 -da 5555666677778888 -ql all -qs s1 -qt b -sa 4 -sb epc -sd 0123456789abba9876543210 -sl 60 -so 0020 -st s1
+</code></pre>
+<h4 id="response-3">Response:</h4>
+<pre><code>CS: .wr -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -ap00000000 -dbusr -dl04 -do0005 -da5555666677778888
+EP: 0123456789ABBA9876543210
+EB: 004
+WW: 0
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding transponder provides the outcome of the request.
+The above response shows a single transponder responding with error <code>EB: 004</code> (memory is locked or perma-locked) - an unsuccessful operation!</p>
+<h4 id="task-5">Task:</h4>
+<p>Attempt to write to the User memory with correct access password.</p>
+<h4 id="command-5">Command:</h4>
+<pre><code>.wr -ap ddddcccc -db usr -dl 04 -do 0005 -da 5555666677778888 -ql all -qs s1 -qt b -sa 4 -sb epc -sd 0123456789abba9876543210 -sl 60 -so 0020 -st s1
+</code></pre>
+<h4 id="response-4">Response:</h4>
+<pre><code>CS: .wr -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -apddddcccc -dbusr -dl04 -do0005 -da5555666677778888
+EP: 0123456789ABBA9876543210
+WW: 4
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding transponder provides the outcome of the request.
+The above response shows 4 words written to a single transponder - a successful operation.</p>
+<p>The transponder now requires a password to modify the User memory bank but it is not yet secure because the password itself can still be easily read or rewritten.
+To prevent this we can use the lock command to protect the reserved memory bank.
+The lock parameters allow for independent control over the Access password and the Kill password.
+The following example will modify the transponder so that the Access password can only be read or modified using the access password.</p>
+<h4 id="task-6">Task:</h4>
+<p>Prevent the reading and writing of the Access password unless the current Access password is specified.</p>
+<h4 id="command-6">Command:</h4>
+<pre><code>.lo -lp 30080 -ap ddddcccc -ql all -qs s1 -qt b -sa 4 -sb epc -sd 0123456789abba9876543210 -sl 60 -so 0020 -st s1
+</code></pre>
+<h4 id="response-5">Response:</h4>
+<pre><code>CS: .lo LCMD 000044 -lp30080 -qlall -qss1 -qtb -sa4 -sbepc -sd0123456789abba9876543210 -sl60 -so0020 -sts1 -apddddcccc
+EP: 0123456789ABBA9876543210
+LS: Lock Success
+OK:
+</code></pre>
+<p>The command’s response provides the command executed after the <code>CS:</code> header and then for each responding transponder provides the outcome of the request.
+The above response shows that the lock succeeded - a successful operation.</p>
+<p>The Access password area is now only readable or writable using the Access password.
+This can be verified using read and write commands as described in the previous ‘Reading’ and ‘Writing’ sections.</p>
+<p>The Lock command can also be used to set the Permalock bits which make memory banks permanently
+unchangeable – these bits, once set, cannot be reset so use with caution.</p>
+<h3 id="writing-a-transponder-epc">Writing a transponder EPC</h3>
+<p>When writing a transponder EPC it is not advised to select the transponder by EPC as the value used to identify the transponder is changing during the process.
+This can cause problems in the situation where the write only partially succeeds (the response to the command returns the number of words successfully written)
+When updating the EPC and the transponder supports a serialized TID bank (the TID memory contains a unique serial number value) the TID can be used as the select data and mask.</p>
+<h3 id="notes">NOTES</h3>
+<h4 id="reading-and-writing-large-amounts-of-data">Reading and Writing Large Amounts of Data</h4>
+<p>The Technology Solutions reader hardware limits the write command to 32 words at a time and a read command
+to 253 words at a time. Depending on the regulatory region the reader configured to operate the maximum dwell
+time at a particular frequency may reduce these values. The reader uses a frequency hopping algorithm and one
+of the constraints of the algorithm is the maximum time the reader can use any particular frequency before a hop is
+required. For example the ETSI region requires a hop every two seconds so is unlikely to affect these values. The
+FCC region requires a hop every 400ms in this case 32 words is approaching the maximum number of words that
+can be written before a hop is required.</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

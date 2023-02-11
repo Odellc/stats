@@ -1,0 +1,1170 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Response Headers | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Response Headers | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="protocol.introduction.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="commandsOverview.html" title="Commands Overview" class="">Commands Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="commandsParser.html" title="Command Parser" class="">Command Parser</a>
+                    </li>
+                    <li class="">
+                      <a href="responses.html" title="Responses" class="">Responses</a>
+                    </li>
+                    <li class="active">
+                      <a href="protocol.responses.html" title="Response Field Headers" class="active">Response Field Headers</a>
+                    </li>
+                    <li class="">
+                      <a href="filesOnSdCard.html" title="Files on the SD card" class="">Files on the SD card</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="commands/protocol.commands.html" title="Commands" class="">Commands</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="commands/protocol.commands.ab.html" title=".ab Abort Command" class="">.ab Abort Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.al.html" title=".al Alert Command" class="">.al Alert Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ar.html" title=".ar Autorun Command" class="">.ar Autorun Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.bc.html" title=".bc Barcode Command" class="">.bc Barcode Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.bp.html" title=".bp Block Permalock transponder Command" class="">.bp Block Permalock transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.bl.html" title=".bl Battery Level Command" class="">.bl Battery Level Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.bt.html" title=".bt Bluetooth&#174; functions" class="">.bt Bluetooth&#174; functions</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.da.html" title=".da Date Command" class="">.da Date Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.dp.html" title=".dp User defined switch Double Press action" class="">.dp User defined switch Double Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ea.html" title=".ea Execute Autorun Command (Deprecated)" class="">.ea Execute Autorun Command (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ec.html" title=".ec Echo" class="">.ec Echo</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.fd.html" title=".fd Factory Defaults Command" class="">.fd Factory Defaults Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ft.html" title=".ft FindTag Command" class="">.ft FindTag Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.hc.html" title=".hc HID config Command" class="">.hc HID config Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.hd.html" title=".hd HID configuration for double press switch action" class="">.hd HID configuration for double press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.hs.html" title=".hs HID configuration for single press switch action" class="">.hs HID configuration for single press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.iv.html" title=".iv Inventory Command" class="">.iv Inventory Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ki.html" title=".ki Kill command" class="">.ki Kill command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.lk.html" title=".lk Licence Key" class="">.lk Licence Key</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.lo.html" title=".lo Lock command" class="">.lo Lock command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.mt.html" title=".mt Mount / Dismount internal memory" class="">.mt Mount / Dismount internal memory</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.pd.html" title=".pd Push Switch Double press" class="">.pd Push Switch Double press</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ps.html" title=".ps Push Switch Single press" class="">.ps Push Switch Single press</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ra.html" title=".ra Read the Autorun File (Deprecated)" class="">.ra Read the Autorun File (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.rd.html" title=".rd Read transponder Command" class="">.rd Read transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.rl.html" title=".rl Read the Log file" class="">.rl Read the Log file</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.sa.html" title=".sa Switch Action Command" class="">.sa Switch Action Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.sh.html" title=".sh Serial HID Command" class="">.sh Serial HID Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.sl.html" title=".sl .	Sleep" class="">.sl .	Sleep</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.sp.html" title=".sp User defined switch Single Press action" class="">.sp User defined switch Single Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.sr.html" title=".sr Show Region" class="">.sr Show Region</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ss.html" title=".ss Switch State Command" class="">.ss Switch State Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.st.html" title=".st Sleep Timeout" class="">.st Sleep Timeout</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.tm.html" title=".tm Time Command" class="">.tm Time Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ts.html" title=".ts Transponder Select" class="">.ts Transponder Select</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.vr.html" title=".vr Version information Command" class="">.vr Version information Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.wa.html" title=".wa Write command to Autorun file (Deprecated)" class="">.wa Write command to Autorun file (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.wr.html" title=".wr Write transponder Command" class="">.wr Write transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="commands/protocol.commands.ws.html" title=".ws Write Single transponder Command" class="">.ws Write Single transponder Command</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <a href="hardwareSpecifics.html" title="Hardware Connection Notes" class="">Hardware Connection Notes</a>
+                    </li>
+                    <li class="">
+                      <a href="releaseNotes.html" title="Release Notes" class="">Release Notes</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="protocol.responses">
+<h1 id="response-field-headers">Response Field Headers</h1>
+
+<p><a title="Autorun file Begin" href="#ab-autorun-file-begin">AB</a>  <a title="Authentication Chip test" href="#ac-authentication-chip-test">AC</a>  <a title="Autorun file End" href="#ae-autorun-file-end">AE</a>  <a title="Antenna Serial number" href="#as-antenna-serial-number">AS</a>  <a title="Bluetooth® Address" href="#ba-bluetooth-address">BA</a>  <a title="Barcode data" href="#bc-barcode-data">BC</a>  <a title="Battery Health" href="#bh-battery-health">BH</a>  <a title="Battery Percentage level" href="#bp-battery-percentage-level">BP</a>  <a title="Barcode Raw" href="#br-barcode-raw">BR</a>  <a title="Bluetooth® Version" href="#bv-bluetooth-version">BV</a><br>
+<a title="Channel Frequency" href="#cf-channel-frequency">CF</a>  <a title="Charge Status" href="#ch-charge-status">CH</a>  <a title="Transponder EPC CRC value" href="#cr-transponder-epc-crc-value">CR</a>  <a title="Command Started" href="#cs-command-started">CS</a>  <a title="Date" href="#da-date">DA</a>  <a title="Double press user defined switch action" href="#dp-double-press-user-defined-switch-action">DP</a>  <a title="Date/Time Stamp" href="#dt-datetime-stamp">DT</a>  <a title="Transponder Access Error Code" href="#ea-transponder-access-error-code">EA</a>  <a title="Transponder Backscatter Error Code" href="#eb-transponder-backscatter-error-code">EB</a>  <a title="Transponder EPC value" href="#ep-transponder-epc-value">EP</a><br>
+<a title="Error" href="#er-error">ER</a>  <a title="Bluetooth® Friendly Name" href="#fn-bluetooth-friendly-name">FN</a>  <a title="UHF API Version" href="#ia-uhf-api-version">IA</a>  <a title="Power Handle Bootloader version number" href="#hb-power-handle-bootloader-version-number">HB</a>  <a title="Power Handle Firmware version number" href="#hf-power-handle-firmware-version-number">HF</a>  <a title="Powerhandle Serial number" href="#hs-powerhandle-serial-number">HS</a>  <a title="Index Number" href="#ix-index-number">IX</a>  <a title="Kill Success" href="#ks-kill-success">KS</a>  <a title="Log Begin" href="#lb-log-begin">LB</a>  <a title="Log End" href="#le-log-end">LE</a><br>
+<a title="Log Length" href="#ll-log-length">LL</a>  <a title="Licence Key" href="#lk-licence-key">LK</a>  <a title="Lock Success" href="#ls-lock-success">LS</a>  <a title="Message" href="#me-message">ME</a>  <a title="Manufacturer name" href="#mf-manufacturer-name">MF</a>  <a title="OK response" href="#ok-ok-response">OK</a>  <a title="QT Control Word" href="#qt-qt-control-word">QT</a>  <a title="Transponder EPC PC value" href="#pc-transponder-epc-pc-value">PC</a>  <a title="Phase" href="#ph-phase">PH</a>  <a title="Parameters" href="#pr-parameters">PR</a><br>
+<a title="Protocol Version number" href="#pv-protocol-version-number">PV</a>  <a title="Radio Bootloader version number" href="#rb-radio-bootloader-version-number">RB</a>  <a title="Transponder Read Data" href="#rd-transponder-read-data">RD</a>  <a title="Radio Firmware version number" href="#rf-radio-firmware-version-number">RF</a>  <a title="Transponder RSSI value" href="#ri-transponder-rssi-value">RI</a>  <a title="Radio Serial number" href="#rs-radio-serial-number">RS</a>  <a title="RSSI Percentage" href="#rp-rssi-percentage">RP</a>  <a title="Single press user defined switch action" href="#sp-single-press-user-defined-switch-action">SP</a>  <a title="Set Region" href="#sr-set-region">SR</a>  <a title="Switch status" href="#sw-switch-status">SW</a><br>
+<a title="Transponder TID value" href="#td-transponder-tid-value">TD</a>  <a title="Time" href="#tm-time">TM</a>  <a title="Unit Bootloader version number" href="#ub-unit-bootloader-version-number">UB</a>  <a title="Unit Firmware version number" href="#uf-unit-firmware-version-number">UF</a>  <a title="Unit Serial number" href="#us-unit-serial-number">US</a>  <a title="Number of Words Written" href="#ww-number-of-words-written">WW</a></p>
+<h2 id="ab-autorun-file-begin">AB: Autorun file Begin</h2>
+<p>This field header indicates the beginning of the Autorun file.</p>
+<h3 id="format">Format</h3>
+<pre><code>AB: optional text
+</code></pre>
+<h3 id="examples">Examples</h3>
+<pre><code>AB: **** Beginning of Autorun file ****
+</code></pre>
+<h3 id="used-in">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><br></p>
+<h2 id="ac-authentication-chip-test">AC: Authentication Chip test</h2>
+<p>This field header indicates the result of the test on the authentication chip .</p>
+<h3 id="format-1">Format</h3>
+<pre><code>AC: Passed/Failed/NotPresent
+</code></pre>
+<h3 id="examples-1">Examples</h3>
+<pre><code>AC: Passed
+</code></pre>
+<h3 id="used-in-1">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><br></p>
+<h2 id="ae-autorun-file-end">AE: Autorun file End</h2>
+<p>This field header indicates the end of the Autorun file .</p>
+<h3 id="format-2">Format</h3>
+<pre><code>AE: optional text
+</code></pre>
+<h3 id="examples-2">Examples</h3>
+<pre><code>AE: **** End of Autorun file ****
+</code></pre>
+<h3 id="used-in-2">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><br></p>
+<h2 id="as-antenna-serial-number">AS: Antenna Serial number</h2>
+<p>This field header precedes the antenna serial number .</p>
+<h3 id="format-3">Format</h3>
+<pre><code>AS: “Antenna serial number”
+</code></pre>
+<h3 id="examples-3">Examples</h3>
+<pre><code>AS: 1128-S1-EU-000001
+</code></pre>
+<h3 id="used-in-3">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="ba-bluetooth-address">BA: Bluetooth® Address</h2>
+<p>This field header precedes the Bluetooth® address .</p>
+<h3 id="format-4">Format</h3>
+<pre><code>BA: “Bluetooth® Address”
+</code></pre>
+<h3 id="examples-4">Examples</h3>
+<pre><code>BA: 00:07:80:41:a4:c6
+</code></pre>
+<h3 id="used-in-4">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="bc-barcode-data">BC: Barcode data</h2>
+<p>This field header precedes the barcode value when escape characters are enabled (default) .
+Since some barcodes can contain the termination characters the use of an escape character, <esc> (0x1B), is used to distinguish between a Cr Lf sequence  contained in the Barcode and the real termination characters. Should the escape character be read as part of the barcode it will be escaped as well.<p>
+<h3 id="format-5">Format</h3>
+<pre><code>BC: “Barcode Value”
+</code></pre>
+<h3 id="examples-5">Examples</h3>
+<pre><code>Example using escape character to read the following barcode data
+“abc&lt;ESC&gt;123456789&lt;CR&gt;&lt;LF&gt;abcdef”
+BC: abc&lt;ESC&gt;&lt;ESC&gt;123456789&lt;ESC&gt;&lt;CR&gt;&lt;ESC&gt;&lt;LF&gt;abcdef
+</code></pre>
+<h3 id="used-in-5">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><br></p>
+<h2 id="bh-battery-health">BH: Battery Health</h2>
+<p>This field header precedes the powerhandle battery health information. (2128 only, where fitted)</p>
+<h3 id="format-6">Format</h3>
+<pre><code>BH: PH vo=voltage dc=designcap fc=fullcap rc=remcap cc=chargecycles sh=stateofhealth
+</code></pre>
+<h3 id="examples-6">Examples</h3>
+<pre><code>BH: PH vo=4179 dc=6500 fc=6530 rc=6530 cc=4 sh=100
+</code></pre>
+<h3 id="used-in-6">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><br></p>
+<h2 id="bp-battery-percentage-level">BP: Battery Percentage level</h2>
+<p>This field header precedes the battery level value .</p>
+<h3 id="format-7">Format</h3>
+<pre><code>BP: “Battery level Value”
+</code></pre>
+<h3 id="examples-7">Examples</h3>
+<pre><code>BP:100%
+BP:78%
+BP:4%
+</code></pre>
+<h3 id="used-in-7">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><br></p>
+<h2 id="br-barcode-raw">BR: Barcode Raw</h2>
+<p>This field header precedes the barcode value when escape characters are disabled.
+Care must be taken since some barcodes can contain the termination characters .</p>
+<h3 id="format-8">Format</h3>
+<pre><code>BR: “Barcode Value”
+</code></pre>
+<h3 id="examples-8">Examples</h3>
+<pre><code>BR: ISBN:5884688-6686
+</code></pre>
+<h3 id="used-in-8">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><br></p>
+<h2 id="bv-bluetooth-version">BV: Bluetooth® Version</h2>
+<p>This field header precedes the Bluetooth® firmware version .</p>
+<h3 id="format-9">Format</h3>
+<pre><code>BV: “Bluetooth® Version”
+</code></pre>
+<h3 id="examples-9">Examples</h3>
+<pre><code>BV: 560
+</code></pre>
+<h3 id="used-in-9">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="cf-channel-frequency">CF: Channel Frequency</h2>
+<p>This field header precedes channel frequency (Hz) used.</p>
+<h3 id="format-10">Format</h3>
+<pre><code>CF: “frequency”
+</code></pre>
+<h3 id="examples-10">Examples</h3>
+<pre><code>CF: 924750
+</code></pre>
+<h3 id="used-in-10">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><br></p>
+<h2 id="ch-charge-status">CH: Charge Status</h2>
+<p>This field header precedes charge status.</p>
+<h3 id="format-11">Format</h3>
+<pre><code>CH: Off/Charging/Complete/Error
+</code></pre>
+<h3 id="examples-11">Examples</h3>
+<pre><code>CH: Complete
+</code></pre>
+<h3 id="used-in-11">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><br></p>
+<h2 id="cr-transponder-epc-crc-value">CR: Transponder EPC CRC value</h2>
+<p>This field header precedes Transponder EPC CRC value (in hex) .</p>
+<h3 id="format-12">Format</h3>
+<pre><code>CR: “CRC Value”
+</code></pre>
+<h3 id="examples-12">Examples</h3>
+<pre><code>CR: 3E4F
+</code></pre>
+<h3 id="used-in-12">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="cs-command-started">CS: Command Started</h2>
+<p>This field header is sent to indicate that a command has started. It precedes the command that initiated it .</p>
+<h3 id="format-13">Format</h3>
+<pre><code>CS: “Command”
+</code></pre>
+<h3 id="examples-13">Examples</h3>
+<pre><code>CS: bc -t 6
+</code></pre>
+<h3 id="used-in-13">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ab.html">.ab		Abort Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.al.html">.al		Alert Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.da.html">.da	Date Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.ea.html">.ea	Execute Autorun Command (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.ec.html">.ec	Echo</a></p>
+<p><a class="xref" href="commands/protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p><a class="xref" href="commands/protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><a class="xref" href="commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p><a class="xref" href="commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.sr.html">.sr	Show Region</a></p>
+<p><a class="xref" href="commands/protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p><a class="xref" href="commands/protocol.commands.tm.html">.tm	Time Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wa.html">.wa	Write command to Autorun file (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="da-date">DA: Date</h2>
+<p>This field header precedes the Date, in ISO 8601 extended format .</p>
+<h3 id="format-14">Format</h3>
+<pre><code>DA: “Date”
+</code></pre>
+<h3 id="examples-14">Examples</h3>
+<pre><code>DA: 2013-01-24
+</code></pre>
+<h3 id="used-in-14">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.da.html">.da	Date Command</a></p>
+<p><br></p>
+<h2 id="dp-double-press-user-defined-switch-action">DP: Double press user defined switch action</h2>
+<p>This field header precedes the action that will be executed when “.sa -d usr” is configured.</p>
+<h3 id="format-15">Format</h3>
+<pre><code>DP: Switch command
+</code></pre>
+<h3 id="examples-15">Examples</h3>
+<pre><code>DP: .bc -t4
+DP: .iv
+</code></pre>
+<h3 id="used-in-15">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p><br></p>
+<h2 id="dt-datetime-stamp">DT: Date/Time Stamp</h2>
+<p>This field header precedes the Time Stamp, in ISO 8601 extended format .</p>
+<h3 id="format-16">Format</h3>
+<pre><code>DT: “Date/Time Stamp”
+</code></pre>
+<h3 id="examples-16">Examples</h3>
+<pre><code>DT: 2013-01-24T13:12:16
+</code></pre>
+<h3 id="used-in-16">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="ea-transponder-access-error-code">EA: Transponder Access Error Code</h2>
+<p>This field header precedes the Transponder access error code .
+Access errors are generated by the reader while trying to access a transponder and apply to the transponder with the preceding EPC value.</p>
+<h3 id="format-17">Format</h3>
+<pre><code>EA:nnn		nnn = 000 to 255
+</code></pre>
+<h3 id="error-codes">Error Codes</h3>
+<pre><code>001 Handle mismatch.
+002 CRC error on transponder response.
+003 No transponder reply.
+004 Invalid password.
+005 Zero kill password.
+006 Transponder lost.
+007 Command format error.
+008 Read count invalid.
+009 Out of retries.
+010 Access error.
+255 Operation failed.
+</code></pre>
+<h3 id="examples-17">Examples</h3>
+<pre><code>EA:004
+EA:006
+</code></pre>
+<h3 id="used-in-17">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><br></p>
+<h2 id="eb-transponder-backscatter-error-code">EB: Transponder Backscatter Error Code</h2>
+<p>This field header precedes the Transponder backscatter error code.
+Backscatter errors are generated by the transponder and apply to the transponder with the preceding EPC value.</p>
+<h3 id="format-18">Format</h3>
+<pre><code>EB:nnn		nnn = 000 to 255
+</code></pre>
+<h3 id="error-codes-1">Error Codes</h3>
+<pre><code>000 General error.
+003 Memory does not exist or the PC value is not supported.
+004 Memory is lock or permalocked.
+011 Transponder has insufficient power.
+015 Transponder does not support error specific codes.
+</code></pre>
+<h3 id="examples-18">Examples</h3>
+<pre><code>EB:003
+EB:011
+</code></pre>
+<h3 id="used-in-18">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><br></p>
+<h2 id="ep-transponder-epc-value">EP: Transponder EPC value</h2>
+<p>This field header precedes Transponder EPC value (in hex) .</p>
+<h3 id="format-19">Format</h3>
+<pre><code>EP: “EPC Value”
+</code></pre>
+<h3 id="examples-19">Examples</h3>
+<pre><code>EP: 0000000000000000000010E6
+</code></pre>
+<h3 id="used-in-19">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="er-error">ER: Error</h2>
+<p>This field header is used to terminate the response to an unsuccessful command.
+It is always followed by a three digit error code then two Carriage return Linefeed pairs .</p>
+<h3 id="format-20">Format</h3>
+<pre><code>ER:nnn		nnn = 000 to 255
+</code></pre>
+<h3 id="error-codes-2">Error Codes</h3>
+<pre><code>001 Syntax Error.
+002 Parameter not supported.
+003 Action not enabled.
+004 Command not supported by hardware
+005 No transponder found
+006 No Barcode found
+007 Parameter configuration invalid
+008 Antenna/Radio Error (Wrong region or Antenna/Radio Not Fitted)
+009 Battery level too low
+010 Scanner not ready
+011 Command not supported on interface
+012 Command not supported from Autorun file
+013 Write Failure
+014 Switch already in use
+015 Command Aborted
+016 Lock Failure
+017 Bluetooth® Error
+018 Licence Key is not blank
+255 System Error.
+</code></pre>
+<h3 id="examples-20">Examples</h3>
+<pre><code>ER:001
+ER:004
+</code></pre>
+<h3 id="used-in-20">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ab.html">.ab		Abort Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.al.html">.al		Alert Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.da.html">.da	Date Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.ea.html">.ea	Execute Autorun Command (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.ec.html">.ec	Echo</a></p>
+<p><a class="xref" href="commands/protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p><a class="xref" href="commands/protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><a class="xref" href="commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p><a class="xref" href="commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.sr.html">.sr	Show Region</a></p>
+<p><a class="xref" href="commands/protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p><a class="xref" href="commands/protocol.commands.tm.html">.tm	Time Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wa.html">.wa	Write command to Autorun file (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="fn-bluetooth-friendly-name">FN: Bluetooth® Friendly Name</h2>
+<p>This field header precedes the Bluetooth® friendly name .</p>
+<h3 id="format-21">Format</h3>
+<pre><code>FN: “Bluetooth® Friendly Name”
+</code></pre>
+<h3 id="examples-21">Examples</h3>
+<pre><code>FN: 1128-EU-000001
+</code></pre>
+<h3 id="used-in-21">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><br></p>
+<h2 id="ia-uhf-api-version">IA: UHF API Version</h2>
+<p>This field header precedes the UHF API version number used for identifying the API in use.</p>
+<h3 id="format-22">Format</h3>
+<pre><code>IA: “UHF API version number”
+</code></pre>
+<h3 id="examples-22">Examples</h3>
+<pre><code>IA: 1.5.0.10
+</code></pre>
+<h3 id="used-in-22">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="hb-power-handle-bootloader-version-number">HB: Power Handle Bootloader version number</h2>
+<p>This field header precedes the powerhandle bootloader version number. (2128 only, when fitted)</p>
+<h3 id="format-23">Format</h3>
+<pre><code>HB: “Powerhandle bootloader version number”
+</code></pre>
+<h3 id="examples-23">Examples</h3>
+<pre><code>HB: 1.0.0
+</code></pre>
+<h3 id="used-in-23">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="hf-power-handle-firmware-version-number">HF: Power Handle Firmware version number</h2>
+<p>This field header precedes the powerhandle firmware version number. (2128 only, when fitted)</p>
+<h3 id="format-24">Format</h3>
+<pre><code>HF: “Powerhandle firmware version number”
+</code></pre>
+<h3 id="examples-24">Examples</h3>
+<pre><code>HF: 1.0.0
+</code></pre>
+<h3 id="used-in-24">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="hs-powerhandle-serial-number">HS: Powerhandle Serial number</h2>
+<p>This field header precedes the powerhandle serial number. (2128 only, when fitted)</p>
+<h3 id="format-25">Format</h3>
+<pre><code>HS: “Powerhandle serial number”
+</code></pre>
+<h3 id="examples-25">Examples</h3>
+<pre><code>HS: 2102-000001
+</code></pre>
+<h3 id="used-in-25">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="ix-index-number">IX: Index Number</h2>
+<p>This field header precedes an index number used for referencing multiple responses to a command .</p>
+<h3 id="format-26">Format</h3>
+<pre><code>IX: 4 digit ASCII hex Index number
+</code></pre>
+<h3 id="examples-26">Examples</h3>
+<pre><code>IX: 004A
+</code></pre>
+<h3 id="used-in-26">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><br></p>
+<h2 id="ks-kill-success">KS: Kill Success</h2>
+<p>This field header indicates the kill command has succeeded .</p>
+<h3 id="format-27">Format</h3>
+<pre><code>KS: Kill Success
+</code></pre>
+<h3 id="examples-27">Examples</h3>
+<pre><code>KS: Kill Success
+</code></pre>
+<h3 id="used-in-27">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><br></p>
+<h2 id="lb-log-begin">LB: Log Begin</h2>
+<p>This field header indicates the beginning of the log .</p>
+<h3 id="format-28">Format</h3>
+<pre><code>LB: optional text
+</code></pre>
+<h3 id="examples-28">Examples</h3>
+<pre><code>LB: **** Beginning of Log ****
+</code></pre>
+<h3 id="used-in-28">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><br></p>
+<h2 id="le-log-end">LE: Log End</h2>
+<p>This field header indicates the end of the log .</p>
+<h3 id="format-29">Format</h3>
+<pre><code>LE: optional text
+</code></pre>
+<h3 id="examples-29">Examples</h3>
+<pre><code>LE: **** End of Log ****
+LE: **** End of Block ****
+</code></pre>
+<h3 id="used-in-29">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><br></p>
+<h2 id="ll-log-length">LL: Log Length</h2>
+<p>This field header precedes the length of the log file in bytes .</p>
+<h3 id="format-30">Format</h3>
+<pre><code>LL: 8 digit ASCII hex Index number
+</code></pre>
+<h3 id="examples-30">Examples</h3>
+<pre><code>LL: 0000004A
+</code></pre>
+<h3 id="used-in-30">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><br></p>
+<h2 id="lk-licence-key">LK: Licence Key</h2>
+<p>This field header precedes the licence key string.
+Any printable ASCII characters are allowed.</p>
+<h3 id="format-31">Format</h3>
+<pre><code>LK: licence Key
+</code></pre>
+<h3 id="examples-31">Examples</h3>
+<pre><code>LK: IamAlicenceKey
+</code></pre>
+<h3 id="used-in-31">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><br></p>
+<h2 id="ls-lock-success">LS: Lock Success</h2>
+<p>This field header indicates the lock command has succeeded.</p>
+<h3 id="format-32">Format</h3>
+<pre><code>LS: Lock Success
+</code></pre>
+<h3 id="examples-32">Examples</h3>
+<pre><code>LS: Lock Success
+</code></pre>
+<h3 id="used-in-32">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><br></p>
+<h2 id="me-message">ME: Message</h2>
+<p>This field header precedes message text.
+It usually precedes the ER: field header to provide additional error information.</p>
+<h3 id="format-33">Format</h3>
+<pre><code>ME: “Message text”
+</code></pre>
+<h3 id="examples-33">Examples</h3>
+<pre><code>ME: “Vibration not supported”
+</code></pre>
+<h3 id="used-in-33">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ab.html">.ab		Abort Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.al.html">.al		Alert Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.da.html">.da	Date Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.ea.html">.ea	Execute Autorun Command (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.ec.html">.ec	Echo</a></p>
+<p><a class="xref" href="commands/protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p><a class="xref" href="commands/protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><a class="xref" href="commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p><a class="xref" href="commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.sr.html">.sr	Show Region</a></p>
+<p><a class="xref" href="commands/protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p><a class="xref" href="commands/protocol.commands.tm.html">.tm	Time Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wa.html">.wa	Write command to Autorun file (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="mf-manufacturer-name">MF: Manufacturer name</h2>
+<p>This field header precedes the manufacturers name .</p>
+<h3 id="format-34">Format</h3>
+<pre><code>MF: “Manufacturer name”
+</code></pre>
+<h3 id="examples-34">Examples</h3>
+<pre><code>MF: Technology Solutions UK ltd.
+</code></pre>
+<h3 id="used-in-34">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="ok-ok-response">OK: OK response</h2>
+<p>This field header is used to terminate the response to a successful command.
+It is always followed by two Carriage return Linefeed pairs .</p>
+<h3 id="format-35">Format</h3>
+<pre><code>OK:
+</code></pre>
+<h3 id="examples-35">Examples</h3>
+<pre><code>OK:
+</code></pre>
+<h3 id="used-in-35">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ab.html">.ab		Abort Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.al.html">.al		Alert Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.da.html">.da	Date Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.ea.html">.ea	Execute Autorun Command (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.ec.html">.ec	Echo</a></p>
+<p><a class="xref" href="commands/protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p><a class="xref" href="commands/protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><a class="xref" href="commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p><a class="xref" href="commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p><a class="xref" href="commands/protocol.commands.sr.html">.sr	Show Region</a></p>
+<p><a class="xref" href="commands/protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p><a class="xref" href="commands/protocol.commands.tm.html">.tm	Time Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wa.html">.wa	Write command to Autorun file (Deprecated)</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="qt-qt-control-word">QT: QT Control Word</h2>
+<p>This field header precedes the 16 bit QT control word (in hex) .</p>
+<h3 id="format-36">Format</h3>
+<pre><code>QT: “QT Value”
+</code></pre>
+<h3 id="examples-36">Examples</h3>
+<pre><code>QT: 4000
+</code></pre>
+<h3 id="used-in-36">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><br></p>
+<h2 id="pc-transponder-epc-pc-value">PC: Transponder EPC PC value</h2>
+<p>This field header precedes Transponder EPC PC value (in hex) .</p>
+<h3 id="format-37">Format</h3>
+<pre><code>PC: “PC Value”
+</code></pre>
+<h3 id="examples-37">Examples</h3>
+<pre><code>PC: 3000
+</code></pre>
+<h3 id="used-in-37">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="ph-phase">PH: Phase</h2>
+<p>This field header precedes tag phase (degrees) used.</p>
+<h3 id="format-38">Format</h3>
+<pre><code>PH: “phase”
+</code></pre>
+<h3 id="examples-38">Examples</h3>
+<pre><code>PH: 135
+</code></pre>
+<h3 id="used-in-38">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><br></p>
+<h2 id="pr-parameters">PR: Parameters</h2>
+<p>This field header precedes parameter values .</p>
+<h3 id="format-39">Format</h3>
+<pre><code>PR: “Parameter Values”
+</code></pre>
+<h3 id="examples-39">Examples</h3>
+<pre><code>PR: -v on -b off
+</code></pre>
+<h3 id="used-in-39">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.al.html">.al		Alert Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p><a class="xref" href="commands/protocol.commands.ec.html">.ec	Echo</a></p>
+<p><a class="xref" href="commands/protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p><a class="xref" href="commands/protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p><a class="xref" href="commands/protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p><a class="xref" href="commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p><a class="xref" href="commands/protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p><a class="xref" href="commands/protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="pv-protocol-version-number">PV: Protocol Version number</h2>
+<p>This field header precedes the protocol version number .</p>
+<h3 id="format-40">Format</h3>
+<pre><code>PV: “Protocol version number”
+</code></pre>
+<h3 id="examples-40">Examples</h3>
+<pre><code>PV: 2.5.0
+</code></pre>
+<h3 id="used-in-40">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="rb-radio-bootloader-version-number">RB: Radio Bootloader version number</h2>
+<p>This field header precedes the radio bootloader version number .</p>
+<h3 id="format-41">Format</h3>
+<pre><code>RB: “Radio bootloader version number”
+</code></pre>
+<h3 id="examples-41">Examples</h3>
+<pre><code>RB: 1.2.0
+</code></pre>
+<h3 id="used-in-41">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="rd-transponder-read-data">RD: Transponder Read Data</h2>
+<p>This field header precedes data read from a Transponder (in hex) .</p>
+<h3 id="format-42">Format</h3>
+<pre><code>RD: “Read Data”
+</code></pre>
+<h3 id="examples-42">Examples</h3>
+<pre><code>RD: 0F078010
+</code></pre>
+<h3 id="used-in-42">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><br></p>
+<h2 id="rf-radio-firmware-version-number">RF: Radio Firmware version number</h2>
+<p>This field header precedes the radio firmware version number .</p>
+<h3 id="format-43">Format</h3>
+<pre><code>RF: “Radio firmware version number”
+</code></pre>
+<h3 id="examples-43">Examples</h3>
+<pre><code>RF: 2.6.0
+</code></pre>
+<h3 id="used-in-43">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="ri-transponder-rssi-value">RI: Transponder RSSI value</h2>
+<p>This field header precedes Transponder RSSI value in dBm .</p>
+<h3 id="format-44">Format</h3>
+<pre><code>RI: “RSSI Value”
+</code></pre>
+<h3 id="examples-44">Examples</h3>
+<pre><code>RI: -63
+</code></pre>
+<h3 id="used-in-44">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ki.html">.ki	Kill command</a></p>
+<p><a class="xref" href="commands/protocol.commands.lo.html">.lo	Lock command</a></p>
+<p><a class="xref" href="commands/protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+<h2 id="rs-radio-serial-number">RS: Radio Serial number</h2>
+<p>This field header precedes the radio serial number which .</p>
+<h3 id="format-45">Format</h3>
+<pre><code>RS: “Radio serial number”
+</code></pre>
+<h3 id="examples-45">Examples</h3>
+<pre><code>RS: 1116-ET-000001
+</code></pre>
+<h3 id="used-in-45">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="rp-rssi-percentage">RP: RSSI Percentage</h2>
+<h3 id="format-46">Format</h3>
+<pre><code>RP: “percentage”
+</code></pre>
+<h3 id="examples-46">Examples</h3>
+<pre><code>RP: 58
+</code></pre>
+<h3 id="used-in-46">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p><br></p>
+<h2 id="sp-single-press-user-defined-switch-action">SP: Single press user defined switch action</h2>
+<p>This field header precedes the action that will be executed when “.sa -s usr” is configured .</p>
+<h3 id="format-47">Format</h3>
+<pre><code>SP: Switch command
+</code></pre>
+<h3 id="examples-47">Examples</h3>
+<pre><code>SP: .bc -t4
+SP: .iv
+</code></pre>
+<h3 id="used-in-47">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p><br></p>
+<h2 id="sr-set-region">SR: Set Region</h2>
+<p>This field header precedes the currently selected region.
+Format:
+SR: region Code</p>
+<h3 id="format-48">Format</h3>
+<h3 id="examples-48">Examples</h3>
+<pre><code>SR: us
+SR: eu
+</code></pre>
+<h3 id="used-in-48">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.sr.html">.sr	Show Region</a></p>
+<p><br></p>
+<h2 id="sw-switch-status">SW: Switch status</h2>
+<p>This field header precedes the switch state value.</p>
+<h3 id="format-49">Format</h3>
+<pre><code>SW: “off/single/double”
+</code></pre>
+<h3 id="examples-49">Examples</h3>
+<pre><code>SW: single
+SW: off
+</code></pre>
+<h3 id="used-in-49">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p><br></p>
+<h2 id="td-transponder-tid-value">TD: Transponder TID value</h2>
+<p>This field header precedes the Transponder TID value (in hex) .</p>
+<h3 id="format-50">Format</h3>
+<h3 id="examples-50">Examples</h3>
+<pre><code>TD: 1C2B3A495867768594A3B2C1
+</code></pre>
+<h3 id="used-in-50">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p><br></p>
+<h2 id="tm-time">TM: Time</h2>
+<p>This field header precedes the Time, in ISO 1601 extended format.</p>
+<h3 id="format-51">Format</h3>
+<pre><code>TM: “Time”
+</code></pre>
+<h3 id="examples-51">Examples</h3>
+<pre><code>TM: 13:12:16
+</code></pre>
+<h3 id="used-in-51">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.tm.html">.tm	Time Command</a></p>
+<p><br></p>
+<h2 id="ub-unit-bootloader-version-number">UB: Unit Bootloader version number</h2>
+<p>This field header precedes the unit bootloader version number.</p>
+<h3 id="format-52">Format</h3>
+<pre><code>UB: “Unit bootloader version number”
+</code></pre>
+<h3 id="examples-52">Examples</h3>
+<pre><code>UB: 1.2.0
+</code></pre>
+<h3 id="used-in-52">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="uf-unit-firmware-version-number">UF: Unit Firmware version number</h2>
+<p>This field header precedes the unit firmware version number.</p>
+<h3 id="format-53">Format</h3>
+<pre><code>UF: “Unit firmware version number”
+</code></pre>
+<h3 id="examples-53">Examples</h3>
+<pre><code>UF: 2.6.0
+</code></pre>
+<h3 id="used-in-53">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="us-unit-serial-number">US: Unit Serial number</h2>
+<p>This field header precedes the unit serial number.</p>
+<h3 id="format-54">Format</h3>
+<pre><code>US: “Unit serial number”
+</code></pre>
+<h3 id="examples-54">Examples</h3>
+<pre><code>US: 1128-EU-000001
+</code></pre>
+<h3 id="used-in-54">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p><br></p>
+<h2 id="ww-number-of-words-written">WW: Number of Words Written</h2>
+<p>This field header precedes the number of words successfully written by a transponder write command.</p>
+<h3 id="format-55">Format</h3>
+<pre><code>WW: nn
+</code></pre>
+<h3 id="examples-55">Examples</h3>
+<h3 id="used-in-55">Used in</h3>
+<p><a class="xref" href="commands/protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p><a class="xref" href="commands/protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p><br></p>
+</esc></article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

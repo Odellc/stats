@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bluetooth HID Mode | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bluetooth HID Mode | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.api.overview.html" title="API Theory Of Operation" class="">API Theory Of Operation</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.api.inventorytagaccess.html" title="API Inventory and Tag Access" class="">API Inventory and Tag Access</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.started.xamarin.html" title="Xamarin" class="">Xamarin</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.dotnet.html" title=".NET" class="">.NET</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.connect.html" title="Connecting" class="">Connecting</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.command.html" title="Commanding" class="">Commanding</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.asciicommander.html" title="AsciiCommander" class="">AsciiCommander</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.operations.html" title="Reader Operations" class="">Reader Operations</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Miscellaneous</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothpairing.html" title="Bluetooth Pairing" class="">Bluetooth Pairing</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.hostbarcode.html" title="Host Barcode" class="">Host Barcode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Application Notes</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothmodes.html" title="Comparison of Bluetooth modes" class="">Comparison of Bluetooth modes</a>
+                          </li>
+                          <li class="active">
+                            <a href="concepts.bluetoothhidmode.html" title="Bluetooth HID mode" class="active">Bluetooth HID mode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="concepts.bluetoothhidmode">
+<h1 id="bluetooth-hid-mode">Bluetooth HID Mode</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The Bluetooth® module in some TSL® readers is able to present the reader to the host as an HID keyboard.
+In this mode the data read by the reader is sent to the host as if it were typed on the host’s keyboard.
+This mode has the advantage that the reader can be used with existing software without change.
+For instance connect to a windows PC via Bluetooth® HID mode, open MS Word and then everything that is
+read by the reader appears in the document as if it was typed.
+There are however some things to bear in mind.
+Bluetooth® HID mode data throughput is typically about 40 characters per second making the reading of large
+transponder populations slow.
+You are limited to two programmable read actions (single press and double press) so complex read operations are
+not possible.
+UHF transponders can cause problems if you only want to read a single transponder.
+Long read range, wide beam angle, variations in transponder performance, multi-path, local environment,
+etc. all combine to add uncertainty.
+The transponder immediately in front of the reader may not be the one the reader receives the strongest
+signal from.</p>
+<h2 id="configuring-a-reader">Configuring a Reader</h2>
+<p>The HID mode settings, like all other settings of the UHF reader, are configured using command parameters.
+Once a parameter has been set it keeps that value until it is changed again or the reader powers down.
+To make a reader power on with parameters other than the default configuration a micro SD card needs to
+be installed into the reader and an auto-run file deployed to the card to setup the required parameters.
+Further information can be found in the application note on setting up an auto-run file.
+Examples of configurations can be found later in this document.</p>
+<h2 id="pairing">Pairing</h2>
+<p>Pairing is achieved in the normal manner for your device, if prompted the default pin is 0000.
+The reader will automatically disconnect if the trigger is not used for 60 seconds.
+(Configurable using the .st –h option).
+The reader will automatically try to reconnect to its paired device when it wakes.
+The reader can only be paired to one device, if you want to connect to a different device
+delete the pairing from the old device first.</p>
+<h2 id="trigger-action">Trigger Action</h2>
+<p>The trigger in HID mode has no auto-repeat facility. Pressing the trigger will perform one
+inventory/read/barcode action and stop until the trigger is released and pressed again.</p>
+<h2 id="hid-ascii-commands">HID ASCII Commands</h2>
+<p>There are two specific HID commands <a class="xref" href="../protocol/commands/protocol.commands.hd.html">.hd</a> and <a class="xref" href="../protocol/commands/protocol.commands.hs.html">.hs</a> these configure the HID mode configuration for the switch
+double press action and the switch single press action. The action that is performed by the each switch is
+controlled by the switch action command <a class="xref" href="../protocol/commands/protocol.commands.sa.html">.sa</a> Both the <a class="xref" href="../protocol/commands/protocol.commands.hd.html">.hd</a> and <a class="xref" href="../protocol/commands/protocol.commands.hs.html">.hs</a> commands operate in the same way but for
+the associated switch press action. The command controls the header (prefix) and termination (suffix) characters
+that are sent around the scanned data and also whether the transponder data is sent as ASCII Hex or just ASCII.</p>
+<h3 id="header-prefix-and-termination-suffix-key-codes">Header (Prefix) and Termination (Suffix) Key Codes</h3>
+<p>Each header (prefix) or terminator (suffix) is specified as up to two key presses.
+They are configured by specifying the two character hex code for each key press to be sent.
+‘ff’ is used to specify to not send a key. As well as sending printable ASCII characters some non-printable
+key presses can also be sent (for example tab or cursor keys) the codes are available in the ASCII Protocol
+documentation along with HID commands. Some examples are provided in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Required key presses</th>
+<th>Parameter value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>‘A’ ‘B’</td>
+<td>‘4142’</td>
+</tr>
+<tr>
+<td>‘A’ ‘a’</td>
+<td>‘4161’</td>
+</tr>
+<tr>
+<td>‘z’</td>
+<td>‘7aff’</td>
+</tr>
+<tr>
+<td>{Cursor down}</td>
+<td>‘82ff’</td>
+</tr>
+<tr>
+<td>‘,’ {tab}</td>
+<td>‘2c09’</td>
+</tr>
+<tr>
+<td>‘@ ‘%’</td>
+<td>‘4025’</td>
+</tr>
+</tbody>
+</table>
+<h3 id="barcode">Barcode</h3>
+<p>When a barcode is scanned there is an optional barcode header (-bh parameter) and optional barcode terminator
+(-bt parameter).
+When a barcode is scanned with a switch press it is sent in HID mode as</p>
+<pre><code>[Barcode header] [Barcode data] [Barcode terminator]
+</code></pre>
+<p>So if the barcode header is set to ‘B’ ‘&gt;’ (‘663e’) and the terminator is set to {enter} (‘0aff’) and the barcode 123ABC
+was scanned the following key sequence is sent to the host ‘B&gt;123ABC{enter}’</p>
+<h3 id="transponder-ascii-mode">Transponder ASCII Mode</h3>
+<p>Transponder data is typically sent as hex ASCII using two ASCII characters per eight bits of the binary data.
+In some applications the transponder EPC or data stored in the transponder may be encoded as ASCII data
+(i.e. the binary data is actually a sequence of eight bit ASCII characters).
+If this is the case then the HID command can be used to specify to send transponder data as ASCII rather than
+ASCII HEX (-td parameter). When in ASCII mode and a non ASCII character is encountered then it is sent as a
+hex code in brackets.</p>
+<pre><code>Transponder data ‘414243444546303132333435’
+
+ASCII mode ‘ABCDEF012345’
+
+HEX mode ‘414243444546303132333435’
+
+Transponder data ‘313233343536A041’
+
+ASCII mode ‘123456[A0]A’
+
+HEX mode ‘313233343536A041’
+</code></pre>
+<p>In the example above the non ASCII ‘A0’ is sent as ‘[A0]’</p>
+<h3 id="transponders">Transponders</h3>
+<p>When a transponder inventory or read operation is performed multiple transponders can be returned in one
+command.
+In addition to the header and terminator that are sent around transponder EPCs and transponder data
+read there is also a header and terminator for the entire inventory cycle or read cycle.
+When specified and the cycle is performed the cycle header and terminator are always sent even if no
+transponders are reported in the cycle.</p>
+<p>Inventory cycle sequence for one transponder</p>
+<pre><code>[Inventory cycle header]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Inventory cycle end]
+Inventory cycle sequence for three transponders
+[Inventory cycle header]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Inventory cycle end]
+</code></pre>
+<p>Read cycle sequence for two read transponders</p>
+<pre><code>[Read cycle header]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Transponder data header] [Transponder data] [Transponder data terminator]
+[Transponder EPC header] [Transponder EPC] [Transponder EPC terminator]
+[Transponder data header] [Transponder data] [Transponder data terminator]
+[Read cycle end]
+</code></pre>
+<h3 id="inventory-and-read-command-hid-parameters">Inventory and Read Command HID Parameters</h3>
+<p>Two new parameters have been added to the inventory <a class="xref" href="../protocol/commands/protocol.commands.iv.html">.iv</a> and read transponder <a class="xref" href="../protocol/commands/protocol.commands.rd.html">.rd</a> commands to support HID
+mode. These parameters are include EPC (-ie) and filter to strongest transponder only (-fs)</p>
+<h4 id="include-epc--ie">Include EPC (-ie)</h4>
+<p>By default the include EPC parameter is on so that the EPC is sent for each transponder scanned. If you require
+to only send data read from the transponder without the EPC then you can set the include EPC parameter to off. In
+this way for each transponder only the read data is returned without the EPC.</p>
+<h4 id="filter-to-strongest--fs">Filter to Strongest (-fs)</h4>
+<p>By default the filter to strongest parameter is off, all transponders returned by the transponder command are
+returned to the host. In HID mode it may be desirable to send only one transponder, to behave more like a
+barcode replacement scanning mode. With the filter to strongest parameter set to on the transponder command
+will complete determining which transponder in the response had the strongest RSSI signal and only the one
+transponder is sent to the host.</p>
+<h2 id="example-configurations">Example Configurations</h2>
+<p>To provide the reader with a custom HID mode configuration requires a micro-SD card to be fitted to the reader.
+On the card place a file called ‘AUTO.TXT’ containing a sequence of configuration commands – this file will be
+executed each time the reader powers up. Note that many of the commands used in the examples rely on power up
+default parameter values.</p>
+<p>The default for the reader in HID mode produces the following output when scanning transponders:</p>
+<pre><code>3038000000000000004B495A
+54534C5F5461675F30303039
+</code></pre>
+<p>Default barcode output appears like this:</p>
+<pre><code>12345678
+2112345678917
+</code></pre>
+<p>Some examples of configuration file content are provided in the following sections.</p>
+<h3 id="specifying-data-type">Specifying Data Type</h3>
+<h4 id="description">Description:</h4>
+<p>To receive transponder data as ASCII we change the default single press trigger action
+<code>(.hs)</code> to return ASCII data (-td asc)</p>
+<h4 id="autorun-file-contents">Autorun file contents:</h4>
+<pre><code>.hs -td asc
+</code></pre>
+<h4 id="example-output-1-ascii-epc-1-hex-epc">Example output (1 ASCII EPC, 1 Hex EPC):</h4>
+<pre><code>TSL_Tag_0007
+08[00][00][00][00][00][00][00]KIZ
+</code></pre>
+<h3 id="changing-headers-and-terminators">Changing Headers and Terminators</h3>
+<h4 id="description-1">Description:</h4>
+<p>To receive each Inventory cycle on a separate line and separate each transponder by a comma and a space
+we can change the default single press trigger action (.hs) to precede each inventory cycle with a newline
+(-ih ff0d). For each transponder EPC identifier we set the header characters to nothing (-eh ffff) and the
+terminator (-et) to the ASCII characters for a comma (2c) and a space (20).</p>
+<h4 id="autorun-file-contents-1">Autorun file contents:</h4>
+<pre><code>.hs -ih ff0d -eh ffff -et 2c20
+</code></pre>
+<h4 id="example-output">Example output</h4>
+<pre><code>54534C5F5461675F30303039, 54534C5F5461675F30303033,
+</code></pre>
+<h4 id="description-2">Description:</h4>
+<p>To place ‘/’ (ASCII character code 2f) around each transponder EPC we change the default single press trigger
+action (.hs) to use a header (-eh) of ‘/’ (2f) and no second character (ff). The terminator (-et) is set to
+‘/’ (2f) and a newline character (0d).</p>
+<h4 id="autorun-file-contents-2">Autorun file contents:</h4>
+<pre><code>.hs -eh 2fff -et 2f0d
+</code></pre>
+<h4 id="example-output-1">Example output</h4>
+<pre><code>/54534C5F5461675F30303039/
+/3038000000000000004B495A/
+</code></pre>
+<h3 id="changing-inventory-operation">Changing Inventory Operation</h3>
+<h4 id="description-3">Description:</h4>
+<p>Configure the inventory (.iv), which is the default single press trigger action, to read only the tag with the
+strongest response (-fs on). Reduce the antenna power to 10 dBm to limit the inventory range (-o 10). Use
+the no action flag (-n) to prevent execution and only set parameter values.</p>
+<h4 id="autorun-file-contents-3">Autorun file contents:</h4>
+<pre><code>.iv -n -fs on -o 10
+</code></pre>
+<h4 id="example-output-2">Example output</h4>
+<pre><code>3038000000000000004B495A
+</code></pre>
+<h3 id="using-multiple-commands">Using Multiple Commands</h3>
+<h4 id="description-4">Description:</h4>
+<p>This configuration will output partial EPC identifiers onto separate lines. The command sequence is as follows:
+Configure (.sa) the single press trigger action to the read command (-s rd).</p>
+<p>Configure the read command (.rd) to not return the normal EPC identifier (-ie off) but to extract a partial EPC
+from the tag EPC memory. Return as data 5 words of the EPC (-dl 05) starting at word 3 of the EPC memory
+(-do 0003). e.g. this returns the last 20 hex digits of a 96-bit EPC. Use the no action flag (-n) to prevent
+execution and only set parameter values.</p>
+<p>Note: Both the –dl and –do parameters use hex numbers. The .rd command reads the EPC memory by default.
+EPC memory starts with the 16-bit CRC followed by the 16-bit Protocol Control (PC) value so the data for the EPC
+identifier starts at word offset 2.</p>
+<h4 id="autorun-file-contents-4">Autorun file contents:</h4>
+<pre><code>.sa -s rd
+.rd -n -ie off –dl 05 –do 0003
+</code></pre>
+<h4 id="example-output-3">Example output</h4>
+<pre><code>4C5F5461675F30303039
+000000000000004B495A
+</code></pre>
+<h4 id="description-5">Description:</h4>
+<p>This configuration extracts the first 2 words of the TID memory bank and outputs, on a separate line for each
+transponder, the EPC identifier and the TID data, surrounded with ‘/’ characters. The command sequence is as
+follows:</p>
+<p>Configure (.sa) the double press trigger action (-d) to read data from the tag (rd).</p>
+<p>Configure the read command (.rd) to return 2 words (-dl02) from the start (-do0000) of the TID memory
+bank (-dbtid). Use the no action flag (-n) to prevent execution and only set parameter values.</p>
+<p>For the double press trigger action (.hd) follow each transponder EPC response with comma and a space (-et
+2c20) then precede TID data with a ‘/’ (-dh 2fff) - follow TID data with a ‘/’ and a newline character (-dt
+2f0d) to place each transponder’s response on a separate line.</p>
+<h4 id="autorun-file-contents-5">Autorun file contents:</h4>
+<pre><code>.sa -d rd
+.rd -n -dbtid -dl02 -do0000
+.hd -et 2c20 -dh 2fff -dt 2f0d
+</code></pre>
+<h4 id="example-output-4">Example output</h4>
+<pre><code>54534C5F5461675F30303033, /E2801105/
+3038000000000000004B495A, /E2006806/
+</code></pre>
+<h3 id="frequently-asked-questions">Frequently Asked Questions</h3>
+<h4 id="why-are-keys-appearing-so-slowly">Why Are Keys Appearing So Slowly?</h4>
+<p>The rate at which keys are typed to a Bluetooth® host is dependent on the host. The key presses are requested by
+the host and the UHF reader returns the next keystroke from its buffer. The HID standard recommends that the host
+polls the ‘keyboard’ at a rate of about 80 per second. Each key press is sent as a key down followed by a key up
+which means that about 40 characters per second is a typical rate. In reality Bluetooth® host devices may request
+key strokes slower or faster than this.</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

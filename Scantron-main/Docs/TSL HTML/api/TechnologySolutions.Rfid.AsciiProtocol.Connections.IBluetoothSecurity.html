@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBluetoothSecurity
+   | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBluetoothSecurity
+   | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.42.2.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity">
+  
+  
+  <h1 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity" class="text-break">Interface IBluetoothSecurity
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods for pairing to readers from within the application</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.html">TechnologySolutions.Rfid.AsciiProtocol.Connections</a></h6>
+  <h6><strong>Assembly</strong>: TechnologySolutions.Rfid.AsciiProtocol.Extensions.dll</h6>
+  <h5 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBluetoothSecurity</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_CanPair_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.CanPair*"></a>
+  <h4 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_CanPair" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.CanPair">CanPair</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this platfom can use <a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.html#TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_PairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress_">PairAsync(BluetoothAddress)</a> to pair to a remote Bluetooth address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanPair { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_CanUnpair_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.CanUnpair*"></a>
+  <h4 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_CanUnpair" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.CanUnpair">CanUnpair</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this platform can use <a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.html#TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_UnpairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress_">UnpairAsync(BluetoothAddress)</a> to remove a pairing to a remote Bluetooth address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanUnpair { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_PairAsync_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.PairAsync*"></a>
+  <h4 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_PairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.PairAsync(TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress)">PairAsync(BluetoothAddress)</h4>
+  <div class="markdown level1 summary"><p>Creates a pairing with the specified <a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress.html">BluetoothAddress</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; PairAsync(BluetoothAddress address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress.html">BluetoothAddress</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The Bluetooth MAC address of the reader to pair to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>The task to create the pairing. The task returns true if the pairing already exists or was created successfully</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_PairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On most platforms this can only succeed if the Bluetooth radio is not currently running a discovery.
+On windows this means that the Bluetooth Settings control panel must be closed.</p>
+</div>
+  <a id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_UnpairAsync_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.UnpairAsync*"></a>
+  <h4 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_UnpairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress_" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.UnpairAsync(TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress)">UnpairAsync(BluetoothAddress)</h4>
+  <div class="markdown level1 summary"><p>Removes a pairing with the specified <a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress.html">BluetoothAddress</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; UnpairAsync(BluetoothAddress address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothAddress.html">BluetoothAddress</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The Bluetooth MAC address of the reader to unpair from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>The task to remove the pairing. The task returns true if the pairing did not exist or was removed successfully</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_UnpairAsync_TechnologySolutions_Rfid_AsciiProtocol_Connections_BluetoothAddress__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On most platforms this can only succeed if the Bluetooth radio is not currently running a discovery.
+On windows this means that the Bluetooth Settings control panel must be closed</p>
+</div>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="TechnologySolutions_Rfid_AsciiProtocol_Connections_IBluetoothSecurity_PairingChanged" data-uid="TechnologySolutions.Rfid.AsciiProtocol.Connections.IBluetoothSecurity.PairingChanged">PairingChanged</h4>
+  <div class="markdown level1 summary"><p>Raised when a reader is paired or unpaired</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;BluetoothPairingEventArgs&gt; PairingChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="TechnologySolutions.Rfid.AsciiProtocol.Connections.BluetoothPairingEventArgs.html">BluetoothPairingEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

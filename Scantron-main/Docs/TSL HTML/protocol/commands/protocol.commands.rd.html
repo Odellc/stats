@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>.rd	Read transponder Command | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=".rd	Read transponder Command | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc">
+    <meta property="docfx:tocrel" content="../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../protocol.introduction.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="../commandsOverview.html" title="Commands Overview" class="">Commands Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="../commandsParser.html" title="Command Parser" class="">Command Parser</a>
+                    </li>
+                    <li class="">
+                      <a href="../responses.html" title="Responses" class="">Responses</a>
+                    </li>
+                    <li class="">
+                      <a href="../protocol.responses.html" title="Response Field Headers" class="">Response Field Headers</a>
+                    </li>
+                    <li class="">
+                      <a href="../filesOnSdCard.html" title="Files on the SD card" class="">Files on the SD card</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../commands/protocol.commands.html" title="Commands" class="">Commands</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../commands/protocol.commands.ab.html" title=".ab Abort Command" class="">.ab Abort Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.al.html" title=".al Alert Command" class="">.al Alert Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ar.html" title=".ar Autorun Command" class="">.ar Autorun Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bc.html" title=".bc Barcode Command" class="">.bc Barcode Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bp.html" title=".bp Block Permalock transponder Command" class="">.bp Block Permalock transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bl.html" title=".bl Battery Level Command" class="">.bl Battery Level Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bt.html" title=".bt Bluetooth&#174; functions" class="">.bt Bluetooth&#174; functions</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.da.html" title=".da Date Command" class="">.da Date Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.dp.html" title=".dp User defined switch Double Press action" class="">.dp User defined switch Double Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ea.html" title=".ea Execute Autorun Command (Deprecated)" class="">.ea Execute Autorun Command (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ec.html" title=".ec Echo" class="">.ec Echo</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.fd.html" title=".fd Factory Defaults Command" class="">.fd Factory Defaults Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ft.html" title=".ft FindTag Command" class="">.ft FindTag Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hc.html" title=".hc HID config Command" class="">.hc HID config Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hd.html" title=".hd HID configuration for double press switch action" class="">.hd HID configuration for double press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hs.html" title=".hs HID configuration for single press switch action" class="">.hs HID configuration for single press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.iv.html" title=".iv Inventory Command" class="">.iv Inventory Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ki.html" title=".ki Kill command" class="">.ki Kill command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.lk.html" title=".lk Licence Key" class="">.lk Licence Key</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.lo.html" title=".lo Lock command" class="">.lo Lock command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.mt.html" title=".mt Mount / Dismount internal memory" class="">.mt Mount / Dismount internal memory</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.pd.html" title=".pd Push Switch Double press" class="">.pd Push Switch Double press</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ps.html" title=".ps Push Switch Single press" class="">.ps Push Switch Single press</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ra.html" title=".ra Read the Autorun File (Deprecated)" class="">.ra Read the Autorun File (Deprecated)</a>
+                          </li>
+                          <li class="active">
+                            <a href="../commands/protocol.commands.rd.html" title=".rd Read transponder Command" class="active">.rd Read transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.rl.html" title=".rl Read the Log file" class="">.rl Read the Log file</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sa.html" title=".sa Switch Action Command" class="">.sa Switch Action Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sh.html" title=".sh Serial HID Command" class="">.sh Serial HID Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sl.html" title=".sl .	Sleep" class="">.sl .	Sleep</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sp.html" title=".sp User defined switch Single Press action" class="">.sp User defined switch Single Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sr.html" title=".sr Show Region" class="">.sr Show Region</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ss.html" title=".ss Switch State Command" class="">.ss Switch State Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.st.html" title=".st Sleep Timeout" class="">.st Sleep Timeout</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.tm.html" title=".tm Time Command" class="">.tm Time Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ts.html" title=".ts Transponder Select" class="">.ts Transponder Select</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.vr.html" title=".vr Version information Command" class="">.vr Version information Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.wa.html" title=".wa Write command to Autorun file (Deprecated)" class="">.wa Write command to Autorun file (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.wr.html" title=".wr Write transponder Command" class="">.wr Write transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ws.html" title=".ws Write Single transponder Command" class="">.ws Write Single transponder Command</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <a href="../hardwareSpecifics.html" title="Hardware Connection Notes" class="">Hardware Connection Notes</a>
+                    </li>
+                    <li class="">
+                      <a href="../releaseNotes.html" title="Release Notes" class="">Release Notes</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="protocol.commands.rd">
+<h1 id="rdread-transponder-command">.rd	Read transponder Command</h1>
+
+<p>Performs an inventory of transponders within the read range of the reader and then reads the data from the requested bank. Returns an error if no transponders are found.</p>
+<table>
+<thead>
+<tr>
+<th>Android</th>
+<th>iOS</th>
+<th>.NET</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>link coming soon</td>
+<td>link coming soon</td>
+<td><a class="xref" href="../../api/TechnologySolutions.Rfid.AsciiProtocol.Commands.ReadTransponderCommand.html">ReadTransponderCommand</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Identifier</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#-al">-al</a></td>
+<td>on/off</td>
+<td>perform an alert after a successful read using the current alert parameters from the .al command</td>
+</tr>
+<tr>
+<td><a href="#-ap">-ap</a></td>
+<td>xxxxxxxx</td>
+<td>Access password, where xxxxxxxx is an 8 character ASCII Hex value</td>
+</tr>
+<tr>
+<td><a href="#-c">-c</a></td>
+<td>on/off</td>
+<td>Include EPC checksum response</td>
+</tr>
+<tr>
+<td><a href="#-db">-db</a></td>
+<td>epc/tid/usr/res</td>
+<td>Data bank to read from</td>
+</tr>
+<tr>
+<td><a href="#-dl">-dl</a></td>
+<td>xx</td>
+<td>Data length, size of the data to read (number of 16 bit words in the range 1 to 253 decimal i.e. 01 to FD hex), where xx is a 2 character ASCII Hex value</td>
+</tr>
+<tr>
+<td><a href="#-do">-do</a></td>
+<td>xxxx</td>
+<td>Data offset, the number of 16 bit words, from the start of the block, to start read from, where xxxx is a 4 character ASCII Hex value</td>
+</tr>
+<tr>
+<td><a href="#-dt">-dt</a></td>
+<td>on/off</td>
+<td>Include date time response</td>
+</tr>
+<tr>
+<td><a href="#-e">-e</a></td>
+<td>on/off</td>
+<td>Include EPC PC information response</td>
+</tr>
+<tr>
+<td><a href="#-fs">-fs</a></td>
+<td>on/off</td>
+<td>filter out all but the strongest RSSI response</td>
+</tr>
+<tr>
+<td><a href="#-ie">-ie</a></td>
+<td>on/off</td>
+<td>Include the EPC response</td>
+</tr>
+<tr>
+<td><a href="#-ic">-ic</a></td>
+<td>on/off</td>
+<td>Include the phase response</td>
+</tr>
+<tr>
+<td><a href="#-ip">-ip</a></td>
+<td>on/off</td>
+<td>Include the channel frequency response</td>
+</tr>
+<tr>
+<td><a href="#-io">-io</a></td>
+<td>on/off</td>
+<td>Inventory only, if set to on then no select will be performed before the inventory round phase is started</td>
+</tr>
+<tr>
+<td><a href="#-ix">-ix</a></td>
+<td>on/off</td>
+<td>Index number each transponder response</td>
+</tr>
+<tr>
+<td><a href="#-n">-n</a></td>
+<td></td>
+<td>No action, just set the parameters</td>
+</tr>
+<tr>
+<td><a href="#-o">-o</a></td>
+<td>nn</td>
+<td>Output power in dBm, where nn is in the range 10 to 29</td>
+</tr>
+<tr>
+<td><a href="#-p">-p</a></td>
+<td></td>
+<td>List the parameter and their current values</td>
+</tr>
+<tr>
+<td><a href="#-ql">-ql</a></td>
+<td>all/nsl/sl</td>
+<td>query Select</td>
+</tr>
+<tr>
+<td><a href="#-qm">-qm</a></td>
+<td>n</td>
+<td>QT mode</td>
+</tr>
+<tr>
+<td><a href="#-qs">-qs</a></td>
+<td>s0,s1,s2,s3</td>
+<td>query Session</td>
+</tr>
+<tr>
+<td><a href="#-qt">-qt</a></td>
+<td>a/b</td>
+<td>query Target</td>
+</tr>
+<tr>
+<td><a href="#-qv">-qv</a></td>
+<td>nn</td>
+<td>Q value (0..15)</td>
+</tr>
+<tr>
+<td><a href="#-r">-r</a></td>
+<td>on/off</td>
+<td>Include transponder RSSI response</td>
+</tr>
+<tr>
+<td><a href="#-sa">-sa</a></td>
+<td>n</td>
+<td>Select action</td>
+</tr>
+<tr>
+<td><a href="#-sb">-sb</a></td>
+<td>epc/tid/usr</td>
+<td>Bank to use for the select mask</td>
+</tr>
+<tr>
+<td><a href="#-sd">-sd</a></td>
+<td>xx..zz</td>
+<td>Select mask data in 2 character ASCII Hex bytes padded to  ensure full bytes, up to a maximum of 32 bytes.</td>
+</tr>
+<tr>
+<td><a href="#-sl">-sl</a></td>
+<td>xx</td>
+<td>Length in bits of the select mask, where xx is a 2 character ASCII Hex value</td>
+</tr>
+<tr>
+<td><a href="#-so">-so</a></td>
+<td>xxxx</td>
+<td>Number of bits from the start of the block to the start of the select mask, where xxxx is a 4 character ASCII Hex value</td>
+</tr>
+<tr>
+<td><a href="#-st">-st</a></td>
+<td>s0,s1,s2,s3,sl</td>
+<td>Select target</td>
+</tr>
+<tr>
+<td><a href="#-x">-x</a></td>
+<td></td>
+<td>Reset the parameters to defaults</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameter-detail">Parameter detail</h2>
+<h3 id="-al">-al</h3>
+<p>perform an alert after a successful read using the current alert parameters from the .al command</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>2</td></tr>
+<tr><th>Default Value</th><td>on</td></tr>
+</table>
+<h3 id="-ap">-ap</h3>
+<p>Access password, where xxxxxxxx is an 8 character ASCII Hex value</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xxxxxxxx</td></tr>
+<tr><th>Range</th><td>8 Hex digits</td></tr>
+<tr><th>Order In Interpretation</th><td>27</td></tr>
+<tr><th>Default Value</th><td>00000000</td></tr>
+</table>
+<h3 id="-c">-c</h3>
+<p>Include EPC checksum response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>3</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-db">-db</h3>
+<p>Data bank to read from</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>epc/tid/usr/res</td></tr>
+<tr><th>Range</th><td>epc/tid/usr/res</td></tr>
+<tr><th>Order In Interpretation</th><td>25</td></tr>
+<tr><th>Default Value</th><td>epc</td></tr>
+</table>
+<h3 id="-dl">-dl</h3>
+<p>Data length, size of the data to read (number of 16 bit words in the range 1 to 253 decimal i.e. 01 to FD hex), where xx is a 2 character ASCII Hex value</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xx</td></tr>
+<tr><th>Range</th><td>2 Hex digits</td></tr>
+<tr><th>Order In Interpretation</th><td>28</td></tr>
+<tr><th>Default Value</th><td>02</td></tr>
+</table>
+<h3 id="-do">-do</h3>
+<p>Data offset, the number of 16 bit words, from the start of the block, to start read from, where xxxx is a 4 character ASCII Hex value</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xxxx</td></tr>
+<tr><th>Range</th><td>4 Hex digits</td></tr>
+<tr><th>Order In Interpretation</th><td>26</td></tr>
+<tr><th>Default Value</th><td>0000</td></tr>
+</table>
+<h3 id="-dt">-dt</h3>
+<p>Include date time response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>9</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-e">-e</h3>
+<p>Include EPC PC information response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>4</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-fs">-fs</h3>
+<p>filter out all but the strongest RSSI response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>10</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-ie">-ie</h3>
+<p>Include the EPC response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>6</td></tr>
+<tr><th>Default Value</th><td>on</td></tr>
+</table>
+<h3 id="-ic">-ic</h3>
+<p>Include the phase response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>7</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-ip">-ip</h3>
+<p>Include the channel frequency response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>8</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-io">-io</h3>
+<p>Inventory only, if set to on then no select will be performed before the inventory round phase is started</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>17</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-ix">-ix</h3>
+<p>Index number each transponder response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>11</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-n">-n</h3>
+<p>No action, just set the parameters</p>
+<table>
+<tr><th>Type</th><td>Switch</td></tr>
+<tr><th>Value</th><td></td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>30</td></tr>
+</table>
+<h3 id="-o">-o</h3>
+<p>Output power in dBm, where nn is in the range 10 to 29</p>
+<table>
+<tr><th>Type</th><td>Output power</td></tr>
+<tr><th>Value</th><td>nn</td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>16</td></tr>
+<tr><th>Default Value</th><td>29</td></tr>
+</table>
+<h3 id="-p">-p</h3>
+<p>List the parameter and their current values</p>
+<table>
+<tr><th>Type</th><td>Switch</td></tr>
+<tr><th>Value</th><td></td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>29</td></tr>
+</table>
+<h3 id="-ql">-ql</h3>
+<p>query Select</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>all/nsl/sl</td></tr>
+<tr><th>Range</th><td>all/nsl/sl</td></tr>
+<tr><th>Order In Interpretation</th><td>21</td></tr>
+<tr><th>Default Value</th><td>all</td></tr>
+</table>
+<h3 id="-qm">-qm</h3>
+<p>QT mode</p>
+<table><tr><td>QT mode
+<p>n =</td><td>Description</td></tr><tr><td>0</td><td>Standard read</td></tr><tr><td>1</td><td>Read from private memory</td></tr><tr><td>2</td><td>Read from private memory short range</td></tr><tr><td>3</td><td>Read the QT control word</td></tr></table><p>
+<table>
+<tr><th>Type</th><td>Numeric</td></tr>
+<tr><th>Value</th><td>n</td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>18</td></tr>
+<tr><th>Default Value</th><td>0</td></tr>
+</table>
+<h3 id="-qs">-qs</h3>
+<p>query Session</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>s0,s1,s2,s3</td></tr>
+<tr><th>Range</th><td>s0/s1/s2/s3</td></tr>
+<tr><th>Order In Interpretation</th><td>22</td></tr>
+<tr><th>Default Value</th><td>s2</td></tr>
+</table>
+<h3 id="-qt">-qt</h3>
+<p>query Target</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>a/b</td></tr>
+<tr><th>Range</th><td>a/b</td></tr>
+<tr><th>Order In Interpretation</th><td>23</td></tr>
+<tr><th>Default Value</th><td>b</td></tr>
+</table>
+<h3 id="-qv">-qv</h3>
+<p>Q value (0..15)</p>
+<table>
+<tr><th>Type</th><td>Output power</td></tr>
+<tr><th>Value</th><td>nn</td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>24</td></tr>
+<tr><th>Default Value</th><td>4</td></tr>
+</table>
+<h3 id="-r">-r</h3>
+<p>Include transponder RSSI response</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>on/off</td></tr>
+<tr><th>Range</th><td>on/off</td></tr>
+<tr><th>Order In Interpretation</th><td>5</td></tr>
+<tr><th>Default Value</th><td>off</td></tr>
+</table>
+<h3 id="-sa">-sa</h3>
+<p>Select action</p>
+<table><tr><td rowspan="2">Parameter
+<p>n=</td><td colspan="2">Matching Action</td><td colspan="2">Non Matching Action</td></tr><tr><td>SL Flag</td><td>Session Flag</td><td>SL Flag</td><td>Session Flag</td></tr><tr><td>0</td><td>assert</td><td>Set A</td><td>deassert</td><td>Set B</td></tr><tr><td>1</td><td>assert</td><td>Set A</td><td>nothing</td><td>nothing</td></tr><tr><td>2</td><td>nothing</td><td>nothing</td><td>deassert</td><td>Set B</td></tr><tr><td>3</td><td>toggle</td><td>toggle</td><td>nothing</td><td>nothing</td></tr><tr><td>4</td><td>deassert</td><td>Set B</td><td>assert</td><td>Set A</td></tr><tr><td>5</td><td>deassert</td><td>Set B</td><td>nothing</td><td>nothing</td></tr><tr><td>6</td><td>nothing</td><td>nothing</td><td>assert</td><td>Set A</td></tr><tr><td>7</td><td>nothing</td><td>nothing</td><td>toggle</td><td>toggle</td></tr></table></p>
+<table>
+<tr><th>Type</th><td>Numeric</td></tr>
+<tr><th>Value</th><td>n</td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>19</td></tr>
+<tr><th>Default Value</th><td>4</td></tr>
+</table>
+<h3 id="-sb">-sb</h3>
+<p>Bank to use for the select mask</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>epc/tid/usr</td></tr>
+<tr><th>Range</th><td>epc/tid/usr</td></tr>
+<tr><th>Order In Interpretation</th><td>12</td></tr>
+<tr><th>Default Value</th><td>epc</td></tr>
+</table>
+<h3 id="-sd">-sd</h3>
+<p>Select mask data in 2 character ASCII Hex bytes padded to  ensure full bytes, up to a maximum of 32 bytes.</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xx..zz</td></tr>
+<tr><th>Range</th><td>Integer number of HEX bytes</td></tr>
+<tr><th>Order In Interpretation</th><td>15</td></tr>
+<tr><th>Default Value</th><td></td></tr>
+</table>
+<h3 id="-sl">-sl</h3>
+<p>Length in bits of the select mask, where xx is a 2 character ASCII Hex value</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xx</td></tr>
+<tr><th>Range</th><td>2 Hex digits</td></tr>
+<tr><th>Order In Interpretation</th><td>14</td></tr>
+<tr><th>Default Value</th><td>00</td></tr>
+</table>
+<h3 id="-so">-so</h3>
+<p>Number of bits from the start of the block to the start of the select mask, where xxxx is a 4 character ASCII Hex value</p>
+<table>
+<tr><th>Type</th><td>HEX</td></tr>
+<tr><th>Value</th><td>xxxx</td></tr>
+<tr><th>Range</th><td>4 Hex digits</td></tr>
+<tr><th>Order In Interpretation</th><td>13</td></tr>
+<tr><th>Default Value</th><td>0000</td></tr>
+</table>
+<h3 id="-st">-st</h3>
+<p>Select target</p>
+<table>
+<tr><th>Type</th><td>Enum</td></tr>
+<tr><th>Value</th><td>s0,s1,s2,s3,sl</td></tr>
+<tr><th>Range</th><td>s0/s1/s2/s3/sl</td></tr>
+<tr><th>Order In Interpretation</th><td>20</td></tr>
+<tr><th>Default Value</th><td>s2</td></tr>
+</table>
+<h3 id="-x">-x</h3>
+<p>Reset the parameters to defaults</p>
+<table>
+<tr><th>Type</th><td>Switch</td></tr>
+<tr><th>Value</th><td></td></tr>
+<tr><th>Range</th><td></td></tr>
+<tr><th>Order In Interpretation</th><td>1</td></tr>
+</table>
+<h2 id="parameter-interpretation-order">Parameter Interpretation Order</h2>
+<p>-x, -al, -c, -e, -r, -ie, -ic, -ip, -dt, -fs, -ix, -sb ,-so, -sl, -sd, -o, -io, -qm, -sa, -st, -ql, -qs, -qt, -qv, -db, -do, -ap, -dl, -p, -n</p>
+<h2 id="parameter-defaults">Parameter Defaults</h2>
+<p>-al on, -ap 00000000, -c off, -db epc, -dl 02, -do 0000, -dt off, -e off, -fs off, -ic off, -ip off, -ie on, -io off,<br>
+-ix off, -o 29, -ql all, -qm 0, -qs s2, -qt b, -qv 4, -r off, -sa 4, -sb epc, -sd, -sl 00, -so 0000, -st s2</p>
+<h2 id="response-headers">Response Headers</h2>
+<p><a class="xref" href="../protocol.responses.html#cf-channel-frequency" title="Channel Frequency">CF</a> <a class="xref" href="../protocol.responses.html#cr-transponder-epc-crc-value" title="Transponder EPC CRC value">CR</a> <a class="xref" href="../protocol.responses.html#cs-command-started" title="Command Started">CS</a> <a class="xref" href="../protocol.responses.html#dt-datetime-stamp" title="Date/Time Stamp">DT</a> <a class="xref" href="../protocol.responses.html#ea-transponder-access-error-code" title="Transponder Access Error Code">EA</a> <a class="xref" href="../protocol.responses.html#eb-transponder-backscatter-error-code" title="Transponder Backscatter Error Code">EB</a> <a class="xref" href="../protocol.responses.html#ep-transponder-epc-value" title="Transponder EPC value">EP</a> <a class="xref" href="../protocol.responses.html#er-error" title="Error">ER</a> <a class="xref" href="../protocol.responses.html#ix-index-number" title="Index Number">IX</a> <a class="xref" href="../protocol.responses.html#me-message" title="Message">ME</a> <a class="xref" href="../protocol.responses.html#ok-ok-response" title="OK response">OK</a> <a class="xref" href="../protocol.responses.html#pc-transponder-epc-pc-value" title="Transponder EPC PC value">PC</a> <a class="xref" href="../protocol.responses.html#ph-phase" title="Phase">PH</a> <a class="xref" href="../protocol.responses.html#pr-parameters" title="Parameters">PR</a> <a class="xref" href="../protocol.responses.html#qt-qt-control-word" title="QT Control Word">QT</a> <a class="xref" href="../protocol.responses.html#rd-transponder-read-data" title="Transponder Read Data">RD</a> <a class="xref" href="../protocol.responses.html#ri-transponder-rssi-value" title="Transponder RSSI value">RI</a></p>
+<h2 id="examples">Examples</h2>
+<table><tr><td>Command</td><td>Response</td><td>Action</td></tr><tr><td>.rd -p -n</td><td>CS: .rd -p -n
+<p>PR: -al on -ap 00000000 -c off -db epc -dl 02</p>
+<p>-do 0000 -dt off -e off –fs off ie on -io off -ix off -n</p>
+<p>-o 29 -p -ql all –qm 0 -qs s2 -qt b -qv 6 -r off -sa 4 -sb epc -sd -sl 00 -so 0000 -st s2 -x</p>
+<p>OK:</td><td>none</td></tr><tr><td>.rd</td><td>CS: .rd<p>
+<p>EP: 310833B2DDD906C000001234</p>
+<p>RD: C3993000</p>
+<p>EP: 341486E37C00000000004254</p>
+<p>RD: 70CF3000</p>
+<p>OK:</td><td>2 transponders read</td></tr><tr><td>.rd -dt on -e on</td><td>CS: .rd -dt on -e on<p>
+<p>DT: 2019-01-26T19:00:52</p>
+<p>EP: 341486E37C00000000004254</p>
+<p>PC: 3000</p>
+<p>RD: 70CF3000</p>
+<p>EP: 310833B2DDD906C000001234</p>
+<p>PC: 3000</p>
+<p>RD: C3993000</p>
+<p>OK:</td><td>2 transponders read</td></tr></table><p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+            xmlns:views="clr-namespace:UpwardFarms.Scantron.Views"
+            x:Class="UpwardFarms.Scantron.Views.MainPage"
+            Title="Scantron" >
+    <ContentPage.Content>
+            <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Spacing="0" Padding="0,0">
+
+                <!-- Title Prompt -->
+                <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" BackgroundColor="#860d38" Spacing="0" Padding="0,4">
+                    <Image Source="upwardfarmstiny.png" HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapMainIcon}"/>
+                        </Image.GestureRecognizers>
+                    </Image> 
+                    <Label Text="{Binding Version}"
+                           TextColor="White"
+                           LineBreakMode="WordWrap"
+                           Style="{DynamicResource ListItemDetailTextStyle}"
+                           FontSize="Medium" FontAttributes="Italic"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,8"
+                           HorizontalOptions="CenterAndExpand"
+                           >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapConfigLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <!-- Main Popup Menu -->
+                <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" BackgroundColor="#c9df9e" Spacing="10" Padding="4,16" IsVisible="{Binding EnablePopup}">
+                    <Label Text="Scan Raft Info" HorizontalOptions="FillAndExpand" FontSize="Large" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapInfoModeLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <BoxView HeightRequest="1" BackgroundColor="#00463c" HorizontalOptions="FillAndExpand" />
+                    <Label Text="Inventory" HorizontalOptions="FillAndExpand" FontSize="Large" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapInventoryModeLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <BoxView HeightRequest="1" BackgroundColor="#00463c" HorizontalOptions="FillAndExpand" IsVisible="{Binding EnableManualEntry}" />
+                    <Label Text="Manual Raft Info" HorizontalOptions="FillAndExpand" FontSize="Large" IsVisible="{Binding EnableManualEntry}" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapManualModeLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <BoxView HeightRequest="1" BackgroundColor="#00463c" HorizontalOptions="FillAndExpand" />
+                    <Label Text="Scan Job Rafts" HorizontalOptions="FillAndExpand" FontSize="Large" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapJobSelectModeLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <BoxView HeightRequest="1" BackgroundColor="#00463c" HorizontalOptions="FillAndExpand" />
+                    <Label Text="Settings" HorizontalOptions="FillAndExpand" FontSize="Large" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapSettingsModeLabel}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            
+                <!-- Scanner Selection Panel -->
+                <Grid 
+                    VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52"/>
+                    </Grid.RowDefinitions>
+                    <ListView x:Name="ScannerListView" 
+                        ItemsSource="{Binding Scanners}"
+                        VerticalOptions="StartAndExpand"
+                        HasUnevenRows="true"
+                        RefreshCommand="{Binding RefreshScannersCommand}"
+                        IsPullToRefreshEnabled="true"
+                        IsRefreshing="{Binding IsRefreshing}"
+                        CachingStrategy="RecycleElement"
+                        ItemTapped="OnScannerTapped"
+                        BackgroundColor="#2ca858"
+                        SelectionMode="None"
+                        Grid.Row="0"
+                        >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Spacing="0" Padding="20,10" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding DisplayName }"
+                                                   LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}"
+                                                   FontSize="Large" FontAttributes="Bold" />
+                                            <Label Text="{Binding State }"
+                                                   LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}"
+                                                   FontSize="Medium" FontAttributes="Bold"
+                                                   HorizontalOptions="EndAndExpand" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            
+                <!-- Settings Panel -->
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" Spacing="8" Padding="8,4" IsVisible="{Binding ShowSettingsPanel}">
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#c9df9e" Spacing="0" Padding="0,8" IsVisible="True">
+                        <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Padding="8,4,8,4">
+                            <Label Text="Scanner Power Level" HorizontalOptions="CenterAndExpand" FontSize="Large" Padding="0,0,0,10"/>
+                            <Label Text="Info Scan" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                            <Slider Value="{Binding PowerLevelInfo}" Maximum="200" MinimumTrackColor="#abd26c" MaximumTrackColor="#2ca858" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="Job Scan" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                            <Slider Value="{Binding PowerLevelJob}" Maximum="200" MinimumTrackColor="#abd26c" MaximumTrackColor="#2ca858" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="Inventory Scan" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                            <Slider Value="{Binding PowerLevelInventory}" Maximum="200" MinimumTrackColor="#abd26c" MaximumTrackColor="#2ca858" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#c9df9e" Spacing="0" Padding="0,8" IsVisible="{Binding EnabledAdvancedSettings}">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Padding="16,4">
+                            <Label Text="Enable Manual RFID Entry" HorizontalOptions="FillAndExpand" FontSize="Large"/>
+                            <Switch IsToggled="{Binding EnableManualEntry}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Padding="16,4">
+                            <Label Text="Enable Test RFIDs" HorizontalOptions="FillAndExpand" FontSize="Large"/>
+                            <Switch IsToggled="{Binding EnableTestId}"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#c9df9e" Spacing="0" Padding="0,8" IsVisible="{Binding EnabledAdvancedSettings}">
+                        <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Padding="16,4">
+                            <Label Text="Host API" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                            <input:RadioButtonGroupView SelectedIndex="{Binding HostSelect}">
+                                <input:RadioButton Text="Official Host"/>
+                                <input:RadioButton Text="Sandbox Test Host" />
+                                <input:RadioButton Text="Custom Host:" />
+                            </input:RadioButtonGroupView>
+                            <Entry Text="{Binding HostCustom}"
+                                    Style="{DynamicResource ListItemDetailTextStyle}"
+                                    FontSize="Small"
+                                    HorizontalTextAlignment="Left"
+                                    HorizontalOptions="FillAndExpand"
+                                    />
+                            <Label Text="Company" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                            <Picker Title="Company" ItemsSource="{Binding Companies}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedCompany}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- View for Selecting A Job -->
+                <ListView x:Name="JobList" ItemsSource="{Binding Jobs}" CachingStrategy="RecycleElement" HasUnevenRows="true" ItemTapped="OnJobTapped"
+                            BackgroundColor="#f0f8f0" Margin="0,10" SeparatorColor="#00463c" SeparatorVisibility="Default" SelectionMode="None" VerticalOptions="StartAndExpand"
+                            IsPullToRefreshEnabled="True" IsRefreshing="{Binding ShowSpinner}" RefreshCommand="{Binding RefreshJobsCommand}" IsVisible="{Binding ShowJobSelectPanel}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View BackgroundColor="#c9df9e">
+                                    <Label Text="{Binding ProdOrderNum}" Margin="15, 10, 10, 10" FontSize="Large" TextColor="#00463c"
+                                        LineBreakMode="TailTruncation"
+                                        HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+                <!-- Header for Scanning A Job -->
+                <Grid 
+                    VerticalOptions="StartAndExpand"
+                    IsVisible="{Binding ShowJobHeader}"
+                    BackgroundColor="#abd26c" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding CurJob}"
+                            LineBreakMode="NoWrap"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            Grid.Row="0"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <!-- View for All Rafts -->
+                <AbsoluteLayout IsVisible="{Binding ShowScanPanel}">
+                <ListView x:Name="RaftList" ItemsSource="{Binding Rafts}" CachingStrategy="RecycleElement" HasUnevenRows="true" ItemTapped="OnRaftTapped"
+                            BackgroundColor="#f0f8f0" Margin="0,10" SeparatorColor="#00463c" SeparatorVisibility="Default" SelectionMode="None" IsVisible="{Binding ShowScanPanel}"
+                            AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View BackgroundColor="#abd26c">
+                                    <StackLayout>
+                                        <!-- Detail (Selected) View Per Raft -->
+                                        <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Spacing="0" Padding="0,0" BackgroundColor="#2ca858" IsVisible="{Binding ShowDetails}" >
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding Identifier}" Margin="15, 10, 10, 0" FontSize="Large" TextColor="#00463c"
+                                                    LineBreakMode="TailTruncation"
+                                                    HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+                                                <ImageButton Source="x.png" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnDeleteTapped" CommandParameter="{Binding .}" IsOpaque="False" BackgroundColor="Transparent"/>
+                                            </StackLayout>
+                                            <Label Text="{Binding Crop}" Margin="15, 0, 0, 0" FontSize="Medium" FontAttributes="None"
+                                                    HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                            <Label Text="{Binding PondLocation}" Margin="15, 0, 0, 10" FontSize="Small" FontAttributes="Italic"
+                                                    HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                            <Grid Margin="0, 10, 0, 0" Padding="15,15,15,15" BackgroundColor="#abd26c">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="25" />
+                                                    <RowDefinition Height="25" />
+                                                    <RowDefinition Height="25" />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="3*" />
+                                                    <ColumnDefinition Width="2*" />
+                                                    <ColumnDefinition Width="50" />
+                                                </Grid.ColumnDefinitions>
+                                                <Label Grid.Column="0" Grid.Row="0" Text="{Binding SeedingPrompt}" FontSize="Medium" FontAttributes="None" 
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding SeedingDate}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="2" Grid.Row="0" Text="{Binding SeederInitials}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="0" Grid.Row="1" Text="{Binding TransplantPrompt}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="1" Grid.Row="1" Text="{Binding TransplantDate}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="2" Grid.Row="1" Text="{Binding TransplanterInitials}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="0" Grid.Row="2" Text="{Binding HarvestPrompt}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="1" Grid.Row="2" Text="{Binding HarvestDate}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Grid.Column="2" Grid.Row="2" Text="{Binding HarvesterInitials}" FontSize="Medium" FontAttributes="None"
+                                                        HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                            </Grid>
+                                            <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Spacing="0" Padding="0,0" BackgroundColor="#c4f08c">
+                                                <Label Text="{Binding DaysInPond}" Margin="15, 10, 0, 4" FontSize="Small" FontAttributes="Italic" 
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                                <Label Text="{Binding LotNumber}" Margin="15, 0, 0, 20" FontSize="Small" FontAttributes="Italic" 
+                                                        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                            </StackLayout>
+                                        </StackLayout>
+
+                                        <!-- Summary (Unexpanded) View Per Raft -->
+                                        <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Spacing="0" Padding="0,0" IsVisible="{Binding ShowSummary}" >
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding Identifier}" Margin="15, 10, 10, 0" FontSize="Large" TextColor="#00463c"
+                                                       LineBreakMode="TailTruncation"
+                                                       HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+                                                <ImageButton Source="x.png" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnDeleteTapped" CommandParameter="{Binding .}" IsOpaque="False" BackgroundColor="Transparent"/>
+                                            </StackLayout>
+                                            <Label Text="{Binding Crop}" Margin="15, 0, 0, 0" FontSize="Medium" FontAttributes="None"
+                                                    HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                            <Label Text="{Binding Status}" Margin="15, 0, 0, 20" FontSize="Medium" FontAttributes="Italic"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!-- Progress Indicator (Spinner) For Posting Data -->
+                <StackLayout
+                    x:Name="aiLayout"
+                    IsVisible="{Binding ShowSpinner}"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="Gray" Opacity="0.5">
+                    <ActivityIndicator
+                        x:Name="ai"
+                        IsRunning="{Binding ShowSpinner}"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Color="Black"/>
+                </StackLayout>
+                </AbsoluteLayout>
+
+                <!-- View for Inventory -->
+                <ListView x:Name="RfidInventory" ItemsSource="{Binding Rafts}" CachingStrategy="RecycleElement" HasUnevenRows="true" ItemTapped="OnRaftTapped"
+                            BackgroundColor="#f0f8f0" Margin="0,10" SeparatorColor="#00463c" SeparatorVisibility="Default" SelectionMode="None" IsVisible="{Binding ShowInventory}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View BackgroundColor="#abd26c">
+                                    <StackLayout>
+                                        <!-- Inventory (Name Only) View Per Raft -->
+                                        <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Spacing="0" Padding="0,0" >
+                                            <Label Text="{Binding Identifier}" Margin="15, 10, 10, 0" FontSize="Large" TextColor="#00463c"
+                                                    LineBreakMode="TailTruncation"
+                                                    HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!-- View for Approving Job Updates -->
+                <Button Text="Approve Scanned Rafts"
+                        Style="{DynamicResource ListItemDetailTextStyle}"
+                        FontAttributes="Italic"
+                        Margin="12,8"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="OnApproveClicked"
+                        IsVisible="{Binding ShowJobAcceptPanel}"/>
+
+                <!-- Scan Raft Progress Prompt -->
+                <StackLayout Orientation="Horizontal" IsVisible="{Binding ShowScanProgressPanel}" BackgroundColor="{Binding CurScanProgressColor}">
+                    <Label Text="{Binding CurScanProgress}"
+                           LineBreakMode="WordWrap"
+                           Style="{DynamicResource ListItemDetailTextStyle}"
+                           FontSize="Medium" FontAttributes="Italic"
+                           HorizontalTextAlignment="Center"
+                           Margin="12,8"
+                           HorizontalOptions="CenterAndExpand" >
+                    </Label>
+                    <ImageButton Source="x.png" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnDeleteAllTapped" IsOpaque="False" BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <!-- Scan Raft Complete -->
+                <Label Text="Raft Update Complete"
+                       LineBreakMode="WordWrap"
+                       Style="{DynamicResource ListItemDetailTextStyle}"
+                       FontSize="Large" FontAttributes="Italic"
+                       HorizontalTextAlignment="Center"
+                       Margin="12,8"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       IsVisible="{Binding ShowScanComplete}">
+                </Label>
+
+                <!-- Optional Hidden Manual Data Entry -->
+                <StackLayout Orientation="Vertical" IsVisible="{Binding ShowManualPanel}" BackgroundColor="#c9df9e">
+                    <Label Text="- or -"
+                        LineBreakMode="WordWrap"
+                        Style="{DynamicResource ListItemDetailTextStyle}"
+                        FontSize="Medium" FontAttributes="Italic"
+                        HorizontalTextAlignment="Center"
+                        Margin="12,8"
+                        HorizontalOptions="CenterAndExpand" />
+                    <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Spacing="0" Padding="4,0">
+                        <Entry x:Name="ManualRaftId"
+                               Text="3D801170200015844B3A0956"
+                               Style="{DynamicResource ListItemDetailTextStyle}"
+                               FontSize="Medium"
+                               HorizontalTextAlignment="Center"
+                               Margin="12,8"
+                               HorizontalOptions="CenterAndExpand"
+                               />
+                        <Button Text="Lookup"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="Center"
+                                Clicked="OnManualClicked" />
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

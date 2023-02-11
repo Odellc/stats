@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started - Xamarin | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started - Xamarin | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.42.2.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started---xamarin">Getting Started - Xamarin</h1>
+
+<h2 id="extraas">extraas</h2>
+<p>Create a normal Xamarin Project of your choice and reference the <a href="https://www.nuget.org/packages/Tsl.AsciiProtocol.Std/">Tsl.AsciiProtocol.Std nuget package</a>.
+You need to add a reference to each project in your solution, the common .NET Standard code and the platform specific code projects.
+We currently support Android, iOS, UWP, and WPF</p>
+<h2 id="platform-specifics">Platform Specifics</h2>
+<h3 id="android">Android</h3>
+<p>You need permissions for USB and Bluetooth</p>
+<p>For the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AsciiTransportsManager.html">AsciiTransportsManager</a> to operate correctly on Android it need to be informted as you Activity pauses and resumes.
+To acheive this we have provided a simple interface <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IAndroidLifecycle.html">IAndroidLifecycle</a>.</p>
+<pre><code class="lang-csharp" name="MainActivity">using System;
+
+using Android.App;
+using Android.Content.PM;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using TechnologySolutions.Rfid.AsciiProtocol.Extensions;
+using TechnologySolutions.Rfid.AsciiProtocol.Transports;
+
+namespace Sdk.Example.Droid
+{
+    [Activity(Label = &quot;Sdk.Example&quot;, Icon = &quot;@mipmap/icon&quot;, Theme = &quot;@style/MainTheme&quot;, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
+        /// &lt;summary&gt;
+        /// Holds a reference to be notified when the Activity pauses and resumes
+        /// &lt;/summary&gt;
+        private IAndroidLifecycle lifecycle;
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+
+            base.OnCreate(savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            // On first resume lifecycle has not been set. Subsequent calls it will already but initialised.
+            if (this.lifecycle == null)
+            {
+                // AsciiTransportsManager should be a singleton in your applcation.
+                // Bait and switch will mean that you can Instantiate it in your .Net Standard portable code 
+                // but it will be the Android platform specific version when referenced here.
+
+                // Get a reference to the AsciiTransportsManager singleton with your DI 
+                // or global reference of choice. Here we use our Locator class
+                AsciiTransportsManager transportsManager;
+                transportsManager = Locator.Locate&lt;IAsciiTransportsManager&gt;() as AsciiTransportsManager;
+                this.lifecycle = transportsManager;
+
+                // Other components that require lifecycle calls can be registered with the AsciiTransportsManager
+                // Here the HostBarcodeHandler is registered.
+                HostBarcodeHandler hostBarcode = Locator.Locate&lt;IHostBarcodeHandler&gt;() as HostBarcodeHandler;
+                transportsManager.RegisterLifecycle(hostBarcode);
+            }
+
+            // Now we have the lifecycle setup, call OnResume passing the activity context each time we resume 
+            this.lifecycle.OnResume(this);
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
+
+            // Call OnPause to notify each time we pause
+            this.lifecycle.OnPause();
+        }
+    }
+}
+</code></pre><h3 id="ios">iOS</h3>
+<p>You need to add com.uk.tsl. to the pList</p>
+<h3 id="uwp">UWP</h3>
+<p>You need to add USB and Bluetooth device capabilities to the appx manifest</p>
+<h3 id="wpf">WPF</h3>
+<p>There are no additional permission to configure.
+To setup a Xamarin Forms project that works with WPF we followed the guide below:
+<a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/other/wpf">https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/other/wpf</a></p>
+<p>We then add a package referennce to Tsl.AsciiProtocol.Std and it is good to go!</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

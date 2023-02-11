@@ -1,0 +1,59 @@
+# macOS junk
+.DS_Store
+
+# SCons junk
+.sconsign.dblite
+
+# Python junk
+*.pyc
+
+# Mock files
+mock_*.go
+
+# Generated version file
+version_gen.go
+
+# Binaries handled by a .gitignore in bin
+
+# Folders
+pkg/
+!vendor/github.com/pkg/
+.vs/
+Docs/HTML/
+
+# Sublime files
+*.sublime-project
+*.sublime-workspace
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.prof
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Test binary, built with `go test -c`
+*.test
+
+# Object & Binary Files
+**/obj/*
+**/bin/*
+
+# Final Android Package
+*.apk

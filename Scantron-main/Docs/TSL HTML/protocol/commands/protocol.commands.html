@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ASCII Protocol Commands | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ASCII Protocol Commands | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc">
+    <meta property="docfx:tocrel" content="../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../protocol.introduction.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="../commandsOverview.html" title="Commands Overview" class="">Commands Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="../commandsParser.html" title="Command Parser" class="">Command Parser</a>
+                    </li>
+                    <li class="">
+                      <a href="../responses.html" title="Responses" class="">Responses</a>
+                    </li>
+                    <li class="">
+                      <a href="../protocol.responses.html" title="Response Field Headers" class="">Response Field Headers</a>
+                    </li>
+                    <li class="">
+                      <a href="../filesOnSdCard.html" title="Files on the SD card" class="">Files on the SD card</a>
+                    </li>
+                    <li class="active">
+                      <span class="expand-stub"></span>
+                      <a href="../commands/protocol.commands.html" title="Commands" class="active">Commands</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../commands/protocol.commands.ab.html" title=".ab Abort Command" class="">.ab Abort Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.al.html" title=".al Alert Command" class="">.al Alert Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ar.html" title=".ar Autorun Command" class="">.ar Autorun Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bc.html" title=".bc Barcode Command" class="">.bc Barcode Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bp.html" title=".bp Block Permalock transponder Command" class="">.bp Block Permalock transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bl.html" title=".bl Battery Level Command" class="">.bl Battery Level Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.bt.html" title=".bt Bluetooth&#174; functions" class="">.bt Bluetooth&#174; functions</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.da.html" title=".da Date Command" class="">.da Date Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.dp.html" title=".dp User defined switch Double Press action" class="">.dp User defined switch Double Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ea.html" title=".ea Execute Autorun Command (Deprecated)" class="">.ea Execute Autorun Command (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ec.html" title=".ec Echo" class="">.ec Echo</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.fd.html" title=".fd Factory Defaults Command" class="">.fd Factory Defaults Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ft.html" title=".ft FindTag Command" class="">.ft FindTag Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hc.html" title=".hc HID config Command" class="">.hc HID config Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hd.html" title=".hd HID configuration for double press switch action" class="">.hd HID configuration for double press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.hs.html" title=".hs HID configuration for single press switch action" class="">.hs HID configuration for single press switch action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.iv.html" title=".iv Inventory Command" class="">.iv Inventory Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ki.html" title=".ki Kill command" class="">.ki Kill command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.lk.html" title=".lk Licence Key" class="">.lk Licence Key</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.lo.html" title=".lo Lock command" class="">.lo Lock command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.mt.html" title=".mt Mount / Dismount internal memory" class="">.mt Mount / Dismount internal memory</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.pd.html" title=".pd Push Switch Double press" class="">.pd Push Switch Double press</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ps.html" title=".ps Push Switch Single press" class="">.ps Push Switch Single press</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ra.html" title=".ra Read the Autorun File (Deprecated)" class="">.ra Read the Autorun File (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.rd.html" title=".rd Read transponder Command" class="">.rd Read transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.rl.html" title=".rl Read the Log file" class="">.rl Read the Log file</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sa.html" title=".sa Switch Action Command" class="">.sa Switch Action Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sh.html" title=".sh Serial HID Command" class="">.sh Serial HID Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sl.html" title=".sl .	Sleep" class="">.sl .	Sleep</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sp.html" title=".sp User defined switch Single Press action" class="">.sp User defined switch Single Press action</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.sr.html" title=".sr Show Region" class="">.sr Show Region</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ss.html" title=".ss Switch State Command" class="">.ss Switch State Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.st.html" title=".st Sleep Timeout" class="">.st Sleep Timeout</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.tm.html" title=".tm Time Command" class="">.tm Time Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ts.html" title=".ts Transponder Select" class="">.ts Transponder Select</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.vr.html" title=".vr Version information Command" class="">.vr Version information Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.wa.html" title=".wa Write command to Autorun file (Deprecated)" class="">.wa Write command to Autorun file (Deprecated)</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.wr.html" title=".wr Write transponder Command" class="">.wr Write transponder Command</a>
+                          </li>
+                          <li class="">
+                            <a href="../commands/protocol.commands.ws.html" title=".ws Write Single transponder Command" class="">.ws Write Single transponder Command</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <a href="../hardwareSpecifics.html" title="Hardware Connection Notes" class="">Hardware Connection Notes</a>
+                    </li>
+                    <li class="">
+                      <a href="../releaseNotes.html" title="Release Notes" class="">Release Notes</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="protocol.commands">
+<h1 id="ascii-protocol-commands">ASCII Protocol Commands</h1>
+
+<p><a class="xref" href="protocol.commands.ab.html">.ab		Abort Command</a></p>
+<p>Abort command, terminates the current command and any pending commands.</p>
+<p><a class="xref" href="protocol.commands.al.html">.al		Alert Command</a></p>
+<p>Configures and alerts the user.</p>
+<p><a class="xref" href="protocol.commands.ar.html">.ar	Autorun Command</a></p>
+<p>If supported by the reader, this command is used to read/write/delete/execute the AUTO.</p>
+<p><a class="xref" href="protocol.commands.bc.html">.bc	Barcode Command</a></p>
+<p>Initiates a barcode read.</p>
+<p><a class="xref" href="protocol.commands.bp.html">.bp	Block Permalock transponder Command</a></p>
+<p>This command is used to read or write the block permalock status on supported transponders.</p>
+<p><a class="xref" href="protocol.commands.bl.html">.bl		Battery Level Command</a></p>
+<p>Returns Battery level as percentage and Charge status.</p>
+<p><a class="xref" href="protocol.commands.bt.html">.bt	Bluetooth&#174; functions</a></p>
+<p>Reads the Bluetooth® address, additionally the Bluetooth® can be reset and configured.</p>
+<p><a class="xref" href="protocol.commands.da.html">.da	Date Command</a></p>
+<p>Reads or sets the date.</p>
+<p><a class="xref" href="protocol.commands.dp.html">.dp	User defined switch Double Press action</a></p>
+<p>Reads or sets the double press user action used when “.</p>
+<p><a class="xref" href="protocol.commands.ea.html">.ea	Execute Autorun Command (Deprecated)</a></p>
+<p>This command will force the autorun file to run.</p>
+<p><a class="xref" href="protocol.commands.ec.html">.ec	Echo</a></p>
+<p>Determines whether commands are echoed back to the host.</p>
+<p><a class="xref" href="protocol.commands.fd.html">.fd	Factory Defaults Command</a></p>
+<p>Restores all command parameters to their default settings.</p>
+<p><a class="xref" href="protocol.commands.ft.html">.ft	FindTag Command</a></p>
+<p>Performs/configures find transponder using the reader.</p>
+<p><a class="xref" href="protocol.commands.hc.html">.hc		HID config Command</a></p>
+<p>Defines settings for HID.</p>
+<p><a class="xref" href="protocol.commands.hd.html">.hd		HID configuration for double press switch action</a></p>
+<p>Controls how data is presented when Bluetooth® is configured for HID by the .</p>
+<p><a class="xref" href="protocol.commands.hs.html">.hs		HID configuration for single press switch action</a></p>
+<p>Controls how data is presented when Bluetooth® is configured for HID by the .</p>
+<p><a class="xref" href="protocol.commands.iv.html">.iv	Inventory Command</a></p>
+<p>Performs an inventory of transponders within the read range of the reader.</p>
+<p><a class="xref" href="protocol.commands.ki.html">.ki	Kill command</a></p>
+<p>This command is used to kill transponders.</p>
+<p><a class="xref" href="protocol.commands.lk.html">.lk	Licence Key</a></p>
+<p>This command reads, writes and deletes the Licence Key stored in the reader’s non-volatile memory.</p>
+<p><a class="xref" href="protocol.commands.lo.html">.lo	Lock command</a></p>
+<p>This command is used to control access to the memory banks and passwords of the selected transponders.</p>
+<p><a class="xref" href="protocol.commands.mt.html">.mt	Mount / Dismount internal memory</a></p>
+<p>Mounts or Dismounts the internal memory, when connected via USB, on readers that support internal memory.</p>
+<p><a class="xref" href="protocol.commands.pd.html">.pd	Push Switch Double press</a></p>
+<p>Starts a timed software switch double press, this is equivalent to a double press and hold of the hardware switch.</p>
+<p><a class="xref" href="protocol.commands.ps.html">.ps	Push Switch Single press</a></p>
+<p>Starts a timed software switch single press, this is equivalent to a single press and hold of the hardware switch.</p>
+<p><a class="xref" href="protocol.commands.ra.html">.ra	Read the Autorun File (Deprecated)</a></p>
+<p>Reads the Autorun file, additionally the Autorun file can be deleted.</p>
+<p><a class="xref" href="protocol.commands.rd.html">.rd	Read transponder Command</a></p>
+<p>Performs an inventory of transponders within the read range of the reader and then reads the data from the requested bank.</p>
+<p><a class="xref" href="protocol.commands.rl.html">.rl		Read the Log file</a></p>
+<p>Reads log file, additionally the log file can be deleted or logging can be turned on or off.</p>
+<p><a class="xref" href="protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<p>Defines what happens when the switch is pressed.</p>
+<p><a class="xref" href="protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<p>Configures the reader to send HID style responses over an SPP link.</p>
+<p><a class="xref" href="protocol.commands.sl.html">.sl	.	Sleep</a></p>
+<p>This command puts the unit into sleep mode.</p>
+<p><a class="xref" href="protocol.commands.sp.html">.sp	User defined switch Single Press action</a></p>
+<p>Reads or sets the single press user action used when “.</p>
+<p><a class="xref" href="protocol.commands.sr.html">.sr	Show Region</a></p>
+<p>If supported by the reader, this command reads RF operating region and the permitted output power range.</p>
+<p><a class="xref" href="protocol.commands.ss.html">.ss	Switch State Command</a></p>
+<p>Reads the state of the switch</p>
+<p><a class="xref" href="protocol.commands.st.html">.st	Sleep Timeout</a></p>
+<p>Sets the timeout before the reader sleeps if there are no connections to the reader or if no trigger presses occur in HID mode.</p>
+<p><a class="xref" href="protocol.commands.tm.html">.tm	Time Command</a></p>
+<p>Reads or sets the time.</p>
+<p><a class="xref" href="protocol.commands.ts.html">.ts	Transponder Select</a></p>
+<p>This command is used to set the state of transponders.</p>
+<p><a class="xref" href="protocol.commands.vr.html">.vr	Version information Command</a></p>
+<p>Reads the version information from the reader</p>
+<p><a class="xref" href="protocol.commands.wa.html">.wa	Write command to Autorun file (Deprecated)</a></p>
+<p>Writes the following command to the end of the Autorun file.</p>
+<p><a class="xref" href="protocol.commands.wr.html">.wr	Write transponder Command</a></p>
+<p>This command tries to write data to any transponder that meets the select criteria.</p>
+<p><a class="xref" href="protocol.commands.ws.html">.ws	Write Single transponder Command</a></p>
+<p>This command writes data to a single transponder.</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

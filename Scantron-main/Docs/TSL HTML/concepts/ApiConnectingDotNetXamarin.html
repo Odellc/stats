@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Connecting to a reader with .NET (including Xamarin) | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Connecting to a reader with .NET (including Xamarin) | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.api.overview.html" title="API Theory Of Operation" class="">API Theory Of Operation</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.api.inventorytagaccess.html" title="API Inventory and Tag Access" class="">API Inventory and Tag Access</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.started.xamarin.html" title="Xamarin" class="">Xamarin</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.dotnet.html" title=".NET" class="">.NET</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.connect.html" title="Connecting" class="">Connecting</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.command.html" title="Commanding" class="">Commanding</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.asciicommander.html" title="AsciiCommander" class="">AsciiCommander</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.operations.html" title="Reader Operations" class="">Reader Operations</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Miscellaneous</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothpairing.html" title="Bluetooth Pairing" class="">Bluetooth Pairing</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.hostbarcode.html" title="Host Barcode" class="">Host Barcode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Application Notes</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothmodes.html" title="Comparison of Bluetooth modes" class="">Comparison of Bluetooth modes</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.bluetoothhidmode.html" title="Bluetooth HID mode" class="">Bluetooth HID mode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="connecting-to-a-reader-with-net-including-xamarin">Connecting to a reader with .NET (including Xamarin)</h1>
+
+<p>The Xamarin SDK is basically the Windows Phone (and previously Windows) SDK built as a portable class
+library for the appropriate targets. The major changes are contained in the TechnologySolutions.Rfid.Extensions namespace.</p>
+<p>Previously the AsciiCommander took an IAsciiSerialPort instance to its Connect method to establish a connection
+to a reader and the Disconnect method to close the connection.
+All these methods did was to effectively assign the AsciiCommander an IAsciiSerialPort to use and then dispose it to close the connection.</p>
+<p>The Xamarin SDK deprecates the connect and disconnect from the AsciiCommander and replaces this with a Transport property.
+Also the IAsciiSerialPort has been renamed to IAsciiSerialTransort to reflect that the transport is not always a serial port.
+To connect the AsciiCommander the Transport is assigned to a valid IAsciiSerialTransport instance and to disconnect this is set to null.
+The responsibility for opening and closing the connection is now with the IReaderConnectionManager.</p>
+<p>An instance of the IReaderConnectionManager can:</p>
+<ul>
+<li>Report changes in connection state through the ConnectionStateChanged (connection, state) event</li>
+<li>Enumerate the available INamedReader connections through ListAvailableReadersAsync</li>
+<li>Connect to and disconnect from an INamedReader instance using the Connect and Disconnect methods</li>
+</ul>
+<p>It is anticipated that the IReaderConnectionManager will evolve.
+Readers can be connected via USB as well as Bluetooth and this may be supported on the mobile devices in addition to the desktop with emerging USB host support on mobile.
+A connection will need to be handed over from Bluetooth to USB if a reader is connected via USB that was previously connection via Bluetooth.
+With the separation between connections and commanders there is the possibility that multiple AsciiCommander
+instances may exist in the application, with different responder chains, for different purposes and the transport
+switched between them depending on the current application function.</p>
+<p>With out of band (OOB) pairing, via barcode or NFC for Bluetooth and plugging in USB connections there is the
+possibility that new devices can arrive and the application may want to connect immediately to the new device.
+The connection manager could have a mechanism to announce a new arrival to allow an application to connect to a
+presented device rather than have the user identify and select from a list of connections.</p>
+<p>While most mobile applications will operate with a single connection the SDK should not impose this limit.
+Mobile devices and definitely desktop application may support connections to multiple readers.
+This would permit a single application to aggregate data from multiple readers before submitting to a further service (cloud).</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

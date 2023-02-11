@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started - Reader Operations | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started - Reader Operations | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.api.overview.html" title="API Theory Of Operation" class="">API Theory Of Operation</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.api.inventorytagaccess.html" title="API Inventory and Tag Access" class="">API Inventory and Tag Access</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.started.xamarin.html" title="Xamarin" class="">Xamarin</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.dotnet.html" title=".NET" class="">.NET</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.connect.html" title="Connecting" class="">Connecting</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.command.html" title="Commanding" class="">Commanding</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.asciicommander.html" title="AsciiCommander" class="">AsciiCommander</a>
+                          </li>
+                          <li class="active">
+                            <a href="concepts.started.operations.html" title="Reader Operations" class="active">Reader Operations</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Miscellaneous</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothpairing.html" title="Bluetooth Pairing" class="">Bluetooth Pairing</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.hostbarcode.html" title="Host Barcode" class="">Host Barcode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Application Notes</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothmodes.html" title="Comparison of Bluetooth modes" class="">Comparison of Bluetooth modes</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.bluetoothhidmode.html" title="Bluetooth HID mode" class="">Bluetooth HID mode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="concepts.started.operations">
+<h1 id="getting-started---reader-operations">Getting Started - Reader Operations</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Reader Operations have been introduced as a high-level API for working with UHF RFID Readers.
+A <a class="xref" href="../api/TechnologySolutions.Rfid.IReader.html">IReader</a> has a number of <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperation.html">IReaderOperation</a>.</p>
+<p>These operations define a high level reader task which include:</p>
+<ul>
+<li>Performing an RFID inventory when the trigger of the reader is pressed</li>
+<li>Performing a barcode scan when the trigger of the reader is pressed</li>
+<li>Commanding the barcode engine on the host terminal when the trigger of the reader is pressed</li>
+<li>Performing an RFID inventory on command</li>
+<li>Performing a Tag Access operation (read / write / lock / kill / blockpermalock etc...) on command</li>
+<li>Reporting periodic reader status</li>
+</ul>
+<p>These operations are more declarative than using the <a class="xref" href="../protocol/protocol.introduction.html">Technology Solutions UK Ltd ASCII 2 Protocol</a> directly and
+their use is covered in the <a class="xref" href="../api/TechnologySolutions.Rfid.html">TechnologySolutions.Rfid</a> namespace summary and in the Reader Operations
+sample code.</p>
+<p>One concern left to the developer is that the reader is only capable of running one instance of the same
+command at any one time. For this reason you should only have one operation enabled using a command at any
+one time.</p>
+<p>If you have an inventory running on trigger press and then perform a commanded inventory the trigger press
+inventory will be impacted.</p>
+<p>If you have a inventory running on trigger press and then perform a commanded read the two commands will
+not affect each other.</p>
+<h2 id="reader-operations-for-ascii-protocol-readers">Reader Operations for ASCII Protocol Readers</h2>
+<p>A reader operation can be started in a few ways.
+It can also just run once or be repeated at a specified interval.</p>
+<p>A <strong>hardware</strong> trigger is where the operation is run on the reader and messages are sent back to the host to report progress.
+An ASCII Protocol reader can only have one primary and one secondary trigger operation. The last enabled operation for each
+trigger is the one assigned to the trigger. Enabling a new operation assigned to the trigger will replace the previous although
+the previous operation <strong>should</strong> be disabled first.</p>
+<p>A <strong>software</strong> trigger is where the operation is commanded from the host in response to the reader reporting changes in trigger state.
+As these operations are commanded from the host you could have multiple operations for the same trigger but this is not advised
+as it will be confusing for an operator.</p>
+<p>A <strong>manual</strong> trigger is where the operation is started from code. The <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperation.html#TechnologySolutions_Rfid_IReaderOperation_StartAsync">StartAsync()</a> will
+not return until the task is completed (or canceled with <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperation.html#TechnologySolutions_Rfid_IReaderOperation_StopAsync">StopAsync()</a> ). If starting a
+periodic task ensure to use @System.Threading.Tasks.Task.Run or similar. When running a single reader operation
+(e.g. to write a transponder) you can simple await <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperation.html#TechnologySolutions_Rfid_IReaderOperation_StartAsync">StartAsync()</a> and follow with an
+await <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperation.html#TechnologySolutions_Rfid_IReaderOperation_StopAsync">StopAsync()</a></p>
+<h3 id="barcode">Barcode</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationBarcode.html">IReaderOperationBarcode</a> performs a barcode read per trigger press. The trigger is
+assigned using <a class="xref" href="../api/TechnologySolutions.Rfid.ITriggerSource.html#TechnologySolutions_Rfid_ITriggerSource_TriggerIndex">TriggerIndex</a>. This command is <strong>hardware</strong> triggered
+so cannot be repeated.</p>
+<p>For ASCII Protocol readers the trigger is either the primary /single click (TriggerIndex = 1) or secondary
+double click (TriggerIndex = 2).</p>
+<p>to implement this command <a class="xref" href="../protocol/commands/protocol.commands.sa.html">.sa	Switch Action Command</a> is used to set the trigger action to a <a class="xref" href="../protocol/commands/protocol.commands.bc.html">.bc	Barcode Command</a> and
+a barcode responder is added to the responder chain</p>
+<h3 id="battery-status">Battery Status</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationBatteryStatus.html">IReaderOperationBatteryStatus</a> runs periodically to report the reader battery status.
+This runs periodically at the specified <a class="xref" href="../api/TechnologySolutions.Rfid.ITriggerSource.html#TechnologySolutions_Rfid_ITriggerSource_TriggerInterval">TriggerInterval</a>.
+It is a <strong>manual</strong> operation but has a <a class="xref" href="../api/TechnologySolutions.Rfid.ITriggerSource.html#TechnologySolutions_Rfid_ITriggerSource_TriggerInterval">TriggerInterval</a> so can be left
+running while the reader remain connected.</p>
+<p>For ASCII Protocol readers this command uses the <a class="xref" href="../protocol/commands/protocol.commands.bl.html">.bl		Battery Level Command</a> command to obtain the battery and charge status.</p>
+<h3 id="find-tag">Find Tag</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationFindTag.html">IReaderOperationFindTag</a> is used to locate a transponder.
+This command is <strong>hardware</strong> triggered.</p>
+<p>For ASCII Protocol readers that support the <a class="xref" href="../protocol/commands/protocol.commands.ft.html">.ft	FindTag Command</a> this will be used.
+Where the <a class="xref" href="../protocol/commands/protocol.commands.ft.html">.ft	FindTag Command</a> is not supported the operation falls back to the <a class="xref" href="../protocol/commands/protocol.commands.iv.html">.iv	Inventory Command</a>.</p>
+<p>The state of the operation is reported with <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationFindTag.html#TechnologySolutions_Rfid_IReaderOperationFindTag_TagFindState">TagFindState</a>
+and <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationFindTag.html#TechnologySolutions_Rfid_IReaderOperationFindTag_TagFindStateChanged">TagFindStateChanged</a>.</p>
+<p>The proximity to the transponder(s) identified by the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationFindTag.html#TechnologySolutions_Rfid_IReaderOperationFindTag_Filter">Filter</a>
+is reported by the @TechnologySolutions.Rfid.IReaderOperationFingTag.TagFindUpdate. This reports the highest
+discovered signal strength to a matching transponder and whether more than one transponder is responding.</p>
+<h3 id="host-barcode">Host Barcode</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationHostBarcode.html">IReaderOperationHostBarcode</a> is used to trigger a barcode engine on the host terminal
+from the trigger on the reader via <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IHostBarcodeHandler.html">IHostBarcodeHandler</a> . This operation will cancel any <strong>hardware</strong> operation assigned to its
+<a class="xref" href="../api/TechnologySolutions.Rfid.ITriggerSource.html#TechnologySolutions_Rfid_ITriggerSource_TriggerIndex">TriggerIndex</a> but is run as a <strong>software</strong> trigger.</p>
+<p>As the trigger is pressed it will call <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBarcodeHandler.html#TechnologySolutions_Rfid_AsciiProtocol_Extensions_IBarcodeHandler_InitiateScan">InitiateScan()</a> and
+as the trigger is released it will call <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IBarcodeHandler.html#TechnologySolutions_Rfid_AsciiProtocol_Extensions_IBarcodeHandler_CancelScan">CancelScan()</a>.</p>
+<h3 id="inventory">Inventory</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationInventory.html">IReaderOperationInventory</a> is used to report transponders on trigger press.
+This operation is <strong>hardware</strong> triggered.</p>
+<p>For ASCII Protocol reader this is installed as a <a class="xref" href="../protocol/commands/protocol.commands.iv.html">.iv	Inventory Command</a> on the switch using <a class="xref" href="../protocol/commands/protocol.commands.sa.html">.sa	Switch Action Command</a></p>
+<h3 id="transponders">Transponders</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTransponders.html">IReaderOperationTransponders</a> is used for perform inventory operations as a
+<strong>manual</strong> OR a <strong>software</strong> trigger. Specify the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTransponders.html#TechnologySolutions_Rfid_IReaderOperationTransponders_Filter">Filter</a>
+to identify the transponders to return and the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTransponders.html#TechnologySolutions_Rfid_IReaderOperationTransponders_Report">Report</a> to
+identify what fields to return per transponder.</p>
+<h3 id="transponder-access">Transponder Access</h3>
+<p><a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTranspondersAccess.html">IReaderOperationTranspondersAccess</a> is used for perform Tag Access operations as a
+<strong>manual</strong> OR a <strong>software</strong> trigger. Specify the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTransponders.html#TechnologySolutions_Rfid_IReaderOperationTransponders_Filter">Filter</a>
+to identify the transponders to return and the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTransponders.html#TechnologySolutions_Rfid_IReaderOperationTransponders_Report">Report</a> to
+identify what fields to return per transponder. Specify the <a class="xref" href="../api/TechnologySolutions.Rfid.IReaderOperationTranspondersAccess.html#TechnologySolutions_Rfid_IReaderOperationTranspondersAccess_Access">Access</a>
+to identify the details of the <strong>Tag Access</strong> to perform.</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

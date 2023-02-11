@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\BarcodeInventory.cs" />
+    <Compile Remove="Services\IMonitorBarcode.cs" />
+    <Compile Remove="Views\FindTagPage.xaml.cs" />
+    <Compile Remove="Views\ChangeEpcPage.xaml.cs" />
+    <Compile Remove="Views\BarcodePage.xaml.cs" />
+    <Compile Remove="Views\ReadersPage.xaml.cs" />
+    <Compile Remove="Views\ReadWritePage.xaml.cs" />
+    <Compile Remove="ViewModels\BarcodeViewModel.cs" />
+    <Compile Remove="ViewModels\ChangeEpcViewModel.cs" />
+    <Compile Remove="ViewModels\FindTagViewModel.cs" />
+    <Compile Remove="ViewModels\ReadersViewModel.cs" />
+    <Compile Remove="ViewModels\ReaderViewModel.cs" />
+    <Compile Remove="ViewModels\ReadWriteViewModel.cs" />
+    <Compile Remove="Services\ProximityEpcChangerOperation.cs" />
+    <Compile Remove="Services\TagReaderWriterOperation.cs" />
+    <Compile Remove="Services\ITagEpcChanger.cs" />
+    <Compile Remove="Services\HostBarcodeMock.cs" />
+    <Compile Remove="ViewModels\RaftsViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tsl.AsciiProtocol.Std" Version="1.4.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />  
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="3.4.4" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ScannerPage.xaml.cs">
+      <DependentUpon>ScannerPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\FindTagPage.xaml" />
+    <EmbeddedResource Remove="Views\ChangeEpcPage.xaml" />
+    <EmbeddedResource Remove="Views\BarcodePage.xaml" />
+    <EmbeddedResource Remove="Views\ReadersPage.xaml" />
+    <EmbeddedResource Remove="Views\ReadWritePage.xaml" />
+  </ItemGroup>
+</Project>

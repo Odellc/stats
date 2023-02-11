@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Connecting to an ASCII 2 reader | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Connecting to an ASCII 2 reader | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.api.overview.html" title="API Theory Of Operation" class="">API Theory Of Operation</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.api.inventorytagaccess.html" title="API Inventory and Tag Access" class="">API Inventory and Tag Access</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.started.xamarin.html" title="Xamarin" class="">Xamarin</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.dotnet.html" title=".NET" class="">.NET</a>
+                          </li>
+                          <li class="active">
+                            <a href="concepts.started.connect.html" title="Connecting" class="active">Connecting</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.command.html" title="Commanding" class="">Commanding</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.asciicommander.html" title="AsciiCommander" class="">AsciiCommander</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.operations.html" title="Reader Operations" class="">Reader Operations</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Miscellaneous</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothpairing.html" title="Bluetooth Pairing" class="">Bluetooth Pairing</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.hostbarcode.html" title="Host Barcode" class="">Host Barcode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Application Notes</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothmodes.html" title="Comparison of Bluetooth modes" class="">Comparison of Bluetooth modes</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.bluetoothhidmode.html" title="Bluetooth HID mode" class="">Bluetooth HID mode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="concepts.started.connect">
+<h1 id="connecting-to-an-ascii-2-reader">Connecting to an ASCII 2 reader</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The TSL ASCII 2 readers support two main modes of use. (see <a class="xref" href="concepts.bluetoothmodes.html">Comparison of Bluetooth modes for TSL ASCII 2 Readers</a> )</p>
+<ul>
+<li>ASCII 2 Protocol</li>
+<li>Keyboard emulation</li>
+</ul>
+<h3 id="ascii-2-protocol">ASCII 2 Protocol</h3>
+<p>To get the most use our of our readers use the <a class="xref" href="../protocol/protocol.introduction.html">Technology Solutions UK Ltd ASCII 2 Protocol</a></p>
+<p>The SDK uses the readers in ASCII 2 Protocol mode. You can connect to the reader over Bluetooth or USB.
+The USB connection has priority over the Bluetooth connection so if a reader is connected via Bluetooth
+it will be mute/unresponsive over Bluetooth while a USB connection also exists.</p>
+<h3 id="keyboard-emulation">Keyboard Emulation</h3>
+<p>For legacy support environments the TSL ASCII 2 readers also support a <a class="xref" href="concepts.bluetoothhidmode.html">keyboard emulation mode</a>.
+In addition to the Bluetooth HID mode the reader can also support HID over serial for Bluetooth or USB.
+This is a mixed mode where the reader is still presented as a serial port and responds to ASCII 2 protocol
+commands but the responses are sent as text rather than ASCII Protocol responses. This HID over serial
+is enabled using <a class="xref" href="../protocol/commands/protocol.commands.sh.html">.sh	Serial HID Command</a></p>
+<h2 id="connection-apis">Connection APIs</h2>
+<h3 id="reader-connection-manager">Reader Connection Manager</h3>
+<p>When the SDK was first released the API used to connect to readers was <strong>Reader Connection Manager</strong>. This
+provided a list of <strong>Named Readers</strong> which could be connected to. Once the <strong>Reader Connection Manager</strong>
+had connected to a reader the <strong>Connection Transport</strong> provided communication with the reader itself</p>
+<p>The <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html">IReaderConnectionManager</a> provided
+<a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html#TechnologySolutions_Rfid_AsciiProtocol_Extensions_IReaderConnectionManager_ListAvailableReadersAsync">ListAvailableReadersAsync()</a>
+to provide a list of <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.INamedReader.html">INamedReader</a> to connect to.</p>
+<p>Once a <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.INamedReader.html">INamedReader</a> was selected this was passed to the
+<a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html#TechnologySolutions_Rfid_AsciiProtocol_Extensions_IReaderConnectionManager_ConnectAsync_TechnologySolutions_Rfid_AsciiProtocol_Extensions_INamedReader_">ConnectAsync(INamedReader)</a> method to setup a
+connection to the reader. If successful the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html#TechnologySolutions_Rfid_AsciiProtocol_Extensions_IReaderConnectionManager_ConnectionTransport">ConnectionTransport</a>
+provided the  <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransport.html">IAsciiSerialTransport</a> to the reader.</p>
+<p>Changes to the single connection are raised via events through the Reader connection manager</p>
+<p>An <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.IAsciiSerialTransport.html">IAsciiSerialTransport</a> is set as the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommander.html#TechnologySolutions_Rfid_AsciiProtocol_AsciiCommander_Transport">Transport</a>
+property of the <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.AsciiCommander.html">AsciiCommander</a></p>
+<p>The <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html">IReaderConnectionManager</a> should have a single instance
+per application, created at the start of the application and disposed with the app. The sample application use
+<a href="https://www.nuget.org/packages/MvvmLight/">Galasoft MvvmLight</a> SimpleIoc to provide an instance but this could
+just be a property on the App class. To get an instance of <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.IReaderConnectionManager.html">IReaderConnectionManager</a>
+You can use a new <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.ReaderConnectionManager.html">ReaderConnectionManager</a>. This returns a platform specific
+instance using a 'bait and switch' technique commonly employed with nuget multi platform packages.</p>
+<h3 id="ascii-transports-manager">ASCII Transports Manager</h3>
+<p>The preferred API for connection management is built upon the <strong>ASCII Transports Manager</strong>.
+The ASCII Transports manager provides two main features</p>
+<ul>
+<li>An <strong>Enumerator</strong> for each supported <strong>Physical Transport</strong> (e.g. Bluetooth, USB)</li>
+<li>An <strong>event source</strong> notifying an application to all changes to <strong>ASCII Transport</strong>s</li>
+</ul>
+<p>The <strong>ASCII Transports Manager</strong> provides <strong>ASCII Transport Enumerators</strong> which list available
+<strong>ASCII Transports</strong>. An <strong>ASCII Transport</strong> is used to create an <strong>ASCII Connection</strong> to an ASCII 2
+Reader. Changes to any <strong>ASCII Transport</strong> is reported centrally through the <strong>ASCII Transports Manager</strong></p>
+<p>The <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportsManager.html">IAsciiTransportsManager</a> instance can be obtained from a <strong>singleton</strong>
+instance of <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Extensions.AsciiTransportsManager.html">AsciiTransportsManager</a>
+(Note the lifecycle registration required for <a class="xref" href="concepts.started.xamarin.html">Android</a>).</p>
+<p>Once the ASCII Transports Manager created the enumerators should be started with a call to <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransportEnumerator.html#TechnologySolutions_Rfid_AsciiProtocol_Transports_IAsciiTransportEnumerator_Start">Start()</a>
+The enumerators will then start reporting available transports via <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.INotifyTransportChanged.html#TechnologySolutions_Rfid_AsciiProtocol_Transports_INotifyTransportChanged_TransportChanged">TransportChanged</a>.</p>
+<p>Once an <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransport.html">IAsciiTransport</a> has been selected a connection is created
+with a call to <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransport.html#TechnologySolutions_Rfid_AsciiProtocol_Transports_IAsciiTransport_ConnectAsync">ConnectAsync()</a>. Once successful the
+<a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiConnection.html">IAsciiConnection</a> is available from <a class="xref" href="../api/TechnologySolutions.Rfid.AsciiProtocol.Transports.IAsciiTransport.html#TechnologySolutions_Rfid_AsciiProtocol_Transports_IAsciiTransport_Connection">Connection</a>
+property of the transport</p>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

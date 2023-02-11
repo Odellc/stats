@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>API Overview | TechnologySolutions.Rfid.AsciiProtocol </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="API Overview | TechnologySolutions.Rfid.AsciiProtocol ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../protocol/protocol.introduction.html" title="ASCII 2 Protocol">ASCII 2 Protocol</a>
+                      </li>
+                      <li>
+                          <a href="../api/TechnologySolutions.Rfid.html" title=".NET API">.NET API</a>
+                      </li>
+                      <li>
+                          <a href="../concepts/concepts.api.overview.html" title="Concepts">Concepts</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="concepts.api.overview.html" title="API Theory Of Operation" class="active">API Theory Of Operation</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.api.inventorytagaccess.html" title="API Inventory and Tag Access" class="">API Inventory and Tag Access</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.started.xamarin.html" title="Xamarin" class="">Xamarin</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.dotnet.html" title=".NET" class="">.NET</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.connect.html" title="Connecting" class="">Connecting</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.command.html" title="Commanding" class="">Commanding</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.asciicommander.html" title="AsciiCommander" class="">AsciiCommander</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.started.operations.html" title="Reader Operations" class="">Reader Operations</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Miscellaneous</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothpairing.html" title="Bluetooth Pairing" class="">Bluetooth Pairing</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.hostbarcode.html" title="Host Barcode" class="">Host Barcode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Application Notes</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="concepts.bluetoothmodes.html" title="Comparison of Bluetooth modes" class="">Comparison of Bluetooth modes</a>
+                          </li>
+                          <li class="">
+                            <a href="concepts.bluetoothhidmode.html" title="Bluetooth HID mode" class="">Bluetooth HID mode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="concepts.api.overview">
+<h1 id="ascii-2-apis---theory-of-operation">ASCII 2 APIs - Theory of Operation</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Technology Solutions has implemented a common object model for Android, iOS and Windows . This document is provided as an overview of using this object model to perform ASCII
+2 commands with a Technology Solutions ASCII 2 device.</p>
+<h2 id="quick-summary-of-the-ascii-2-protocol">Quick Summary of the ASCII 2 Protocol</h2>
+<h3 id="command-structure">Command Structure</h3>
+<p>A command is a single ASCII line terminated with carriage return, line feed or both. It starts with a period <code>.</code>
+followed by two lower case characters to identify the command (e.g. <code>.iv</code> for the <a class="xref" href="../protocol/commands/protocol.commands.iv.html">Inventory Command</a>. or <code>.bc</code> for the <a class="xref" href="../protocol/commands/protocol.commands.bc.html">Barcode Command</a>)</p>
+<pre><code>.bc LCMD 000003 -aloff-p-dt     on
+</code></pre>
+<p>Each command supports a list of optional parameters. If the parameters are not sent to the reader in a particular
+command then the reader uses the last value sent for the parameter or the parameter’s default if the parameter has
+never been sent. The value of the parameters are stored per command (i.e. the inventory output power is separate
+from the read transponder output power). A parameter on the command line starts with the minus sign <code>-</code> followed
+by one or more characters to identify the parameter and then the parameter value (if any).</p>
+<table>
+<thead>
+<tr>
+<th>Command Identifier</th>
+<th>Library Identifier</th>
+<th>Command Index</th>
+<th>Parameter 1</th>
+<th>Parameter 2</th>
+<th>Parameter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.bc</code></td>
+<td><code>LCMD</code></td>
+<td><code>000003</code></td>
+<td><code>-aloff</code></td>
+<td><code>-p</code></td>
+<td><code>-dt on</code></td>
+</tr>
+</tbody>
+</table>
+<p>Once a command has been configured (or the default is appropriate) then a command can be executed with just its command identifier.</p>
+<h4 id="perform-a-barcode-scan-using-the-current-or-default-parameters">Perform a barcode scan using the current (or default) parameters:</h4>
+<p><code>.bc</code></p>
+<p>Commands that have parameters can typically be reverted to the default using the ' reset parameters' <code>-x</code></p>
+<h4 id="perform-a-barcode-scan-resetting-the-command-to-its-defaults-before-performing-the-scan">Perform a barcode scan resetting the command to its defaults before performing the scan:</h4>
+<p><code>.bc -x</code></p>
+<p>To configure a command without actually performing the command action there is a 'take no action' parameter <code>-n</code>.
+In this way the command can be configured for execution at a later date. In the example below the alert for barcode is
+turned off without performing a barcode scan</p>
+<h4 id="perform-a-barcode-command-to-set-the-alert-action-off-with-the-take-no-action-parameter">Perform a barcode command to set the alert action off with the ‘take no action’ parameter</h4>
+<p><code>.bc –al off –n</code></p>
+<p>Between the <strong>Command Identifier</strong> and the first <strong>Parameter</strong> the reader will ignore any alpha numeric or white space.
+The APIs use this fact to insert the <strong>Library Identifier</strong> and <strong>Command Identifier</strong>. This is not used at all by the reader but echoed in the command started response line <code>CS:</code>(see responses) which
+enables the library to identify the response for a specific command.</p>
+<p>The <strong>Library Identifier</strong> is  a fixed string <code>LCMD</code> to identify the source of the command
+as a library command.</p>
+<p>The <strong>Command Index</strong> is an incremented command index (e.g. <code>000001</code>) to uniquely identify the command.</p>
+<h3 id="responses">Responses</h3>
+<p>A response from a Technology Solutions ASCII 2 device consists of multiple lines. All but the last line in the
+response starts with a two capital letter response header followed by a colon <code>:</code>.
+The last line in the response is an empty line which marks the end of a response. Each line has a carriage return line feed pair to terminate the line.
+For each line the two capital letters before the colon identify what the value after the colon represents.
+The first line in a response is always command started <code>CS:</code>. The value of this line is a copy of the command line
+sent to the reader that it is responding to. The last non empty line is either <code>OK:</code> or <code>ER: nnn</code> indicating whether
+the command completed successfully or not, <code>nnn</code> will be a defined error code number. If a command ends with
+<code>ER: nnn</code> then typically this will be preceded with an <code>ME:</code> message line with a human readable version of the error code. Other lines can appear in the response depending on the command being issued.
+Shown below is a successful inventory command response for two transponders which includes index <code>IX:</code>, EPC
+<code>EP:</code>, RSSI <code>RI:</code>, PC word <code>PC:</code> and checksum <code>CR:</code> for each transponder.</p>
+<pre><code>CS: .iv LCMD 000001 -con -ixon -eon –ron
+IX: 0001
+EP: 41524E4C3030303030310000
+RI: -56
+CR: 21AB
+PC: 3000
+IX: 0002
+EP: 330DE29525C0210005F5F8F2
+RI: -50
+CR: 44D2
+PC: 3000
+OK:
+{empty line}
+</code></pre>
+<h3 id="events">Events</h3>
+<p>The reader can be configured to send events that are not part of a command response. Each event is sent as a
+single line with a two capital letter identifier followed by a colon <code>:</code> then the event value.
+For example asynchronous switch notifications can be enabled using the <a class="xref" href="../protocol/commands/protocol.commands.sa.html">switch action command</a> <code>.sa –aon</code>.
+Switch events are sent each time the switch state changes.
+The examples below show the event sent when asynchronous notifications sent when the switch changes to the
+double pressed state, off and single pressed state respectively.</p>
+<pre><code>SW: double
+SW: off
+SW: single
+</code></pre>
+<h3 id="trigger-actions">Trigger Actions</h3>
+<p>The Technology Solutions ASCII 2 devices support a trigger with a single and double press. Even where the
+physical trigger is not present there are commands ( <a class="xref" href="../protocol/commands/protocol.commands.ps.html">.ps	Push Switch Single press</a> , <a class="xref" href="../protocol/commands/protocol.commands.pd.html">.pd	Push Switch Double press</a> ) to perform a virtual press for a period of seconds. When a
+single or double press is actioned a command is executed sequentially multiple times until the press is released.
+The action for each type, single or double, can be set to off / read / write / inventory / barcode or a custom
+command line using <a class="xref" href="../protocol/commands/protocol.commands.sa.html">.sa	Switch Action Command</a> . The custom commands lines is specified using either <a class="xref" href="../protocol/commands/protocol.commands.sp.html">.sp	User defined switch Single Press action</a> or <a class="xref" href="../protocol/commands/protocol.commands.dp.html">.dp	User defined switch Double Press action</a> . By default the single press action is <a class="xref" href="../protocol/commands/protocol.commands.iv.html">inventory</a> transponders and the double press action is to scan a <a class="xref" href="../protocol/commands/protocol.commands.bc.html">barcode</a>.</p>
+<h2 id="api-classes-overview">API Classes Overview</h2>
+<p>The main class is an ASCII commander that is responsible for sending commands to and receiving responses from a Technology Solutions ASCII 2 device.
+The commander uses a transport. The transport has a write line method to write a command to the
+connected device and a read line method to read a line of a response from the reader. The transport also
+notifies the commander when new data is available to read. This abstract transport can be implemented as a serial
+port, a Bluetooth stream, a network socket or an External Accessory stream based on the mechanism used to
+communicate with the Technology Solutions ASCII 2 device.
+The ASCII commander has a responder chain for receiving from the Technology Solutions ASCII 2 device. The responder
+chain holds a number of ASCII command responders that look for specific responses returned from the reader.
+For each ASCII line received the responders are asked in order to process the line until one responder indicates it has
+processed the line. Once a responder has processed the line then no further responders in the chain see the line.
+A specialized responder is the synchronous responder, this is used when a command is executed synchronously
+(see later). The synchronous responder delegates the processing of the line to the currently executing synchronous command.</p>
+<h3 id="mapping-commands-to-the-ascii-2-protocol">Mapping Commands to the ASCII 2 Protocol</h3>
+<p>The <a class="xref" href="../protocol/protocol.introduction.html">ASCII 2 protocol document</a> details all the commands supported by the readers that implement a particular protocol version.
+For each ASCII 2 protocol command there is a corresponding command class.
+Each command class provides properties for each optional parameter defined in the command.
+These properties default to null, nil, nothing so that they won’t be sent to the reader when the command is executed unless set to a value.
+In this way the optional parameters are only sent to the reader when they are assigned a value.
+Depending on the API each command class either ‘has a’ or implements its own responder.
+This responder can be added to the responder chain where a command is used to capture an asynchronous response or is
+used when the command is executed synchronously. When a command class’s responder captures a response
+it provides properties to read the values received. Command classes may also raise an event, notification or
+provide a delegate for when a particular response is received. For example the barcode command class signals
+as a barcode is scanned and the commands that return one or more transponders signal as each transponder is
+received.</p>
+<h3 id="executing-commands">Executing Commands</h3>
+<p>Commands are executed by passing a command class instance to the execute method of the commander.
+There are two ways a command can be executed:</p>
+<ol>
+<li><strong>Send Only</strong> (Formally asynchronous execution). The Execute method writes the command, with its parameters to the reader. It is up to responders in the responder chain to handle the response to this command</li>
+<li><strong>Send and Receive</strong> (Formally synchronous execution). The Execute methods writes the command, with its parameters to the reader. The method blocks for up the command's timeout to receive the response to the command. The command has a response property to which the response is populated and also there may be properties on the command for the response</li>
+</ol>
+<h4 id="send-only-formally-asynchronous">Send Only (formally asynchronous)</h4>
+<p>When a command is executed as <strong>send only</strong> the command instance passed to the execute method is only used
+to generate the command line to send to the reader based on the command parameters that have been set.
+Once the command has been sent the execute method returns.
+The responder chain will capture the response from the reader when it arrives.</p>
+<p>This used to be referred to as asynchronous execution but this terminology is being phased out as it is confusing when coupled with Task based async await Threading APIs</p>
+<h4 id="send-and-receive-formally-synchronous">Send and Receive (formally synchronous)</h4>
+<p>When a command is executed as <strong>send and receive</strong> the command instance passed to the execute method is used to
+generate the command line and this is sent to the reader as before.
+The execute method then blocks for up to commands timeout property to capture the response.
+To execute a command as send and receive there must be a synchronous responder in the responder chain (typically an exception is thrown if send and receive is attempted and there is no synchronous responder).
+The synchronous responder delegates its processing of each received line to the currently executing command.
+In this way the responder of the command passed to the execute method is updated with the response from the reader.
+Once the response is fully received or the timeout is reached the execute method returns.
+When execute returns the command will contain the response from the reader (assuming it was received successfully).
+When the command line is generated for a command class instance this is passed to the command’s responder.
+In this way when a command is executed synchronously the only response that the command will capture is one
+which starts with a <code>CS:</code> header that matches the LCMD and command index for the command sent.
+In this way a response that is returned from a trigger press will not be captured incorrectly as a response to the command sent to the reader.</p>
+<h3 id="responder-chain">Responder Chain</h3>
+<p>The ASCII command has a responder chain that is responsible for capturing responses from the reader.
+The responder chain is a list of responders that get called in turn for each line received from a reader.
+When a responder in the chain indicates it has used the received line no further responders in the chain are notified
+A typical responder chain would contain</p>
+<ul>
+<li>{Logger responder}</li>
+<li>Synchronous responder</li>
+<li>Inventory responder</li>
+<li>Barcode responder</li>
+<li>Switch responder</li>
+</ul>
+<p>The <strong>logger responder</strong> is an optional developer aid. It never consumes a received line.
+Being first in the responder chain it will see every line received from the reader but has been set up to never mark a line as processed.
+It simply logs each line to a debug output before allowing further responders in the chain to examine and possibly capture the response.</p>
+<p>The <strong>synchronous responder</strong> relays the process response to a currently executing <strong>send and receive</strong> command.
+This enables a <strong>send and receive</strong> command to receive its own response.
+It is placed before the general responders in the responder chain so that it will capture its own specific response before a more general responder captures it.
+i.e. If you execute a inventory command synchronously it will be sent with LCMD and index (e.g. 000999) the
+synchronous responder and hence the executing command will capture the response that starts with command
+started with <code>CS: .iv LCMD 000999</code> where as a general inventory responder will capture any inventory response
+<code>CS: .iv</code>.</p>
+<p>The <strong>inventory responder</strong> will capture transponder responses that have been executed <strong>send only</strong> including those sent via the trigger press.
+The trigger press by default just executes <code>.iv</code> so the response can be differentiated from the library commands as the <code>LCMD</code> is absent.
+If the inventory responder were to be placed before the synchronous responder it would capture the response as an inventory response and the <strong>send and receive</strong> command would never receive its response.</p>
+<p>The <strong>barcode responder</strong> will capture asynchronous barcode responses that have been executed <strong>send only</strong> either from a command or from a trigger press.</p>
+<p>The <strong>switch responder</strong> will capture the switch change <strong>events</strong> sent if asynchronous switch notifications are enabled.</p>
+<h3 id="changing-the-parameters-used-for-a-command">Changing the Parameters used for a Command</h3>
+<p>As the commands implement their own responders an inventory command instance is placed into the responder chain to receive transponder events.
+What the reader sends for each transponder can be modified with command parameters (RSSI, PC, Index, and Checksum).
+However the command in the responder is passively listening for responses from the reader.
+To modify what the reader outputs for each transponder an inventory command must be sent to the reader with the updated parameters using the execute method of the commander.
+These changes will remain in effect until commanded subsequently or the reader reboots.
+An auto-run file can be deployed to the micro SD card within a Technology Solutions ASCII 2 device to make a reader operate with non-default parameters as soon as a boot is complete.</p>
+<h3 id="reading-parameters">Reading Parameters</h3>
+<p>Commands that support parameters have a read parameters optional parameter. When present in a command line
+(<code>-p</code>) the reader will send a <code>PR:</code> line in the response with the supported parameters and their current values.
+To read the parameters set the read parameters parameter to TriState.Yes, this will output the <code>-p</code> to the command line.
+To read the parameters without performing the command set the take no action optional parameter <code>-n</code> to TriState.Yes,
+this allows the parameters of a command to be updated without executing the command (useful for the autorun file to set up the parameters for commands without performing them).
+When the responder of a command class receives a <code>PR:</code> line it uses a parse parameters method to update the parameters of the command with the values received from the reader.</p>
+<p>The example below reads the parameters of a barcode command without performing a barcode scan:</p>
+<p>Command Sent to the reader</p>
+<pre><code>.bc -p -n
+</code></pre>
+<p>Response Received</p>
+<pre><code>CS: .bc -p –n
+PR: -al on -dt on -e on -n -p -t 9 –x
+OK:
+</code></pre>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2011 - 2019 Technology Solutions UK Ltd
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
