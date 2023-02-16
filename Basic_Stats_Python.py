@@ -42,5 +42,3 @@ train_prediction = regression_model.predict(X = pd.DataFrame(mtcars['wt']))
 
 
 
-
-
