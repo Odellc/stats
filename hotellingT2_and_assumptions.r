@@ -60,5 +60,3 @@ HotellingsT2(attitude[1:15,], attitude[16:30,])
 
 
 
-
-
