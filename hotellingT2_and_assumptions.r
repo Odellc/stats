@@ -57,6 +57,3 @@ plotmeans(attitude.raises ~ group, data=attitude, ylim=c(0,100), xlab = "Groups"
 library(ICSNP)
 
 HotellingsT2(attitude[1:15,], attitude[16:30,])
-
-
-
