@@ -52,6 +52,7 @@ plotmeans(attitude.raises ~ group, data=attitude, ylim=c(0,100), xlab = "Groups"
           legends = c("Males", "Females"), main="Attitude", connect=FALSE, mean.labels=TRUE, col=NULL,
           p=1.0)
 
+
 #Perform Hotelling T2 Test
 #install.packages("ICSNP")
 library(ICSNP)
