@@ -40,6 +40,7 @@ boxM(attitude, group)
 #install.packages('gplots')
 library(gplots)
 
+
 plotmeans(attitude.complaints ~ group, data=attitude, ylim=c(0,100), xlab = "Groups",
           legends = c("Males", "Females"), main="Attitude", connect=FALSE, mean.labels=TRUE, col=NULL,
           p=1.0)
