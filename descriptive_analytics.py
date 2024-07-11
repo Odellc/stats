@@ -11,3 +11,4 @@ print(f'just x = {x}')
 print(f'X with nan = {x_with_nan}')
 
 
+
