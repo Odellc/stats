@@ -49,3 +49,7 @@ print(f"pandas mean {mean_}")
 
 #pandas mean with nan is the same function
 print(z_with_nan.mean())
+
+'''
+The weighted mean or weighted average
+'''
