@@ -37,6 +37,8 @@ print(f"statistics library mean {mean_}")
 mean_ = statistics.mean(x_with_nan)
 print(f"statistics library mean {mean_}")
 
+print(f"np library np.nanmean {mean_}")
+
 
 #instead you can use np.nanmean()
 
@@ -53,3 +55,14 @@ print(z_with_nan.mean())
 '''
 The weighted mean or weighted average
 '''
+
+w = [0.1, 0.2, 0.3, 0.25, 0.15]
+
+wmean = sum(w[i] * x[i] for i in range(len(x))) / sum(w)
+
+print(f"Weighted mean with range: {wmean}")
+
+#or with zip
+wmean = sum(x_ * w_ for (x_, w_) in zip(x,w)) / sum(w)
+
+print(f"Weighted mean with zip: {wmean}")
