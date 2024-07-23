@@ -66,3 +66,4 @@ print(f"Weighted mean with range: {wmean}")
 wmean = sum(x_ * w_ for (x_, w_) in zip(x,w)) / sum(w)
 
 print(f"Weighted mean with zip: {wmean}")
+
