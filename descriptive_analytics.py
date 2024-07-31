@@ -67,4 +67,11 @@ wmean = sum(x_ * w_ for (x_, w_) in zip(x,w)) / sum(w)
 
 print(f"Weighted mean with zip: {wmean}")
 
+#harmonic Mean manually
+hmean = len(x) / sum(1 / item for item in x)
+print(f"Harmonic mean by hand: {hmean}")
+
+#haronic mean using stats module
+hmean = statistics.harmonic_mean(x)
+print(f"Harmonic mean using stats module: {hmean}")
 
