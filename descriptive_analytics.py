@@ -75,3 +75,18 @@ print(f"Harmonic mean by hand: {hmean}")
 hmean = statistics.harmonic_mean(x)
 print(f"Harmonic mean using stats module: {hmean}")
 
+
+#geometric mean
+gmean = 1
+for item in x:
+    gmean *= item
+    print(f"test: {gmean}")
+
+gmean **= 1 / len(x)
+
+print(f"Geometric mean = {gmean}")
+
+#Note has to be python 3.8 or higher for this
+print(f"or us the stats model for geometri mean {statistics.geometric_mean(x)}")
+
+
