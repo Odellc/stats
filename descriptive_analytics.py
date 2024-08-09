@@ -90,3 +90,5 @@ print(f"Geometric mean = {gmean}")
 print(f"or us the stats model for geometri mean {statistics.geometric_mean(x)}")
 
 
+
+
