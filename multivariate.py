@@ -34,3 +34,5 @@ columns = ['Alcohol', 'Malic acid', 'Ash',
             'Proanthocyanins', 'Color intensity', 'Hue',
             'OD280/OD315 of diluted wines', 'Proline'
         ]
+
+
