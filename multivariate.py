@@ -15,7 +15,7 @@ DISPLAY_MAX_ROWS = 20  # number of max rows to print for a DataFrame
 pd.set_option('display.max_rows', DISPLAY_MAX_ROWS)
 
 
-print(os.curdir)
+# print(os.curdir)
 
 
 data = pd.read_csv("C:/Users/codel/OneDrive/Documents/wine.data", header=None)
@@ -36,3 +36,12 @@ columns = ['Alcohol', 'Malic acid', 'Ash',
         ]
 
 
+scatterplot_variables = data.loc[:, "V2":"V6"]
+
+pd.plotting.scatter_matrix(data.loc[:, "V2":"V6"], diagonal="kde")
+plt.tight_layout()
+plt.show()
+
+
+sns.lmplot(data, x="V4", y="V5", hue="V1", fit_reg=False)
+plt.show()
