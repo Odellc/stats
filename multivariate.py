@@ -45,3 +45,15 @@ plt.show()
 
 sns.lmplot(data, x="V4", y="V5", hue="V1", fit_reg=False)
 plt.show()
+
+
+ax = data[["V2","V3","V4","V5","V6"]].plot()
+ax.legend(loc='center left', bbox_to_anchor=(1, 0.5));
+plt.show()
+
+
+#print the summary statistics
+
+for x in [np.mean, np.std]:
+    print(x)
+    print(X.apply(x))
