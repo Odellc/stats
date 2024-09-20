@@ -57,3 +57,5 @@ plt.show()
 for x in [np.mean, np.std]:
     print(x)
     print(X.apply(x))
+
+
