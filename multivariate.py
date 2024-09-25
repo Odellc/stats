@@ -65,3 +65,4 @@ class2data = data[y=="2"]
 print(f'Mean of variable 2 group on y group 2: {class2data.loc[:, "V2":].apply(np.mean)}')
 
 print(f'Standard Deviation of variable 2 group on y group 2: {class2data.loc[:, "V2":].apply(np.std)}')
+
