@@ -67,4 +67,11 @@ print(f'Mean of variable 2 group on y group 2: {class2data.loc[:, "V2":].apply(n
 print(f'Standard Deviation of variable 2 group on y group 2: {class2data.loc[:, "V2":].apply(np.std)}')
 
 
+def print_means_and_STD_by_group(variables, groupvariables):
+    data_groupby = variables.groupby(groupvariables)
+    print(f'Means: {data_groupby.apply(np.mean)}') 
+    print(f'STD: {data_groupby.apply(np.std)}')
+    print(f'Sample Size: {data_groupby.apply(len)}')
 
+
+print_means_and_STD_by_group(X, y)
