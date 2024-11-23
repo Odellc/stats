@@ -89,5 +89,22 @@ print(f"Geometric mean = {gmean}")
 #Note has to be python 3.8 or higher for this
 print(f"or us the stats model for geometri mean {statistics.geometric_mean(x)}")
 
-
-
+def calcWithinGroupsVariance(variable, groupvariable):
+    # find out how many values the group variable can take
+    levels = sorted(set(groupvariable))
+    numlevels = len(levels)
+    # get the mean and standard deviation for each group:
+    numtotal = 0
+    denomtotal = 0
+    for leveli in levels:
+        levelidata = variable[groupvariable==leveli]
+        levelilength = len(levelidata)
+        # get the standard deviation for group i:
+        sdi = np.std(levelidata)
+        numi = (levelilength)*sdi**2
+        denomi = levelilength
+        numtotal = numtotal + numi
+        denomtotal = denomtotal + denomi
+    # calculate the within-groups variance
+    Vw = numtotal / (denomtotal - numlevels)
+    return Vw
