@@ -75,3 +75,25 @@ def print_means_and_STD_by_group(variables, groupvariables):
 
 
 print_means_and_STD_by_group(X, y)
+
+def calcWithinGroupsVariance(variable, groupvariable):
+    # find out how many values the group variable can take
+    levels = sorted(set(groupvariable))
+    numlevels = len(levels)
+    # get the mean and standard deviation for each group:
+    numtotal = 0
+    denomtotal = 0
+    for leveli in levels:
+        levelidata = variable[groupvariable==leveli]
+        levelilength = len(levelidata)
+        # get the standard deviation for group i:
+        sdi = np.std(levelidata)
+        numi = (levelilength)*sdi**2
+        denomi = levelilength
+        numtotal = numtotal + numi
+        denomtotal = denomtotal + denomi
+    # calculate the within-groups variance
+    Vw = numtotal / (denomtotal - numlevels)
+    return Vw
+
+print(f'Function for calc within group variance {calcWithinGroupsVariance(X.V2, y)}')
