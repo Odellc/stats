@@ -97,3 +97,26 @@ def calcWithinGroupsVariance(variable, groupvariable):
     return Vw
 
 print(f'Function for calc within group variance {calcWithinGroupsVariance(X.V2, y)}')
+
+def calcBetweenGroupsVariance(variable, groupvariable):
+    # find out how many values the group variable can take
+    levels = sorted(set((groupvariable)))
+    numlevels = len(levels)
+    # calculate the overall grand mean:
+    grandmean = np.mean(variable)
+    # get the mean and standard deviation for each group:
+    numtotal = 0
+    denomtotal = 0
+    for leveli in levels:
+        levelidata = variable[groupvariable==leveli]
+        levelilength = len(levelidata)
+        # get the mean and standard deviation for group i:
+        meani = np.mean(levelidata)
+        sdi = np.std(levelidata)
+        numi = levelilength * ((meani - grandmean)**2)
+        denomi = levelilength
+        numtotal = numtotal + numi
+        denomtotal = denomtotal + denomi
+    # calculate the between-groups variance
+    Vb = numtotal / (numlevels - 1)
+    return(Vb)
