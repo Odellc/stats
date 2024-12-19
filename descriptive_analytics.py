@@ -108,3 +108,4 @@ def calcWithinGroupsVariance(variable, groupvariable):
     # calculate the within-groups variance
     Vw = numtotal / (denomtotal - numlevels)
     return Vw
+
