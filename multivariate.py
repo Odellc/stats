@@ -120,3 +120,6 @@ def calcBetweenGroupsVariance(variable, groupvariable):
     # calculate the between-groups variance
     Vb = numtotal / (numlevels - 1)
     return(Vb)
+
+
+calcBetweenGroupsVariance(X.V2, y)
