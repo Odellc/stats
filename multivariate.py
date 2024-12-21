@@ -122,4 +122,16 @@ def calcBetweenGroupsVariance(variable, groupvariable):
     return(Vb)
 
 
-calcBetweenGroupsVariance(X.V2, y)
+print(f'Function for calc between group variance {calcBetweenGroupsVariance(X.V2, y)}')
+      
+print(f'Seperation achieved by V2: {calcBetweenGroupsVariance(X.V2, y) / calcWithinGroupsVariance(X.V2, y)}')
+
+
+def calcSeparations(variables, groupvariable):
+    # calculate the separation for each variable
+    for variablename in variables:
+        variablei = variables[variablename]
+        Vw = calcWithinGroupsVariance(variablei, groupvariable)
+        Vb = calcBetweenGroupsVariance(variablei, groupvariable)
+        sep = Vb/Vw
+        print("variable", variablename, "Vw=", Vw, "Vb=", Vb, "separation=", sep)
