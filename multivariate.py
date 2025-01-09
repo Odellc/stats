@@ -136,4 +136,4 @@ def calcSeparations(variables, groupvariable):
         sep = Vb/Vw
         print("variable", variablename, "Vw=", Vw, "Vb=", Vb, "separation=", sep)
 
-#calcSeparations()
+calcSeparations(X, y)
