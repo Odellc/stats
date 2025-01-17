@@ -109,3 +109,32 @@ def calcWithinGroupsVariance(variable, groupvariable):
     Vw = numtotal / (denomtotal - numlevels)
     return Vw
 
+print(calcWithinGroupsVariance(variable, groupvariable))
+
+
+def calcWithinGroupsCovariance(variable1, variable2, groupvariable):
+    levels = sorted(set(groupvariable))
+    numlevels = len(levels)
+    Covw = 0.0
+    # get the covariance of variable 1 and variable 2 for each group:
+    for leveli in levels:
+        levelidata1 = variable1[groupvariable==leveli]
+        levelidata2 = variable2[groupvariable==leveli]
+        mean1 = np.mean(levelidata1)
+        mean2 = np.mean(levelidata2)
+        levelilength = len(levelidata1)
+        # get the covariance for this group:
+        term1 = 0.0
+        for levelidata1j, levelidata2j in zip(levelidata1, levelidata2):
+            term1 += (levelidata1j - mean1)*(levelidata2j - mean2)
+        Cov_groupi = term1 # covariance for this group
+        Covw += Cov_groupi
+    totallength = len(variable1)
+    Covw /= totallength - numlevels
+    return Covw
+
+print(calcWithinGroupsCovariance(x.V8, x.V11, y))
+
+corr = stats.pearsonr(x.V2, x.V3)
+print("p-value:\t", corr[1])
+print("cor:\t\t", corr[0])
