@@ -138,3 +138,9 @@ print(calcWithinGroupsCovariance(x.V8, x.V11, y))
 corr = stats.pearsonr(x.V2, x.V3)
 print("p-value:\t", corr[1])
 print("cor:\t\t", corr[0])
+
+
+corrmat = X.corr()
+corrmat
+
+sns.heatmap(corrmat, vmax=1., square=False).xaxis.tick_top()
