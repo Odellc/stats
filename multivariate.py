@@ -137,3 +137,92 @@ def calcSeparations(variables, groupvariable):
         print("variable", variablename, "Vw=", Vw, "Vb=", Vb, "separation=", sep)
 
 calcSeparations(X, y)
+
+
+def calcWithinGroupsVariance(variable, groupvariable):
+    # find out how many values the group variable can take
+    levels = sorted(set(groupvariable))
+    numlevels = len(levels)
+    # get the mean and standard deviation for each group:
+    numtotal = 0
+    denomtotal = 0
+    for leveli in levels:
+        levelidata = variable[groupvariable==leveli]
+        levelilength = len(levelidata)
+        # get the standard deviation for group i:
+        sdi = np.std(levelidata)
+        numi = (levelilength)*sdi**2
+        denomi = levelilength
+        numtotal = numtotal + numi
+        denomtotal = denomtotal + denomi
+    # calculate the within-groups variance
+    Vw = numtotal / (denomtotal - numlevels)
+    return Vw
+
+print(calcWithinGroupsVariance(variable, groupvariable))
+
+
+def calcWithinGroupsCovariance(variable1, variable2, groupvariable):
+    levels = sorted(set(groupvariable))
+    numlevels = len(levels)
+    Covw = 0.0
+    # get the covariance of variable 1 and variable 2 for each group:
+    for leveli in levels:
+        levelidata1 = variable1[groupvariable==leveli]
+        levelidata2 = variable2[groupvariable==leveli]
+        mean1 = np.mean(levelidata1)
+        mean2 = np.mean(levelidata2)
+        levelilength = len(levelidata1)
+        # get the covariance for this group:
+        term1 = 0.0
+        for levelidata1j, levelidata2j in zip(levelidata1, levelidata2):
+            term1 += (levelidata1j - mean1)*(levelidata2j - mean2)
+        Cov_groupi = term1 # covariance for this group
+        Covw += Cov_groupi
+    totallength = len(variable1)
+    Covw /= totallength - numlevels
+    return Covw
+
+print(calcWithinGroupsCovariance(x.V8, x.V11, y))
+
+corr = stats.pearsonr(x.V2, x.V3)
+print("p-value:\t", corr[1])
+print("cor:\t\t", corr[0])
+
+
+corrmat = X.corr()
+corrmat
+
+sns.heatmap(corrmat, vmax=1., square=False).xaxis.tick_top()
+
+def hinton(matrix, max_weight=None, ax=None):
+    """Draw Hinton diagram for visualizing a weight matrix."""
+    ax = ax if ax is not None else plt.gca()
+
+    if not max_weight:
+        max_weight = 2**np.ceil(np.log(np.abs(matrix).max())/np.log(2))
+
+    ax.patch.set_facecolor('lightgray')
+    ax.set_aspect('equal', 'box')
+    ax.xaxis.set_major_locator(plt.NullLocator())
+    ax.yaxis.set_major_locator(plt.NullLocator())
+
+    for (x, y), w in np.ndenumerate(matrix):
+        color = 'red' if w > 0 else 'blue'
+        size = np.sqrt(np.abs(w))
+        rect = plt.Rectangle([x - size / 2, y - size / 2], size, size,
+                             facecolor=color, edgecolor=color)
+        ax.add_patch(rect)
+
+    nticks = matrix.shape[0]
+    ax.xaxis.tick_top()
+    ax.set_xticks(range(nticks))
+    ax.set_xticklabels(list(matrix.columns), rotation=90)
+    ax.set_yticks(range(nticks))
+    ax.set_yticklabels(matrix.columns)
+    ax.grid(False)
+
+    ax.autoscale_view()
+    ax.invert_yaxis()
+
+hinton(corrmat)
