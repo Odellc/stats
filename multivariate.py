@@ -159,8 +159,6 @@ def calcWithinGroupsVariance(variable, groupvariable):
     Vw = numtotal / (denomtotal - numlevels)
     return Vw
 
-print(calcWithinGroupsVariance(variable, groupvariable))
-
 
 def calcWithinGroupsCovariance(variable1, variable2, groupvariable):
     levels = sorted(set(groupvariable))
@@ -226,3 +224,18 @@ def hinton(matrix, max_weight=None, ax=None):
     ax.invert_yaxis()
 
 hinton(corrmat)
+
+
+def test(matrix):
+    print(f'matrix is {matrix}')
+    print("-----------------------------------")
+    count = 0
+    for (x,y), w in np.ndenumerate(matrix):
+        print(f"x is {x}, y is {y}")
+        print(f"w is {w}")
+        count += 1
+        if count >3:
+            sys.exit()
+
+
+test(corrmat)
