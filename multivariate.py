@@ -9,6 +9,7 @@ from sklearn.decomposition import PCA
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from scipy import stats
 import matplotlib as mp
+import sys
 
 
 DISPLAY_MAX_ROWS = 20  # number of max rows to print for a DataFrame
@@ -181,9 +182,9 @@ def calcWithinGroupsCovariance(variable1, variable2, groupvariable):
     Covw /= totallength - numlevels
     return Covw
 
-print(calcWithinGroupsCovariance(x.V8, x.V11, y))
+print(calcWithinGroupsCovariance(X.V8, X.V11, y))
 
-corr = stats.pearsonr(x.V2, x.V3)
+corr = stats.pearsonr(X.V2, X.V3)
 print("p-value:\t", corr[1])
 print("cor:\t\t", corr[0])
 
