@@ -240,3 +240,16 @@ def test(matrix):
 
 
 test(corrmat)
+
+def mosthighlycorrelated(mydataframe, numtoreport):
+    #find the correlations
+    cormatrix = mydataframe.corr()
+    #set the correlations on the diagonal to zero
+    #to stop them from being reported as the highest ones
+    cormatrix *= np.tri(*cormatrix.values.shape, k=-1).T
+    # find the top n correlations
+    cormatrix = cormatrix.stack()
+    cormatrix = cormatrix.reindex(cormatrix.abs().sort_values(ascending=False).index).reset_index()
+    # assign human-friendly names
+    cormatrix.columns = ["FirstVariable", "SecondVariable", "Correlation"]
+    return cormatrix.head(numtoreport)
