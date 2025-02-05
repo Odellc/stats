@@ -239,9 +239,14 @@ def test(matrix):
             sys.exit()
 
 
-test(corrmat)
-
 def mosthighlycorrelated(mydataframe, numtoreport):
+    '''
+    The arguments of the function are the variables that you want 
+    to calculate the correlations for, and the number of top 
+    correlation coefficients to print out 
+    (for example, you can tell it to print out the largest 10 
+    correlation coefficients, or the largest 20).
+    '''
     #find the correlations
     cormatrix = mydataframe.corr()
     #set the correlations on the diagonal to zero
@@ -253,3 +258,6 @@ def mosthighlycorrelated(mydataframe, numtoreport):
     # assign human-friendly names
     cormatrix.columns = ["FirstVariable", "SecondVariable", "Correlation"]
     return cormatrix.head(numtoreport)
+
+print(f'most highly correlationd= {mosthighlycorrelated(X, 10)}')
+
