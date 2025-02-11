@@ -193,6 +193,7 @@ corrmat = X.corr()
 corrmat
 
 sns.heatmap(corrmat, vmax=1., square=False).xaxis.tick_top()
+plt.show()
 
 def hinton(matrix, max_weight=None, ax=None):
     """Draw Hinton diagram for visualizing a weight matrix."""
@@ -223,6 +224,7 @@ def hinton(matrix, max_weight=None, ax=None):
 
     ax.autoscale_view()
     ax.invert_yaxis()
+    plt.show()
 
 hinton(corrmat)
 
@@ -261,3 +263,13 @@ def mosthighlycorrelated(mydataframe, numtoreport):
 
 print(f'most highly correlationd= {mosthighlycorrelated(X, 10)}')
 
+
+#Standardize and scale the data
+#setup for a mean of 0 and variance of 1
+
+standardisedX = scale(X)
+
+standardisedX = pd.DataFrame(standardisedX, index=X.index, columns=X.columns)
+
+standardisedX.apply(np.mean)
+print(f"standardized outputs: {standardisedX}")
