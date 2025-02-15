@@ -273,3 +273,20 @@ standardisedX = pd.DataFrame(standardisedX, index=X.index, columns=X.columns)
 
 standardisedX.apply(np.mean)
 print(f"standardized outputs: {standardisedX}")
+
+
+pca = PCA().fit(standardisedX)
+
+def pca_summary(pca, standardised_data, out=True):
+    names = ["PC"+str(i) for i in range(1, len(pca.explained_variance_ratio_)+1)]
+    a = list(np.std(pca.transform(standardised_data), axis=0))
+    b = list(pca.explained_variance_ratio_)
+    c = [np.sum(pca.explained_variance_ratio_[:i]) for i in range(1, len(pca.explained_variance_ratio_)+1)]
+    columns = pd.MultiIndex.from_tuples([("sdev", "Standard deviation"), ("varprop", "Proportion of Variance"), ("cumprop", "Cumulative Proportion")])
+    summary = pd.DataFrame(zip(a, b, c), index=names, columns=columns)
+    if out:
+        print("Importance of components:")
+        print(summary)
+    return summary
+
+pca_summary(pca, standardisedX)
