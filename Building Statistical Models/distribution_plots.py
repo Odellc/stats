@@ -181,9 +181,125 @@ def plot_distributions(n_replicas, professional_sample, blue_collar_sample, prof
         print("Standard Error: ", round(blue_collar_sample.std() / np.sqrt(n_replicas), 4) )
     else:
         print("At least two samples required to create the following statistics:\nConfidence Intervals\nMean\nStandard Error")
+    
+    plt.show()
 
 n_replicas=0
 plot_distributions(n_replicas=n_replicas, professional_sample=df_professional['income'],
                     blue_collar_sample=df_blue_collar['income'],
                     professional_label="Professional",
                     blue_collar_label="Blue Collar")
+
+
+n_replicas=1000
+professional_boostrap_means = pd.Series([df_professional.sample(frac=0.5, replace=True)['income'].mean() for i in range(n_replicas)])
+blue_collar_boostrap_means = pd.Series([df_blue_collar.sample(frac=0.5, replace=True)['income'].mean() for i in range(n_replicas)])
+
+plot_distributions(n_replicas=n_replicas, professional_sample=professional_boostrap_means,
+                    blue_collar_sample=blue_collar_boostrap_means,
+                    professional_label="Professional",
+                    blue_collar_label="Blue Collar")
+
+
+#SEM is the standard error of the mean
+print(f'''Below is the SEM: Standard Error of the Mean: 
+SEM for Professional: {scipy.stats.sem(professional_boostrap_means):.3f}
+SEM for Blue Collar: {scipy.stats.sem(blue_collar_boostrap_means):.3f}
+''')
+
+
+#Correlation Coefficent Pearsons
+df_prof_corr = df_professional.sample(n=10)
+df_blue_corr = df_blue_collar.sample(n=10)
+
+corr, _ = scipy.stats.pearsonr(df_prof_corr['income'], df_blue_corr['income'])
+
+print(f"what comes out of scipy.stats.pearsonr: {scipy.stats.pearsonr(df_prof_corr['income'], df_blue_corr['income'])}")
+
+print(f"Correlation for n=10 samples between pressional and blue collar income: {corr}")
+
+#get correlation for high number of replications
+professional_boostrap_means = pd.Series([df_prof_corr.sample(frac=0.5, replace =False).income.mean() for i in range(n_replicas)])
+blue_collar_boostrap_means = pd.Series([df_blue_corr.sample(frac=0.5, replace =False).income.mean() for i in range(n_replicas)])
+
+corr, _ = scipy.stats.pearsonr(professional_boostrap_means, blue_collar_boostrap_means)
+
+print(f"Correlation for n={n_replicas} samples between pressional and blue collar income: {corr}")
+
+
+#PERMUTATIONS
+from itertools import permutations, combinations
+# list of 10 people in the party
+people = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10']
+# all the ways that the 3 prizes are distributed
+perm = permutations(people, 3)
+list_perm = list(perm)
+print(f"Permutations: There are {len(list_perm)} ways to distribute the prizes!")
+
+print(f"Permutations: The 10 first ways to distribute the prizes: {list_perm[:10]} ")
+
+comb = combinations(people, 3)
+list_comb = list(comb)
+print(f"Combinations: There are {len(list_comb)} ways to distribute the prizes!")
+
+print(f"Combinations: The 10 first ways to distribute the prizes: {list_comb[:10]} ")
+
+
+
+#testing purmutations
+
+#create permutations testing function
+def permutation_testing(A,B, n_iter=1000):
+    differences = []
+    P = np.array(A+B)
+    original_mean = np.array(A).mean() - np.array(B).mean()
+
+    for i in range(n_iter):
+        np.random.shuffle(P) # Create a random permutation of P
+        A_new = P[:len(A)] #have the same size as the original A
+        B_new = P[-len(B):] # having the original length of B
+        differences.append(A_new.mean() - B_new.mean())
+
+    #calculate P value
+    
+    p_value = round(
+        1-(float(
+            len(
+                np.where(
+                    differences <= original_mean
+                )[0]
+            )
+        )/float(
+            n_iter
+        ))
+        ,2
+    )
+    return p_value
+
+A = [3,5,4]
+B = [43,41,56,78,54]
+print(permutation_testing(A,B,n_iter=10000))
+
+#Transformations
+np.random.seed(42) # for reproducible purpose
+# create a random data
+df = np.random.beta(a=1, b=10, size = 10000)
+df_log = np.log(df) #log transformation
+df_sqrt = np.sqrt(df) # Square Root transformation
+df_cbrt = np.cbrt(df) # Cube Root transformation
+plt.figure(figsize = (10,10))
+plt.subplot(2,2,1)
+plt.hist(df)
+plt.title("Original Data")
+plt.subplot(2,2,2)
+plt.hist(df_log)
+plt.title("Log Transformation")
+plt.subplot(2,2,3)
+plt.hist(df_sqrt)
+plt.title("Square Root Transformation")
+plt.subplot(2,2,4)
+plt.hist(df_cbrt)
+plt.title("Cube Root Transformation")
+
+
+plt.show()
