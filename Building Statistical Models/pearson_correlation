@@ -1,0 +1,64 @@
+from scipy.stats import pearsonr
+import matplotlib.pyplot as plt 
+import scipy.stats as stats
+import seaborn as sns
+import pandas as pd
+import numpy as np 
+
+
+mu1, sigma1 = 0, 1.1
+normally_distributed_1 = np.random.normal(mu1, sigma1, 1000)
+
+mu2, sigma2 = 0, 0.7
+normally_distributed_2 = np.random.normal(mu2, sigma2, 1000)
+
+df_norm = pd.DataFrame({'Distribution':['Distribution 1' for i in range(len(normally_distributed_1))] + ['Distribution 2' for i in range(len(normally_distributed_2))],
+                        'X':np.concatenate([normally_distributed_1, normally_distributed_2])})
+
+plt.figure(figsize=(8,4))
+
+palette_dict = {'Distribution 1':'#567CFF',
+                'Distribution 2':'#17FF7D'}
+
+ax = sns.histplot(data=df_norm, x="X", hue="Distribution", palette=palette_dict, fill=True, alpha=0.3, kde=True)
+
+plt.savefig('./Pearsons1.png', dpi=300, facecolor='w', bbox_inches = "tight")
+
+p, r = pearsonr(df_norm.loc[df_norm['Distribution'] == 'Distribution 1', 'X'],
+                df_norm.loc[df_norm['Distribution'] == 'Distribution 2', 'X'])
+
+print(f"p-value = {p}")
+print(f"Correlation coefficient = {r}")
+
+sns.scatterplot(x=normally_distributed_1,
+                y=normally_distributed_2)
+
+import statsmodels.api as sm
+
+df_cars = sm.datasets.get_rdataset("mtcars", "datasets").data
+
+sns.set_theme(style="white")
+
+corr = df_cars.corr()
+
+f, ax = plt.subplots(figsize=(15, 10))
+
+cmap = sns.diverging_palette(250, 20, as_cmap=True)
+
+sns.heatmap(corr, cmap=cmap, vmax=.4, center=0,
+            square=True, linewidths=.5, annot=True)
+
+plt.show()
+
+
+print(df_cars.corr())
+
+from statsmodels.stats.power import TTestPower
+import numpy as np
+# Difference of distribution mean and the value to be assessed divided by the distribution standard deviation
+effect_size = abs(100000-90000) / 2800
+powersTT = TTestPower()
+result = powersTT.solve_power(effect_size, nobs=3, alpha=0.05, 
+alternative='two-sided')
+print('Power based on sample size:{}'.format(round(result,2)))
+# Power based on sample size: 0.85
