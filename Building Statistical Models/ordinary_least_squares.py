@@ -91,3 +91,59 @@ for i in range(len(standardized_residuals)):
         ax[1, 1].annotate(i,xy=(leverage[i], standardized_residuals[i]))
 
 fig.tight_layout()
+
+
+
+from statsmodels.graphics.tsaplots import plot_pacf
+plot_pacf(compiled_model.resid, alpha=0.05, lags=50)
+
+from statsmodels.graphics.tsaplots import plot_acf
+from statsmodels.graphics.tsaplots import plot_pacf
+fig, ax = plt.subplots(2,3, figsize=(15,10))
+plot_acf(df_mod['realdpi'], alpha=0.05, lags=50, ax=ax[0,0])
+ax[0,0].set_title('Original ACF')
+plot_pacf(df_mod['realdpi'], alpha=0.05, lags=50, ax=ax[0,1])
+ax[0,1].set_title('Original PACF')
+ax[0,2].set_title('Original Data')
+ax[0,2].plot(df_mod['realdpi'])
+plot_acf(np.diff(df_mod['realdpi'], n=1), alpha=0.05, lags=50, ax=ax[1,0])
+ax[1,0].set_title('Once-Differenced ACF')
+plot_pacf(np.diff(df_mod['realdpi'], n=1), alpha=0.05, lags=50, ax=ax[1,1])
+ax[1,1].set_title('Once-Differenced PACF')
+ax[1,2].set_title('Once-Differenced Data')
+ax[1,2].plot(np.diff(df_mod['realdpi'], n=1))
+
+
+ols_model_1diff = sm.OLS(np.diff(df_mod['realdpi'], n=1), pd.concat([df_mod['const'].iloc[:-1], pd.Series(np.diff(df_mod['realinv'], n=1))], axis=1))
+compiled_model_1diff = ols_model_1diff.fit()
+
+from sklearn.model_selection import train_test_split
+train, test = train_test_split(df_mod, train_size=0.75, shuffle=True)
+
+ols_model_train = sm.OLS(train['realdpi'], train[['const','realinv']])
+compiled_model_train = ols_model_train.fit()
+print(compiled_model_train.summary())
+
+ols_model_test = sm.OLS(test['realdpi'], test[['const','realinv']])
+compiled_model_test = ols_model_test.fit()
+print(compiled_model_test.summary())
+
+from sklearn.metrics import mean_absolute_error
+mae = mean_absolute_error(train['realdpi'], compiled_model_train.predict(train[['const','realinv']]))
+print(f'mean absolute error: {mae}')
+
+import numpy as np
+errors = []
+for i in range(len(train)):
+    errors.append(abs(train['realdpi'].iloc[i] - train['realdpi'].mean()))
+np.mean(errors)
+
+mae_test = mean_absolute_error(test['realdpi'], compiled_model_train.predict(test[['const','realinv']]))
+mae_test
+#408.0253171549187
+
+errors = []
+for i in range(len(test)):
+    errors.append(abs(test['realdpi'].iloc[i] - test['realdpi'].mean())), 
+np.mean(errors)
+#1945.5873125720873
