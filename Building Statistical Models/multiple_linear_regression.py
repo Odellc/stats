@@ -101,3 +101,50 @@ plt.show()
 
 print(all_data.corr())
 print(all_data.corr()[['target']])
+
+
+y = data['target']
+X = pd.DataFrame(
+    data['data'], 
+    columns=['age','sex','bmi','bp','s1','s2','s3','s4','s5','s6']
+)
+# this just converts sex back to a categorical variable
+X.sex = X.sex.apply(lambda x: 1 if x > 0 else 0)
+
+
+
+#Recursive Feature Selection
+
+print('Recursive Feature Selection')
+
+linear_model = LinearRegression()
+linear_model.fit(X, y)
+
+print(f'linear model coefficients: {linear_model.coef_}')
+
+print(f'linear model intercept: {linear_model.intercept_}')
+
+rfecv = RFECV(
+    estimator=linear_model,
+    step=1,
+    cv=2,
+    scoring=make_scorer(mape ,greater_is_better=False),
+    min_features_to_select=1
+)
+#Fit Recursive feature selection
+rfecv.fit(X,y)
+
+print("Optimal number of features : %d" % rfecv.n_features_)
+
+plt.plot(
+    range(1, len(rfecv.cv_results_['mean_test_score']) + 1),
+    # need to negate sign here due to scorer behavior
+    -rfecv.cv_results_['mean_test_score'],
+)
+plt.xlabel("Number of Features")
+plt.ylabel("Cross-Validation Score (MAPE)")
+
+plt.show()
+
+print(-rfecv.cv_results_['mean_test_score'])
+      
