@@ -76,7 +76,6 @@ def print_means_and_STD_by_group(variables, groupvariables):
 
 
 print_means_and_STD_by_group(X, y)
-
 def calcWithinGroupsVariance(variable, groupvariable):
     # find out how many values the group variable can take
     levels = sorted(set(groupvariable))
