@@ -1,6 +1,5 @@
 
 #Binomial Distribution, Bernoulli distribution, Negative Binomial Distribution.
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -79,7 +78,6 @@ plt.show()
 
 df_train = pd.concat([X_train,y_train], axis=1)
 
-
 poisson_training_results = sm.GLM(y_train, X_train, family=sm.families.Poisson()).fit()
 
 df_train['y_lambda'] = poisson_training_results.mu
@@ -88,7 +86,6 @@ df_train['y_auxiliary'] = df_train.apply(lambda x: ((x['children'] - x['y_lambda
 
 aux_olsr_results = smf.ols('y_auxiliary ~ y_lambda - 1', df_train).fit()
 print(aux_olsr_results.params)
-
 
 print(f'numpy shape and average: {np.shape(poisson_training_results.mu)}')
 print(f'y train shape = {np.shape(y_train)}')
@@ -117,10 +114,8 @@ print(f'using params to check for over dispersian {ols_model.params}')
 
 print(ols_model.summary)
 
-
 negative_binomial_model = sm.GLM(y_train, X_train, family=NegativeBinomial(alpha=ols_model.params.values)).fit()
 print(negative_binomial_model.summary())
-
 
 print('Training Root Mean Squared Error: ', RMSE(y_train, negative_binomial_model.predict(X_train)) )
 print('Testing Root Mean Squared Error: ', RMSE(y_test, negative_binomial_model.predict(X_test)))
