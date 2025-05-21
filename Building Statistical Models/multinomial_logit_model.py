@@ -70,7 +70,7 @@ Other potential model fits solvers available are:
 ‘minimize’ for generic wrapper of scipy minimize (BFGS by default)
 
 '''
-model_stat.summary()
+print(model_stat.summary())
 
 #predict the y to compare to y test based on the trained model
 y_hat_stat = model_stat.predict(X_test)
