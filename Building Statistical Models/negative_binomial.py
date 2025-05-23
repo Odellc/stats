@@ -1,5 +1,5 @@
 
-#Binomial Distribution, Bernoulli distribution, Negative Binomial Distribution.
+#Binomial Distribution, Bernoulli distribution, Negative Binomial Distribution. m
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -18,6 +18,7 @@ n, p = 15, 0.5
 mean, var, skew, kurt = nbinom.stats(n, p, moments='mvsk')
 x = np.arange(nbinom.ppf(0.01, n, p),
               nbinom.ppf(0.99, n, p))
+
 
 #Look to see if the variance is greater than the mean
 print(x.var())
@@ -51,6 +52,7 @@ plt.savefig('./ChildrenDistribution.png', dpi=300, facecolor='w', bbox_inches = 
 Here we use the log-likelihood method 'nb2', which is the variance derived from the mixture of Poisson distributions with Gamma mixing weights.
 '''
 
+
 y = round(data['children'])
 X = data[['const','age','religious','yrs_married','educ','occupation','occupation_husb','affairs','rate_marriage']] 
 
@@ -64,6 +66,7 @@ print('''Here we have overdisperison of our target variable, which means we shou
        binomial regression instead of Poisson regression. Although it does not apply in this situation,
          it is useful to note that with negative binomial regression, target value order does 
       not matter as it does with Poisson regression.''')
+
 
 print(np.unique(y))
 
