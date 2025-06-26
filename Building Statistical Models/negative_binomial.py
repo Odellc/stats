@@ -72,13 +72,13 @@ print(np.unique(y))
 
 np.array([0., 1., 2., 3., 4., 6.])
 
-
+#create histogram plot
 plt.hist(y, bins=50)
 plt.xlabel('Child Count')
 plt.title('Child Count per Married Couple')
 plt.show()
 
-
+#Train model
 df_train = pd.concat([X_train,y_train], axis=1)
 
 poisson_training_results = sm.GLM(y_train, X_train, family=sm.families.Poisson()).fit()
@@ -93,6 +93,8 @@ print(aux_olsr_results.params)
 print(f'numpy shape and average: {np.shape(poisson_training_results.mu)}')
 print(f'y train shape = {np.shape(y_train)}')
 
+
+#Using Generalized linear moding to do a Poission model
 poisson_training_results = sm.GLM(y_train, X_train, family=sm.families.Poisson()).fit()
 
 df_aux = pd.DataFrame({'children':y_train,
@@ -103,6 +105,7 @@ df_train['y_lambda'] = poisson_training_results.mu
 df_train['y_auxiliary'] = df_train.apply(lambda x: ((x['children'] - x['y_lambda'])**2 - x['y_lambda']) / x['y_lambda'], axis=1)
 
 aux_olsr_results = smf.ols('y_auxiliary ~ y_lambda - 1', df_train).fit()
+
 print(f'params = {aux_olsr_results.params}')
 
 poisson_model = sm.GLM(y_train, X_train, family=sm.families.Poisson()).fit()
@@ -113,8 +116,9 @@ df_aux['children'] = y_train
 df_aux['y_auxiliary'] = df_aux.apply(lambda x: ((x['children'] - x['y_mu_hat'])**2 - x['y_mu_hat']) / x['y_mu_hat'], axis=1)
 
 ols_model = OLS('y_auxiliary ~ y_mu_hat - 1', df_aux).fit()
-print(f'using params to check for over dispersian {ols_model.params}')
 
+print(f'using params to check for over dispersian {ols_model.params}')
+print("Model summary output:")
 print(ols_model.summary)
 
 negative_binomial_model = sm.GLM(y_train, X_train, family=NegativeBinomial(alpha=ols_model.params.values)).fit()
