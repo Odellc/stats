@@ -1,6 +1,9 @@
 import statsmodels.api as sm
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler
 
 df_affairs = sm.datasets.fair.load().data
 
@@ -46,8 +49,35 @@ X['occupation'] = X['occupation'].map({1: 'Occupation_One',
                                        2: 'Occupation_Two',
                                        3: 'Occupation_Three',
                                        4: 'Occupation_Four',
-                                       5: 'Occupation_Five'
+                                       5: 'Occupation_Five',
                                        6: 'Occupation_Six'})
 
 X = pd.get_dummies(X, columns=['occupation'])
 X.drop('occupation_husb', axis=1, inplace=True)
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.33, random_state=42)
+
+X_train_sc = X_train.copy()
+X_test_sc = X_test.copy()
+
+ct = ColumnTransformer([
+    ('', StandardScaler(), [
+        'rate_marriage', 'age', 'yrs_married', 'children', 'religious', 'educ'
+    ])
+], remainder= 'passthrough'
+)
+
+X_train_sc = ct.fit_transform(X_train_sc)
+
+ct = ColumnTransformer([
+    ('', StandardScaler(), [
+        'rate_marriage', 'age', 'yrs_married', 'children', 'religious', 'educ'
+    ])
+], remainder= 'passthrough'
+)
+
+X_test_sc = ct.fit_transform(X_test_sc)
+
+print(X_train_sc)
+print(X_test_sc)
