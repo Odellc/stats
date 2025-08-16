@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 df_affairs = sm.datasets.fair.load().data
 
@@ -81,3 +82,20 @@ X_test_sc = ct.fit_transform(X_test_sc)
 
 print(X_train_sc)
 print(X_test_sc)
+
+#fit the data
+
+lda = LinearDiscriminantAnalysis()
+lda.fit(X_train_sc, y_train)
+
+
+#build out functions to measure the precision and recall
+def precision_score(true_positives:int, false_positives:int):
+    precision = true_positives / (true_positives + false_positives)
+    return precision
+
+def recall_score(true_positives:int, false_negatives:int):
+    recall = true_positives / (true_positives + false_negatives)
+    return recall
+
+#now run the model to verify performance
