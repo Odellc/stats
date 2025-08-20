@@ -5,6 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 df_affairs = sm.datasets.fair.load().data
 
@@ -99,3 +102,18 @@ def recall_score(true_positives:int, false_negatives:int):
     return recall
 
 #now run the model to verify performance
+
+y_train_pred = lda.predict(X_train_sc)
+
+cf_train = confusion_matrix(y_train, y_train_pred, labels=[0,1])
+tn_train, fp_train, fn_train, tp_train = cf_train.ravel()
+
+cf_matrix = sns.heatmap(cf_train, annot=True, fmt='g', cbar=False)
+
+cf_matrix.set(xlabel='Predicted', ylabel="Actual", title='Confusion Matrix - Train')
+
+plt.show()
+
+print(f'Precision on train: {round(precision_score(tp_train, fp_train), 4)}')
+
+print(f'Recall on Train: {round(recall_score(tp_train, fn_train), 4)}')
