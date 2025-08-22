@@ -117,3 +117,19 @@ plt.show()
 print(f'Precision on train: {round(precision_score(tp_train, fp_train), 4)}')
 
 print(f'Recall on Train: {round(recall_score(tp_train, fn_train), 4)}')
+
+#repeat the process on the test data set
+y_test_prod = lda.predict(X_test_sc)
+
+cf_test = confusion_matrix(y_test, y_test_prod, labels=[0,1])
+tn_test, fp_test, fn_test, tp_test = cf_train.ravel()
+
+cf_matrix = sns.heatmap(cf_test, annot=True, fmt='g', cbar=False)
+cf_matrix.set(xlabel='Predicted', ylabel='Actual', title='Confusion Matrix - Test')
+
+plt.show()
+
+print(f'Precision on train: {round(precision_score(tp_test, fp_test), 4)}')
+
+print(f'Recall on Train: {round(recall_score(tp_test, fn_test), 4)}')
+
