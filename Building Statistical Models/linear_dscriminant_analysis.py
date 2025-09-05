@@ -37,9 +37,6 @@ y=df_affairs['affairs']
 
 df_affairs_sd = pd.concat([X, y], axis=1)
 
-# print(X)
-# print(y)
-# print(df_affairs_sd)
 
 for col in df_affairs_sd.columns:
     if col not in ['affairs', 'occupation', 'occupation_husb']:
@@ -132,4 +129,3 @@ plt.show()
 print(f'Precision on train: {round(precision_score(tp_test, fp_test), 4)}')
 
 print(f'Recall on Train: {round(recall_score(tp_test, fn_test), 4)}')
-
