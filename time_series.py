@@ -22,3 +22,17 @@ df['realdpi'] = round(df['realdpi'].astype('float32'), 2)
 
 df_mod = df[['realinv', 'realdpi']].copy()
 
+# Continue from where your code ends
+fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+
+# Plot the 'realinv' time series
+ax[0].plot(df_mod['realinv'])
+ax[0].set_title('Real Investment Time Series')
+ax[0].axhline(0, color='red', linestyle='--')
+
+# Plot the ACF for 'realinv' with lag=50 and alpha=0.03
+plot_acf(df_mod['realinv'], ax=ax[1], lags=50, alpha=0.03)
+ax[1].set_title('Autocorrelation Function (ACF)')
+
+plt.tight_layout()
+plt.show() 
